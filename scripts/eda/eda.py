@@ -84,12 +84,42 @@ restaurant_type_counts = pd.Series(
     [item for sublist in business_data_pa['restaurant_types'] for item in sublist]).value_counts()
 
 # Display the most common restaurant types
-print("Most common restaurant types in PA:")
-print(restaurant_type_counts.head(10))
+# print("Most common restaurant types in PA:")
+# print(restaurant_type_counts.head(10))
 
 # Plot the results
 restaurant_type_counts.head(10).plot(kind='bar', figsize=(10, 6), title='Top 10 Restaurant Types in PA')
 plt.xlabel('Restaurant Type')
 plt.ylabel('Count')
-plt.savefig('Top_10_restaurant_types_in_PA.pnga')
-plt.show()
+# plt.savefig('Top_10_restaurant_types_in_PA.pnga')
+# plt.show()
+
+
+# Part 4.1
+
+# Define function to filter specific restaurant categories
+def filter_specific_categories(dataframe, category_list):
+    filtered_df = dataframe[
+        dataframe['restaurant_types'].apply(lambda types: any(cat in types for cat in category_list))]
+    return filtered_df
+
+
+# Filter for 'Italian' and 'Breakfast & Brunch' categories
+italian_restaurants = filter_specific_categories(business_data_pa, ['Italian'])
+breakfast_brunch_restaurants = filter_specific_categories(business_data_pa, ['Breakfast & Brunch'])
+
+
+# Function to calculate basic metrics for a category
+def calculate_basic_metrics(df, category_name):
+    average_rating = df['stars'].mean()
+    total_restaurants = len(df)
+    average_review_count = df['review_count'].mean()
+    print(f"Metrics for {category_name}:")
+    print(f"Total Restaurants: {total_restaurants}")
+    print(f"Average Rating: {average_rating:.2f}")
+    print(f"Average Review Count: {average_review_count:.2f}\n")
+
+
+# Calculate and display metrics for Italian and Breakfast & Brunch restaurants
+calculate_basic_metrics(italian_restaurants, 'Italian')
+calculate_basic_metrics(breakfast_brunch_restaurants, 'Breakfast & Brunch')

@@ -1,6 +1,5 @@
 import logging
 import os
-from collections import Counter
 from datetime import datetime
 
 import geopandas as gpd
@@ -20,12 +19,6 @@ logger = logging.getLogger(__name__)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
-# Define paths to data
-business_path = get_path_from_root("data", "raw", "Yelp Data", "business.json")
-
-# Initialize DataFrame to hold business data
-business_data_pa = pd.DataFrame()
-
 
 # Function definitions
 def load_data_in_chunks(file_path, chunk_size, filter_state='PA'):
@@ -35,18 +28,18 @@ def load_data_in_chunks(file_path, chunk_size, filter_state='PA'):
     return temp_df
 
 
-def count_categories(dataframe):
-    category_counts = Counter()
-    for row in dataframe['categories']:
-        if row:
-            categories = row.split(', ')
-            category_counts.update(categories)
-    return category_counts
+# Function Definitions
+def load_cleaned_business_data(file_path):
+    try:
+        return pd.read_json(file_path, lines=True)
+    except Exception as e:
+        logger.error(f"Error loading business data: {e}")
+        return pd.DataFrame()
 
 
 def extract_restaurant_types(row):
-    if row['categories'] and 'Restaurants' in row['categories']:
-        return [category.strip() for category in row['categories'].split(',') if category.strip() != 'Restaurants']
+    if pd.notna(row['categories']) and 'Restaurants' in row['categories']:
+        return [category.strip() for category in row['categories'].split(',') if 'Restaurants' not in category.strip()]
     return []
 
 
@@ -56,13 +49,17 @@ def filter_specific_categories(dataframe, category_list):
 
 
 def calculate_basic_metrics(df, category_name):
+    if df.empty or 'stars' not in df.columns:
+        logger.error(f"{category_name} DataFrame is empty or missing required columns")
+        return
+
     average_rating = df['stars'].mean()
     total_restaurants = len(df)
     average_review_count = df['review_count'].mean()
-    print(f"Metrics for {category_name}:")
-    print(f"Total Restaurants: {total_restaurants}")
-    print(f"Average Rating: {average_rating:.2f}")
-    print(f"Average Review Count: {average_review_count:.2f}")
+
+    logger.info(
+        f"Metrics for {category_name}: Total Restaurants: {total_restaurants}, Average Rating: {average_rating:.2f}, "
+        f"Average Review Count: {average_review_count:.2f}")
 
 
 def plot_category_counts(counter, title, file_name):
@@ -174,27 +171,32 @@ def save_geospatial_data_to_csv(geo_df, yelp_data, file_name):
 # Main function to call all tasks
 def main():
     chunk_size = 10000  # Adjust based on your system's memory capability
-    business_data_pa = load_data_in_chunks(business_path, chunk_size)
+    # Define paths to data
+    # business_path = get_path_from_root("data", "raw", "Yelp Data", "business.json")
+    # business_data_pa = load_data_in_chunks(business_path, chunk_size)
 
-    # # 1
-    # pa_category_counts = count_categories(business_data_pa)
-    # plot_category_counts(pa_category_counts, 'Top 10 Business Categories in PA',
-    #                      'Top_10_business_categories_in_PA.png')
+    cleaned_business_path = get_path_from_root("data", "interim", "cleaned_business.json")
+    business_data_pa = load_data_in_chunks(cleaned_business_path, chunk_size)
+
+
+    # 2
+    business_data_pa['restaurant_types'] = business_data_pa.apply(extract_restaurant_types, axis=1)
+    restaurant_type_counts = pd.Series(
+        [item for sublist in business_data_pa['restaurant_types'] for item in sublist]).value_counts()
+    plot_category_counts(restaurant_type_counts, 'Top 10 Restaurant Types in PA', 'Top_10_restaurant_types_in_PA.png')
     #
-    # # 2
-    # business_data_pa['restaurant_types'] = business_data_pa.apply(extract_restaurant_types, axis=1)
-    # restaurant_type_counts = pd.Series(
-    #     [item for sublist in business_data_pa['restaurant_types'] for item in sublist]).value_counts()
-    # plot_category_counts(restaurant_type_counts, 'Top 10 Restaurant Types in PA', 'Top_10_restaurant_types_in_PA.png')
-    #
-    # # 3
-    # italian_restaurants = filter_specific_categories(business_data_pa, ['Italian'])
-    # breakfast_brunch_restaurants = filter_specific_categories(business_data_pa, ['Breakfast & Brunch'])
-    # calculate_basic_metrics(italian_restaurants, 'Italian')
-    # calculate_basic_metrics(breakfast_brunch_restaurants, 'Breakfast & Brunch')
-    #
-    # # 4
-    # google_trend_analysis()
+    # 3
+    business_data_pa['restaurant_types'] = business_data_pa.apply(extract_restaurant_types, axis=1)
+    print(business_data_pa.columns)
+    italian_restaurants = filter_specific_categories(business_data_pa, ['Italian'])
+    # Ensure that 'italian_restaurants' is not empty and has the required columns
+    if italian_restaurants.empty or 'stars' not in italian_restaurants.columns:
+        logger.error("Italian restaurants DataFrame is empty or missing 'stars' column")
+    else:
+        calculate_basic_metrics(italian_restaurants, 'Italian')
+
+    # 4
+    google_trend_analysis()
 
     # 5
     italian_restaurants_geo = load_geojson(get_path_from_root("data", "raw", "GIS Data", "export.geojson"))

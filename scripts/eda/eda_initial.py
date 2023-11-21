@@ -1,13 +1,7 @@
 import logging
-import os
-from datetime import datetime
 
-import geopandas as gpd
 import matplotlib.pyplot as plt
 import pandas as pd
-import seaborn as sns
-from shapely import Point
-from sklearn.linear_model import LinearRegression
 
 from scripts.utility.path_utils import get_path_from_root
 
@@ -76,96 +70,53 @@ def plot_category_counts(counter, title, file_name):
     plt.close()
 
 
-def google_trend_analysis():
-    path = get_path_from_root("data", "raw", "Google Trend Data", "multiTimeline.csv")
-    df = pd.read_csv(path)
-
-    # Convert 'Week' to datetime
-    df['Week'] = pd.to_datetime(df['Week'])
-
-    # Convert 'Week' to its corresponding ordinal value
-    df['Week'] = df['Week'].map(datetime.toordinal)
-
-    # Step 3: Fit the model
-    model = LinearRegression()
-    model.fit(df[['Week']], df['italian_restaurants:(Pennsylvania)'])
-
-    # Step 4: Get the slope and intercept of the line
-    slope = model.coef_
-    intercept = model.intercept_
-
-    reg_line = slope * df['Week'] + intercept
-
-    # Step 6: Plot the data along with the regression line
-    plt.figure(figsize=(10, 6))
-    sns.scatterplot(data=df, x='Week', y='italian_restaurants:(Pennsylvania)', color='blue')
-    plt.ylabel('Relative Search Interest since 2018')
-    plt.plot(df['Week'], reg_line, color='red')
-    plt.title('Regression Line of Italian Food Trend in Pennsylvania')
-    plt.savefig(os.path.join(get_path_from_root("results", "eda"), "Relative_Search_Interest_since_2018.png"))
-    plt.show()
-
-
-def load_geojson(file_path):
-    return gpd.read_file(file_path)
-
-
-def plot_restaurant_density(geo_df, title, file_name):
-    fig, ax = plt.subplots(1, 1, figsize=(10, 6))
-    geo_df.plot(ax=ax, markersize=10, color='blue', label='Italian Restaurants')
-    plt.title(title)
-    plt.xlabel('Longitude')
-    plt.ylabel('Latitude')
-    plt.legend()
-    plt.savefig(os.path.join(get_path_from_root("results", "eda"), file_name))
-    plt.close()
-
-
-def save_geospatial_data_to_csv(geo_df, yelp_data, file_name):
-    # Convert Yelp data to a GeoDataFrame
-    if 'latitude' in yelp_data.columns and 'longitude' in yelp_data.columns:
-        buffer_radius = 0.001  # This is roughly 100 meters, adjust as needed
-
-        # Convert Yelp data to a GeoDataFrame with a buffer
-        yelp_gdf = gpd.GeoDataFrame(
-            yelp_data,
-            geometry=[Point(xy).buffer(buffer_radius) for xy in zip(yelp_data.longitude, yelp_data.latitude)]
-        )
-        yelp_gdf.set_crs(epsg=4326, inplace=True)  # Set CRS
-
-        # Ensure the coordinate reference system matches for both GeoDataFrames
-        geo_df = geo_df.to_crs(yelp_gdf.crs)
-
-        # Perform spatial join with buffering
-        merged_data = gpd.sjoin(geo_df, yelp_gdf, how="inner", predicate='intersects')
-
-        # Check the column names and correct them
-        print(merged_data.columns)
-
-        if not merged_data.empty:
-            # You'll need to replace the column names in the list below with the actual column names from merged_data
-            columns_to_save = ['name_left', 'addr:street', 'addr:city', 'addr:state', 'addr:postcode', 'geometry']
-
-            merged_data = merged_data[columns_to_save]
-
-            # Rename columns for clarity
-            merged_data.rename(columns={
-                'name_left': 'name',
-                'addr:street': 'address',
-                'addr:city': 'city',
-                'addr:state': 'state',
-                'addr:postcode': 'postal_code'
-                # Add any other renaming as necessary
-            }, inplace=True)
-            unique_columns = ['name', 'address', 'city', 'state', 'postal_code']
-            merged_data.drop_duplicates(subset=unique_columns, inplace=True)
-
-            # Save to CSV
-            file_path = os.path.join(get_path_from_root("data", "interim"), file_name)
-            merged_data.to_csv(file_path, index=False)
-            logger.info(f"Saved merged data to {file_name}")
-    else:
-        logger.error("Latitude and Longitude columns are missing from the Yelp data.")
+#
+#
+# def save_geospatial_data_to_csv(geo_df, yelp_data, file_name):
+#     # Convert Yelp data to a GeoDataFrame
+#     if 'latitude' in yelp_data.columns and 'longitude' in yelp_data.columns:
+#         buffer_radius = 0.001  # This is roughly 100 meters, adjust as needed
+#
+#         # Convert Yelp data to a GeoDataFrame with a buffer
+#         yelp_gdf = gpd.GeoDataFrame(
+#             yelp_data,
+#             geometry=[Point(xy).buffer(buffer_radius) for xy in zip(yelp_data.longitude, yelp_data.latitude)]
+#         )
+#         yelp_gdf.set_crs(epsg=4326, inplace=True)  # Set CRS
+#
+#         # Ensure the coordinate reference system matches for both GeoDataFrames
+#         geo_df = geo_df.to_crs(yelp_gdf.crs)
+#
+#         # Perform spatial join with buffering
+#         merged_data = gpd.sjoin(geo_df, yelp_gdf, how="inner", predicate='intersects')
+#
+#         # Check the column names and correct them
+#         print(merged_data.columns)
+#
+#         if not merged_data.empty:
+#             # You'll need to replace the column names in the list below with the actual column names from merged_data
+#             columns_to_save = ['name_left', 'addr:street', 'addr:city', 'addr:state', 'addr:postcode', 'geometry']
+#
+#             merged_data = merged_data[columns_to_save]
+#
+#             # Rename columns for clarity
+#             merged_data.rename(columns={
+#                 'name_left': 'name',
+#                 'addr:street': 'address',
+#                 'addr:city': 'city',
+#                 'addr:state': 'state',
+#                 'addr:postcode': 'postal_code'
+#                 # Add any other renaming as necessary
+#             }, inplace=True)
+#             unique_columns = ['name', 'address', 'city', 'state', 'postal_code']
+#             merged_data.drop_duplicates(subset=unique_columns, inplace=True)
+#
+#             # Save to CSV
+#             file_path = os.path.join(get_path_from_root("data", "interim"), file_name)
+#             merged_data.to_csv(file_path, index=False)
+#             logger.info(f"Saved merged data to {file_name}")
+#     else:
+#         logger.error("Latitude and Longitude columns are missing from the Yelp data.")
 
 
 # Main function to call all tasks

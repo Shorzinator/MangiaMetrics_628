@@ -1,3 +1,5 @@
+import re
+
 import nltk
 from nltk.corpus import stopwords
 import pandas as pd
@@ -65,15 +67,27 @@ def preprocess_text(text):
     nltk.download("stopwords")
     nltk.download("wordnet")
 
+    # Remove URLs
+    text = re.sub(r'http\S+', '', text)
+
+    # Replace special characters and numbers
+    text = re.sub(r'[^a-zA-Z\s]', '', text)
+    
     # Tokenization and lowercase
     words = nltk.word_tokenize(text.lower())
 
     # Stopword removal
-    words = [word for word in words if word not in stopwords.words("english")]
+    stop_words = set(stopwords.words("english"))
+    words = [word for word in words if word not in stop_words]
+
+    # Negation handling
+    words = ['not_' + words[i+1] if words[i] == 'not' and i+1 < len(words) else words[i] for i in range(len(words))]
 
     # Lemmatization
     lemmatizer = nltk.WordNetLemmatizer()
     words = [lemmatizer.lemmatize(word) for word in words]
+    words = [lemmatizer.lemmatize(word, pos='n') for word in words]  # Lemmatize nouns
+    words = [lemmatizer.lemmatize(word, pos='v') for word in words]  # Lemmatize verbs
 
     # Rejoin words into a string
     return " ".join(words)

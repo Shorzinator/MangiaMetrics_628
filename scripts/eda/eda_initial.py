@@ -178,31 +178,30 @@ def main():
     cleaned_business_path = get_path_from_root("data", "interim", "cleaned_business.json")
     business_data_pa = load_data_in_chunks(cleaned_business_path, chunk_size)
 
-
     # 2
     business_data_pa['restaurant_types'] = business_data_pa.apply(extract_restaurant_types, axis=1)
     restaurant_type_counts = pd.Series(
         [item for sublist in business_data_pa['restaurant_types'] for item in sublist]).value_counts()
     plot_category_counts(restaurant_type_counts, 'Top 10 Restaurant Types in PA', 'Top_10_restaurant_types_in_PA.png')
-    #
+
     # 3
-    business_data_pa['restaurant_types'] = business_data_pa.apply(extract_restaurant_types, axis=1)
-    print(business_data_pa.columns)
-    italian_restaurants = filter_specific_categories(business_data_pa, ['Italian'])
-    # Ensure that 'italian_restaurants' is not empty and has the required columns
-    if italian_restaurants.empty or 'stars' not in italian_restaurants.columns:
-        logger.error("Italian restaurants DataFrame is empty or missing 'stars' column")
-    else:
-        calculate_basic_metrics(italian_restaurants, 'Italian')
+    # business_data_pa['restaurant_types'] = business_data_pa.apply(extract_restaurant_types, axis=1)
+    # print(business_data_pa.columns)
+    # italian_restaurants = filter_specific_categories(business_data_pa, ['Italian'])
+    # # Ensure that 'italian_restaurants' is not empty and has the required columns
+    # if italian_restaurants.empty or 'stars' not in italian_restaurants.columns:
+    #     logger.error("Italian restaurants DataFrame is empty or missing 'stars' column")
+    # else:
+    #     calculate_basic_metrics(italian_restaurants, 'Italian')
 
     # 4
-    google_trend_analysis()
+    # google_trend_analysis()
 
     # 5
-    italian_restaurants_geo = load_geojson(get_path_from_root("data", "raw", "GIS Data", "export.geojson"))
-    plot_restaurant_density(italian_restaurants_geo, 'Density of Italian Restaurants in PA',
-                            "italian_restaurants_density_pa.png")
-    save_geospatial_data_to_csv(italian_restaurants_geo, business_data_pa, 'italian_restaurants_geospatial_data.csv')
+    # italian_restaurants_geo = load_geojson(get_path_from_root("data", "raw", "GIS Data", "export.geojson"))
+    # plot_restaurant_density(italian_restaurants_geo, 'Density of Italian Restaurants in PA',
+    #                         "italian_restaurants_density_pa.png")
+    # save_geospatial_data_to_csv(italian_restaurants_geo, business_data_pa, 'italian_restaurants_geospatial_data.csv')
 
 
 # Call the main function

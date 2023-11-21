@@ -1,4 +1,4 @@
-import os.path
+import os
 
 import pandas as pd
 from textblob import TextBlob

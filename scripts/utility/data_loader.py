@@ -1,6 +1,8 @@
-import pandas as pd
-import geopandas as gpd
 import logging
+
+import geopandas as gpd
+import pandas as pd
+
 from scripts.utility.path_utils import get_path_from_root
 
 # Constants
@@ -53,3 +55,15 @@ def get_geodata():
     except Exception as e:
         logger.error(f"Error loading GeoJSON data: {e}")
         return gpd.GeoDataFrame()
+
+
+def get_google_trends_data():
+    path = get_path_from_root("data", "Google Trend Data", "InterestOverTime.csv")
+    try:
+        trends_data = pd.read_csv(path)
+        trends_data['date'] = pd.to_datetime(trends_data['date'])  # Assuming there is a 'date' column
+        trends_data.set_index('date', inplace=True)
+        return trends_data
+    except Exception as e:
+        logger.error(f"Error in loading Google Trends data: {e}")
+        return pd.DataFrame()

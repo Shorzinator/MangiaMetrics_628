@@ -1,29 +1,38 @@
 import pandas as pd
-import logging
 import geopandas as gpd
-from scripts.eda.eda_initial import load_data_in_chunks
+import logging
 from scripts.utility.path_utils import get_path_from_root
 
-chunk_size = 10000  # Adjust based on system's memory capability
+# Constants
+CHUNK_SIZE = 10000  # Adjust based on system's memory capability
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
+# Function to load data in chunks
+def load_data_in_chunks(file_path, chunk_size):
+    try:
+        temp_df = pd.DataFrame()
+        for chunk in pd.read_json(file_path, lines=True, chunksize=chunk_size):
+            temp_df = pd.concat([temp_df, chunk])
+        return temp_df
+    except Exception as e:
+        logger.error(f"Error loading data from {file_path}: {e}")
+        return pd.DataFrame()
+
+
+# Function to load business data
 def get_business_df():
-    # Define paths to data
     business_path = get_path_from_root("data", "raw", "Yelp Data", "business.json")
-    business_data_pa = load_data_in_chunks(business_path, chunk_size)
-
-    return business_data_pa
+    return load_data_in_chunks(business_path, CHUNK_SIZE)
 
 
+# Function to load review data
 def get_review_df():
     review_path = get_path_from_root("data", "raw", "Yelp Data", "review.json")
-    review_data_pa = load_data_in_chunks(review_path, chunk_size)
-
-    return review_data_pa
+    return load_data_in_chunks(review_path, CHUNK_SIZE)
 
 
 # Function to load cleaned business data
@@ -32,10 +41,11 @@ def get_clean_business_df():
     try:
         return pd.read_json(path, lines=True)
     except Exception as e:
-        logger.error(f"Error loading business data: {e}")
+        logger.error(f"Error loading cleaned business data: {e}")
         return pd.DataFrame()
 
 
+# Function to load GeoJSON data
 def get_geodata():
     path = get_path_from_root("data", "GIS Data", "export.geojson")
     try:

@@ -1,3 +1,5 @@
+import nltk
+from nltk.corpus import stopwords
 import pandas as pd
 
 from config import BUSINESS_CLEANING_CONFIG, REVIEW_CLEANING_CONFIG
@@ -58,6 +60,25 @@ def clean_business():
         logging.error(f"Error in clean_business: {e}")
 
 
+def preprocess_text(text):
+
+    nltk.download("stopwords")
+    nltk.download("wordnet")
+
+    # Tokenization and lowercase
+    words = nltk.word_tokenize(text.lower())
+
+    # Stopword removal
+    words = [word for word in words if word not in stopwords.words("english")]
+
+    # Lemmatization
+    lemmatizer = nltk.WordNetLemmatizer()
+    words = [lemmatizer.lemmatize(word) for word in words]
+
+    # Rejoin words into a string
+    return " ".join(words)
+
+
 def clean_reviews_chunk(chunk):
     # Filter based on business IDs from cleaned business data
     chunk = chunk[chunk['business_id'].isin(REVIEW_CLEANING_CONFIG['business_ids'])]
@@ -69,6 +90,7 @@ def clean_reviews_chunk(chunk):
     # Remove duplicates and preprocess text for sentiment analysis
     chunk.drop_duplicates(subset='review_id', inplace=True)
     chunk['text'] = chunk['text'].str.lower().str.replace(r'[^\w\s]+', '')
+    chunk['text'] = chunk["text"].apply(lambda x: preprocess_text(x))
 
     return chunk
 

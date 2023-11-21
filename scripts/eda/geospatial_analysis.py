@@ -1,7 +1,4 @@
 import matplotlib.pyplot as plt
-import pandas as pd
-from shapely.geometry import Point
-from scripts.utility.path_utils import get_path_from_root
 from scripts.utility.data_loader import get_clean_business_df, get_geodata
 import logging
 

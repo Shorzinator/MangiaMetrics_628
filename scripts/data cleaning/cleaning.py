@@ -1,3 +1,6 @@
+import collections
+import json
+import os
 import re
 
 import nltk
@@ -13,11 +16,50 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Display all columns
+pd.set_option('display.max_columns', None)
+
+
+# nltk.download("stopwords")
+# nltk.download("wordnet")
+# nltk.download("punkt")
 
 def get_cleaned_business_ids():
     path = get_path_from_root("data", "interim", "cleaned_business.json")
     cleaned_business_df = pd.read_json(path, lines=True)
     return cleaned_business_df['business_id'].unique().tolist()
+
+
+def parse_attributes(attributes):
+    # Return the attributes as-is if it's a dictionary, or an empty dictionary if None
+    return attributes if isinstance(attributes, dict) else {}
+
+
+def flatten_dict(d, parent_key='', sep='_'):
+    items = []
+    for k, v in d.items():
+        new_key = parent_key + sep + k if parent_key else k
+        if isinstance(v, collections.abc.MutableMapping):
+            try:
+                nested_dict = json.loads(v.replace("'", "\""))
+                items.extend(flatten_dict(nested_dict, new_key, sep=sep).items())
+            except (json.JSONDecodeError, AttributeError):
+                items.append((new_key, v))
+        else:
+            items.append((new_key, v))
+    return dict(items)
+
+
+def flatten_attributes(business_df):
+    # Parse the attribute column into dictionaries
+    business_df['attributes'] = business_df['attributes'].apply(parse_attributes)
+
+    return business_df.join(pd.DataFrame([flatten_dict(row) for row in business_df['attributes']]))
+
+
+def save_pretty_json(df, path):
+    with open(path, 'w') as f:
+        json.dump(df.to_dict(orient='records'), f, indent=4)
 
 
 def clean_business():
@@ -52,27 +94,29 @@ def clean_business():
         business_df = business_df[
             (business_df["latitude"].between(-90, 90)) & (business_df["longitude"].between(-180, 180))]
 
-        # Save cleaned data
-        path_to_save = get_path_from_root("data", "interim", "cleaned_business.json")
-        business_df.to_json(path_to_save, orient='records', lines=True)
+        business_df = flatten_attributes(business_df)
 
-        logging.info(f"Cleaned data saved to {path_to_save}")
+        # Save cleaned data
+        path_to_save = get_path_from_root("data", "interim")
+        os.makedirs(path_to_save, exist_ok=True)
+
+        save_pretty_json(business_df, os.path.join(path_to_save, "cleaned_business.json"))
+        # business_df.to_json(os.path.join(path_to_save, "cleaned_business.json"), orient='records', lines=True)
+
+        logging.info(f"Cleaned business data saved to {path_to_save}")
 
     except Exception as e:
         logging.error(f"Error in clean_business: {e}")
+        raise
 
 
 def preprocess_text(text):
-
-    nltk.download("stopwords")
-    nltk.download("wordnet")
-
     # Remove URLs
     text = re.sub(r'http\S+', '', text)
 
     # Replace special characters and numbers
     text = re.sub(r'[^a-zA-Z\s]', '', text)
-    
+
     # Tokenization and lowercase
     words = nltk.word_tokenize(text.lower())
 
@@ -81,7 +125,7 @@ def preprocess_text(text):
     words = [word for word in words if word not in stop_words]
 
     # Negation handling
-    words = ['not_' + words[i+1] if words[i] == 'not' and i+1 < len(words) else words[i] for i in range(len(words))]
+    words = ['not_' + words[i + 1] if words[i] == 'not' and i + 1 < len(words) else words[i] for i in range(len(words))]
 
     # Lemmatization
     lemmatizer = nltk.WordNetLemmatizer()
@@ -94,17 +138,19 @@ def preprocess_text(text):
 
 
 def clean_reviews_chunk(chunk):
+    chunk = chunk.copy()  # Create a copy of the chunk to avoid SettingWithCopyWarning
+
     # Filter based on business IDs from cleaned business data
     chunk = chunk[chunk['business_id'].isin(REVIEW_CLEANING_CONFIG['business_ids'])]
 
     # Standardize date formats and handle missing values
-    chunk['date'] = pd.to_datetime(chunk['date'], errors='coerce')
+    chunk.loc[:, 'date'] = pd.to_datetime(chunk['date'], errors='coerce')
     chunk.dropna(subset=['review_id', 'user_id', 'business_id', 'date'], inplace=True)
 
     # Remove duplicates and preprocess text for sentiment analysis
     chunk.drop_duplicates(subset='review_id', inplace=True)
-    chunk['text'] = chunk['text'].str.lower().str.replace(r'[^\w\s]+', '')
-    chunk['text'] = chunk["text"].apply(lambda x: preprocess_text(x))
+    chunk.loc[:, 'text'] = chunk['text'].str.lower().str.replace(r'[^\w\s]+', '')
+    chunk.loc[:, 'text'] = chunk["text"].apply(lambda x: preprocess_text(x))
 
     return chunk
 

@@ -196,13 +196,18 @@ def clean_trips_data():
     df = pd.read_csv(input_path)
 
     # Define columns to drop
-    columns_to_drop = ['State FIPS', 'State Postal Code', 'Level', 'Row ID', 'Week']
+    columns_to_drop = ['State FIPS', 'State Postal Code', 'Level', 'Row ID', 'Week', 'Number of Trips >=500']
 
     # Drop the unnecessary columns
-    df_cleaned = df.drop(columns=columns_to_drop)
+    df_cleaned = df.drop(columns=columns_to_drop, axis=1)
+
+    # Convert 'Date' to datetime, and set it as the index
+    df['Date'] = pd.to_datetime(df['Date'])
+    df.set_index('Date', inplace=True)
 
     # Save the cleaned dataset to a new file
     df_cleaned.to_csv(os.path.join(output_path, "cleaned_transportation.csv"), index=False)
+    print(df_cleaned.columns)
     print(f"Cleaned data saved to {output_path}")
 
 

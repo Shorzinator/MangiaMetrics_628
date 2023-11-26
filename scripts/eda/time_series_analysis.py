@@ -1,62 +1,66 @@
+import os
+
 import pandas as pd
+from textblob import TextBlob
+from collections import Counter
 import matplotlib.pyplot as plt
-from scripts.utility.data_loader import get_review_df, get_google_trends_data
+from wordcloud import WordCloud
+from scripts.utility.data_loader import get_review_df, get_clean_review_df
 import logging
 
-# Configure Logging
+from scripts.utility.path_utils import get_path_from_root
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def prepare_time_series_data(review_data, trends_data):
-    # Preparing Yelp Review data
-    review_data["date"] = pd.to_datetime(review_data["date"])
-    review_data.set_index("date", inplace=True)
-    monthly_reviews = review_data.resample("M").agg({"stars": "mean", "review_id": "count"})
-
-    # Preparing Google Trend Data
-    # Assuming Google Trends data is already in the correct format
-    monthly_trends = trends_data.resample("M").mean()
-
-    # Combine Yelp data and Google Trend data
-    combined_data = pd.merge(monthly_reviews, monthly_trends, left_index=True, right_index=True, how="outer")
-    return combined_data
+def sentiment_analysis(reviews):
+    reviews["sentiment"] = reviews["text"].apply(lambda x: TextBlob(x).sentiment.polarity)
+    reviews["sentiment_category"] = pd.cut(reviews["sentiment"], bins=3, labels=["negative", "neutral", "positive"])
+    return reviews
 
 
-def plot_combined_time_series(combined_data, title='Monthly Trends for Italian Restaurants',
-                              file_name='monthly_trends.png'):
-    fig, ax1 = plt.subplots(figsize=(12, 6))
-
-    # Plotting Yelp Review Trends
-    color = 'tab:blue'
-    ax1.set_xlabel('Time')
-    ax1.set_ylabel('Average Rating', color=color)
-    ax1.plot(combined_data.index, combined_data['stars'], color=color)
-    ax1.tick_params(axis='y', labelcolor=color)
-
-    # Plotting Google Trends Data
-    ax2 = ax1.twinx()
-    color = 'tab:green'
-    ax2.set_ylabel('Google Search Interest', color=color)
-    ax2.plot(combined_data.index, combined_data['Italian_Restaurant_in_PA'], color=color)  # Update column name
-    ax2.tick_params(axis='y', labelcolor=color)
-
+def plot_sentiment_distribution(reviews, title, file_name):
+    sentiment_count = reviews["sentiment_category"].value_counts().reindex(["negative", "neutral", "positive"])
+    sentiment_count.plot(kind="bar", color=["red", "grey", "green"])
     plt.title(title)
-    fig.tight_layout()
-    plt.savefig(file_name)
-    plt.show()
+    plt.xlabel("Sentiment")
+    plt.ylabel("Count")
+    plt.savefig(os.path.join(get_path_from_root("results", "eda"), file_name))
+    plt.close()
+
+
+def keyword_extraction(reviews):
+    words = "".join(reviews["text"]).split()
+    word_freq = Counter(words)
+    return word_freq
+
+
+def plot_word_cloud(word_freq, title, file_name):
+    wordcloud = WordCloud(width=800, height=800,
+                          background_color='white',
+                          min_font_size=10).generate_from_frequencies(word_freq)
+    plt.figure(figsize=(8, 8), facecolor=None)
+    plt.imshow(wordcloud)
+    plt.axis("off")
+    plt.title(title)
+    plt.tight_layout(pad=0)
+    plt.savefig(os.path.join(get_path_from_root("results", "eda"), file_name))
+    plt.close()
 
 
 def main():
-    review_data = get_review_df()
-    google_trends_data = get_google_trends_data()
+    review_data = get_clean_review_df()
 
-    if not review_data.empty and not google_trends_data.empty:
-        combined_data = prepare_time_series_data(review_data, google_trends_data)
-        plot_combined_time_series(combined_data, "Yelp Reviews and Google Trends Over Time", "combined_trends.png")
-        logger.info("Combined time-series analysis completed and plot saved.")
+    if not review_data.empty:
+        sentiment_reviews = sentiment_analysis(review_data)
+        plot_sentiment_distribution(sentiment_reviews, "Sentiment Distribution in Reviews",
+                                    "sentiment_distribution.png")
+
+        word_freq = keyword_extraction(sentiment_reviews)
+        plot_word_cloud(word_freq, "Common Words in Reviews", "review_wordcloud.png")
     else:
-        logger.error("Failed to load data for combined time-series analysis.")
+        logger.error("Failed to load review data for analysis.")
 
 
 if __name__ == "__main__":

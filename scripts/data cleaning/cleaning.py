@@ -26,8 +26,14 @@ pd.set_option('display.max_columns', None)
 
 def get_cleaned_business_ids():
     path = get_path_from_root("data", "interim", "cleaned_business.json")
-    cleaned_business_df = pd.read_json(path, lines=True)
-    return cleaned_business_df['business_id'].unique().tolist()
+    try:
+        with open(path, 'r') as f:
+            data = json.load(f)
+        cleaned_business_df = pd.DataFrame(data)
+        return cleaned_business_df['business_id'].unique().tolist()
+    except Exception as e:
+        logging.error(f"Error in get_cleaned_business_ids: {e}")
+        return []
 
 
 def parse_attributes(attributes):
@@ -59,7 +65,12 @@ def flatten_attributes(business_df):
 
 def save_pretty_json(df, path):
     with open(path, 'w') as f:
-        json.dump(df.to_dict(orient='records'), f, indent=4)
+        try:
+            json_data = df.to_dict(orient='records')
+            json.dump(json_data, f, indent=4)
+        except Exception as e:
+            logging.error(f"Error in save_pretty_json: {e}")
+            raise
 
 
 def clean_business():
@@ -177,8 +188,28 @@ def clean_reviews():
         logging.error(f"Error in clean_reviews: {e}")
 
 
-if __name__ == "__main__":
-    clean_business()
+def clean_trips_data():
+    input_path = os.path.join(get_path_from_root("data", "raw", "Transportation Data"), "Trips_by_Distance.csv")
+    output_path = get_path_from_root("data", "interim")
 
-    REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
-    clean_reviews()
+    # Load the dataset
+    df = pd.read_csv(input_path)
+
+    # Define columns to drop
+    columns_to_drop = ['State FIPS', 'State Postal Code', 'Level', 'Row ID', 'Week']
+
+    # Drop the unnecessary columns
+    df_cleaned = df.drop(columns=columns_to_drop)
+
+    # Save the cleaned dataset to a new file
+    df_cleaned.to_csv(os.path.join(output_path, "cleaned_transportation.csv"), index=False)
+    print(f"Cleaned data saved to {output_path}")
+
+
+if __name__ == "__main__":
+    # clean_business()
+    #
+    # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
+    # clean_reviews()
+
+    clean_trips_data()

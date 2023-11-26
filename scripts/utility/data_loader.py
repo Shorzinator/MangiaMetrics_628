@@ -47,6 +47,15 @@ def get_clean_business_df():
         return pd.DataFrame()
 
 
+def get_clean_review_df():
+    path = get_path_from_root("data", "interim", "cleaned_reviews.json")
+    try:
+        return pd.read_json(path, lines=True)
+    except Exception as e:
+        logger.error(f"Error loading cleaned review data: {e}")
+        return pd.DataFrame()
+
+
 # Function to load GeoJSON data
 def get_geodata():
     path = get_path_from_root("data", "GIS Data", "export.geojson")
@@ -58,11 +67,11 @@ def get_geodata():
 
 
 def get_google_trends_data():
-    path = get_path_from_root("data", "Google Trend Data", "InterestOverTime.csv")
+    path = get_path_from_root("data", "raw", "Google Trend Data", "InterestOverTime_since2004.csv")
     try:
         trends_data = pd.read_csv(path)
-        trends_data['date'] = pd.to_datetime(trends_data['date'])  # Assuming there is a 'date' column
-        trends_data.set_index('date', inplace=True)
+        trends_data['Month'] = pd.to_datetime(trends_data['Month'])
+        trends_data.set_index('Month', inplace=True)
         return trends_data
     except Exception as e:
         logger.error(f"Error in loading Google Trends data: {e}")

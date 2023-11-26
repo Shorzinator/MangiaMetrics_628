@@ -5,7 +5,7 @@ from textblob import TextBlob
 from collections import Counter
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
-from scripts.utility.data_loader import get_review_df
+from scripts.utility.data_loader import get_clean_review_df
 import logging
 
 from scripts.utility.path_utils import get_path_from_root
@@ -15,13 +15,13 @@ logger = logging.getLogger(__name__)
 
 
 def sentiment_analysis(reviews):
-    reviews["sentiment"] = reviews["text"].apple(lambda x: TextBlob(x).sentiment.polarity)
+    reviews["sentiment"] = reviews["text"].apply(lambda x: TextBlob(x).sentiment.polarity)
     reviews["sentiment_category"] = pd.cut(reviews["sentiment"], bins=3, labels=["negative", "neutral", "positive"])
     return reviews
 
 
 def plot_sentiment_distribution(reviews, title, file_name):
-    sentiment_count = reviews["sentiment_category"].value_counts()
+    sentiment_count = reviews["sentiment_category"].value_counts().reindex(["negative", "neutral", "positive"])
     sentiment_count.plot(kind="bar", color=["red", "grey", "green"])
     plt.title(title)
     plt.xlabel("Sentiment")
@@ -45,12 +45,12 @@ def plot_word_cloud(word_freq, title, file_name):
     plt.axis("off")
     plt.title(title)
     plt.tight_layout(pad=0)
-    plt.savefig(file_name)
+    plt.savefig(os.path.join(get_path_from_root("results", "eda"), file_name))
     plt.close()
 
 
 def main():
-    review_data = get_review_df()
+    review_data = get_clean_review_df()
 
     if not review_data.empty:
         sentiment_reviews = sentiment_analysis(review_data)

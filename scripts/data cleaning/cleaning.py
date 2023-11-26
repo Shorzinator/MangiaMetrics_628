@@ -73,6 +73,38 @@ def save_pretty_json(df, path):
             raise
 
 
+def parse_attributes(attributes):
+    # Return the attributes as-is if it's a dictionary, or an empty dictionary if None
+    return attributes if isinstance(attributes, dict) else {}
+
+
+def flatten_dict(d, parent_key='', sep='_'):
+    items = []
+    for k, v in d.items():
+        new_key = parent_key + sep + k if parent_key else k
+        if isinstance(v, collections.abc.MutableMapping):
+            try:
+                nested_dict = json.loads(v.replace("'", "\""))
+                items.extend(flatten_dict(nested_dict, new_key, sep=sep).items())
+            except (json.JSONDecodeError, AttributeError):
+                items.append((new_key, v))
+        else:
+            items.append((new_key, v))
+    return dict(items)
+
+
+def flatten_attributes(business_df):
+    # Parse the attribute column into dictionaries
+    business_df['attributes'] = business_df['attributes'].apply(parse_attributes)
+
+    return business_df.join(pd.DataFrame([flatten_dict(row) for row in business_df['attributes']]))
+
+
+def save_pretty_json(df, path):
+    with open(path, 'w') as f:
+        json.dump(df.to_dict(orient='records'), f, indent=4)
+
+
 def clean_business():
     try:
         business_df = get_business_df()

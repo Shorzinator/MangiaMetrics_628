@@ -1,16 +1,16 @@
 import collections
 import json
+import logging
 import os
 import re
 
 import nltk
-from nltk.corpus import stopwords
 import pandas as pd
+from nltk.corpus import stopwords
 
 from config import BUSINESS_CLEANING_CONFIG, REVIEW_CLEANING_CONFIG
 from scripts.utility.data_loader import get_business_df
 from scripts.utility.path_utils import get_path_from_root
-import logging
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO)
@@ -168,7 +168,6 @@ def clean_reviews_chunk(chunk):
 
 def clean_reviews():
     try:
-        cleaned_reviews_df = pd.DataFrame()
         chunks = []
 
         for chunk in pd.read_json(get_path_from_root("data", "raw", "Yelp Data", "review.json"), lines=True,
@@ -211,40 +210,39 @@ def clean_trips_data():
 
 
 def clean_dp03():
-    input_path = "/Users/shouryamaheshwari/Desktop/UW/STAT 628/MangiaMetrics_628/data/raw/Census Bureau Data/ACSDP5Y2017.DP03-2023-11-15T172523.csv"
+    input_path = os.path.join(get_path_from_root("data", "raw", "Census Bureau Data"),
+                              "ACSDP5Y2017.DP03-2023-11-15T172523.csv")
     output_path = os.path.join(get_path_from_root("data", "interim"), "cleaned_dp03.csv")
 
+    # Read the CSV file
     dp03_df = pd.read_csv(input_path)
 
-    # Replace non-breaking spaces with a standard space and strip whitespace
+    # Remove non-breaking spaces and strip whitespace
     dp03_df['Label (Grouping)'] = dp03_df['Label (Grouping)'].str.replace(u'\xa0', ' ').str.strip()
 
-    # Identify main categories and subcategories based on all-caps and indentation
+    # Identify main categories and subcategories
     dp03_df['Category'] = dp03_df['Label (Grouping)'].apply(lambda x: x if x.isupper() else None)
     dp03_df['Category'] = dp03_df['Category'].ffill()
     dp03_df['Subcategory'] = dp03_df.apply(
         lambda x: x['Label (Grouping)'] if not x['Label (Grouping)'].isupper() else None, axis=1)
 
-    # Remove 'Pennsylvania!!' from column headers and Margin of Error columns
-    dp03_df.columns = dp03_df.columns.str.replace('Pennsylvania!!', '', regex=False).str.replace(' Margin of Error', '',
-                                                                                                 regex=False)
+    # Clean column names
+    dp03_df.columns = dp03_df.columns.str.replace('Pennsylvania!!', '').str.replace(' Margin of Error', '', regex=False)
 
-    # Convert percentages and estimates to numeric values
-    for col in dp03_df.columns:
-        if 'Estimate' in col or 'Percent' in col:
-            # Ensure the column is string before replacing
-            dp03_df[col] = pd.to_numeric(dp03_df[col].astype(str).str.replace(',', '').str.replace('%', ''),
-                                         errors='coerce')
-        if 'Percent' in col:
-            dp03_df[col] /= 100
+    # Remove commas from the last four columns
+    print(dp03_df.columns)
+    last_four_columns = dp03_df.columns[-4:]
+    print(last_four_columns)
+    for col in last_four_columns:
+        dp03_df[col] = dp03_df[col].apply(lambda x: x.replace(',', '') if isinstance(x, str) else x)
 
     # Set the multi-level index
     dp03_df.set_index(['Category', 'Subcategory'], inplace=True)
 
-    # Drop unnecessary columns
+    # Drop the original 'Label (Grouping)' column as it's no longer needed
     dp03_df.drop(columns=['Label (Grouping)'], inplace=True)
 
-    # Save the cleaned dataframe
+    # Save the cleaned DataFrame
     dp03_df.to_csv(output_path, index=True)
 
 
@@ -257,4 +255,3 @@ if __name__ == "__main__":
     # clean_trips_data()
 
     clean_dp03()
-    # pass

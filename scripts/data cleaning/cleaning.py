@@ -207,14 +207,54 @@ def clean_trips_data():
 
     # Save the cleaned dataset to a new file
     df_cleaned.to_csv(os.path.join(output_path, "cleaned_transportation.csv"), index=False)
-    print(df_cleaned.columns)
     print(f"Cleaned data saved to {output_path}")
+
+
+def clean_dp03():
+    input_path = "/Users/shouryamaheshwari/Desktop/UW/STAT 628/MangiaMetrics_628/data/raw/Census Bureau Data/ACSDP5Y2017.DP03-2023-11-15T172523.csv"
+    output_path = os.path.join(get_path_from_root("data", "interim"), "cleaned_dp03.csv")
+
+    dp03_df = pd.read_csv(input_path)
+
+    # Replace non-breaking spaces with a standard space and strip whitespace
+    dp03_df['Label (Grouping)'] = dp03_df['Label (Grouping)'].str.replace(u'\xa0', ' ').str.strip()
+
+    # Identify main categories and subcategories based on all-caps and indentation
+    dp03_df['Category'] = dp03_df['Label (Grouping)'].apply(lambda x: x if x.isupper() else None)
+    dp03_df['Category'] = dp03_df['Category'].ffill()
+    dp03_df['Subcategory'] = dp03_df.apply(
+        lambda x: x['Label (Grouping)'] if not x['Label (Grouping)'].isupper() else None, axis=1)
+
+    # Remove 'Pennsylvania!!' from column headers and Margin of Error columns
+    dp03_df.columns = dp03_df.columns.str.replace('Pennsylvania!!', '', regex=False).str.replace(' Margin of Error', '',
+                                                                                                 regex=False)
+
+    # Convert percentages and estimates to numeric values
+    for col in dp03_df.columns:
+        if 'Estimate' in col or 'Percent' in col:
+            # Ensure the column is string before replacing
+            dp03_df[col] = pd.to_numeric(dp03_df[col].astype(str).str.replace(',', '').str.replace('%', ''),
+                                         errors='coerce')
+        if 'Percent' in col:
+            dp03_df[col] /= 100
+
+    # Set the multi-level index
+    dp03_df.set_index(['Category', 'Subcategory'], inplace=True)
+
+    # Drop unnecessary columns
+    dp03_df.drop(columns=['Label (Grouping)'], inplace=True)
+
+    # Save the cleaned dataframe
+    dp03_df.to_csv(output_path, index=True)
 
 
 if __name__ == "__main__":
     # clean_business()
-    #
+
     # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
     # clean_reviews()
 
-    clean_trips_data()
+    # clean_trips_data()
+
+    clean_dp03()
+    # pass

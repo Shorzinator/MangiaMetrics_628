@@ -41,10 +41,17 @@ def get_review_df():
 def get_clean_business_df():
     path = get_path_from_root("data", "interim", "cleaned_business.json")
     try:
+        # Attempt to read the file in the JSON lines format
         return pd.read_json(path, lines=True)
-    except Exception as e:
+    except ValueError as e:
         logger.error(f"Error loading cleaned business data: {e}")
-        return pd.DataFrame()
+        try:
+            # Attempt to read a JSON file that is an array of objects
+            return pd.read_json(path)
+        except ValueError as e2:
+            logger.error(f"Error loading cleaned business data: {e2}")
+    return pd.DataFrame()
+
 
 
 def get_clean_review_df():
@@ -75,4 +82,16 @@ def get_google_trends_data():
         return trends_data
     except Exception as e:
         logger.error(f"Error in loading Google Trends data: {e}")
+        return pd.DataFrame()
+
+
+def get_clean_transportation_df():
+    path = get_path_from_root("data", "interim", "cleaned_transportation.csv")
+    try:
+        transportation_df = pd.read_csv(path)
+        transportation_df['Date'] = pd.to_datetime(transportation_df['Date'])
+        return transportation_df
+
+    except Exception as e:
+        logger.error(f"Error in loading Transportation data: {e}")
         return pd.DataFrame()

@@ -1,0 +1,179 @@
+About the project
+Columns in business.json -
+{
+    // string, 22 character unique string business id
+    "business_id": "tnhfDv5Il8EaGSXZGiuQGg",
+
+    // string, the business's name
+    "name": "Garaje",
+
+    // string, the full address of the business
+    "address": "475 3rd St",
+
+    // string, the city
+    "city": "San Francisco",
+
+    // string, 2 character state code, if applicable
+    "state": "CA",
+
+    // string, the postal code
+    "postal code": "94107",
+
+    // float, latitude
+    "latitude": 37.7817529521,
+
+    // float, longitude
+    "longitude": -122.39612197,
+
+    // float, star rating, rounded to half-stars
+    "stars": 4.5,
+
+    // integer, number of reviews
+    "review_count": 1198,
+
+    // integer, 0 or 1 for closed or open, respectively
+    "is_open": 1,
+
+    // object, business attributes to values. note: some attribute values might be objects
+    "attributes": {
+        "RestaurantsTakeOut": true,
+        "BusinessParking": {
+            "garage": false,
+            "street": true,
+            "validated": false,
+            "lot": false,
+            "valet": false
+        },
+    },
+
+    // an array of strings of business categories
+    "categories": [
+        "Mexican",
+        "Burgers",
+        "Gastropubs"
+    ],
+
+    // an object of key day-to-value hours, hours are using a 24-hour clock
+    "hours": {
+        "Monday": "10:00-21:00",
+        "Tuesday": "10:00-21:00",
+        "Friday": "10:00-21:00",
+        "Wednesday": "10:00-21:00",
+        "Thursday": "10:00-21:00",
+        "Sunday": "11:00-18:00",
+        "Saturday": "10:00-21:00"
+    }
+
+columns in review.json -
+{
+    // string, 22 character unique review id
+    "review_id": "zdSx_SD6obEhz9VrW9uAWA",
+
+    // string, 22 character unique user id, maps to the user in user.json
+    "user_id": "Ha3iJu77CxlrFm-vQRs_8g",
+
+    // string, 22 character business id, maps to business in business.json
+    "business_id": "tnhfDv5Il8EaGSXZGiuQGg",
+
+    // integer, star rating
+    "stars": 4,
+
+    // string, date formatted YYYY-MM-DD
+    "date": "2016-03-09",
+
+    // string, the review itself
+    "text": "Great place to hang out after work: the prices are decent, and the ambience is fun. It's a bit loud, but very lively. The staff is friendly, and the food is good. They have a good selection of drinks.",
+
+    // integer, number of useful votes received
+    "useful": 0,
+
+    // integer, number of funny votes received
+    "funny": 0,
+
+    // integer, number of cool votes received
+    "cool": 0
+}
+
+Columns in export.geojson -
+Index(['id', '@id', 'addr:city', 'addr:country', 'addr:county',
+       'addr:housename', 'addr:housenumber', 'addr:postcode', 'addr:state',
+       'addr:street', 'addr:unit', 'air_conditioning', 'alt_name', 'amenity',
+       'amenity_1', 'bar', 'branch', 'brand', 'brand:wikidata',
+       'brand:wikipedia', 'building', 'building:levels', 'building:material',
+       'building:part', 'capacity', 'check_date', 'cocktails',
+       'contact:facebook', 'contact:instagram', 'contact:linkedin',
+       'contact:phone', 'contact:website', 'contact:yelp', 'craft',
+       'created_by', 'cuisine', 'delivery', 'description', 'diet:gluten_free',
+       'diet:organic', 'diet:pescetarian', 'diet:vegetarian', 'dish',
+       'drink:beer', 'drink:coffee', 'drink:liquor', 'drink:wine', 'email',
+       'facebook', 'fax', 'fixme', 'indoor_seating', 'internet_access',
+       'internet_access:fee', 'layer', 'level', 'microbrewery', 'name',
+       'name:en', 'note', 'old_name', 'opening_hours', 'opening_hours:covid19',
+       'operator', 'outdoor_seating', 'payment:american_express',
+       'payment:cash', 'payment:contactless', 'payment:credit_cards',
+       'payment:cryptocurrencies', 'payment:debit_cards',
+       'payment:discover_card', 'payment:mastercard', 'payment:visa',
+       'payment:visa_debit', 'phone', 'reservation', 'roof:levels',
+       'roof:shape', 'short_name', 'smoking', 'source', 'source:geometry',
+       'start_date', 'survey:date', 'takeaway', 'toilets',
+       'toilets:wheelchair', 'type', 'website', 'website:menu', 'wheelchair',
+       'wheelchair:description', '@geometry', 'geometry'],
+      dtype='object')
+
+
+Columns in cleaned_transportation.csv -
+Index(['Date', 'County FIPS', 'County Name', 'Population Staying at Home',
+       'Population Not Staying at Home', 'Number of Trips',
+       'Number of Trips <1', 'Number of Trips 1-3', 'Number of Trips 3-5',
+       'Number of Trips 5-10', 'Number of Trips 10-25',
+       'Number of Trips 25-50', 'Number of Trips 50-100',
+       'Number of Trips 100-250', 'Number of Trips 250-500',
+       'Number of Trips >=500', 'Month'],
+      dtype='object')
+
+Columns in DP03:
+Index(['Label (Grouping)', 'Pennsylvania!!Estimate',
+       'Pennsylvania!!Margin of Error', 'Pennsylvania!!Percent',
+       'Pennsylvania!!Percent Margin of Error'],
+      dtype='object')
+
+Columns in DP04:
+Index(['Label (Grouping)', 'Pennsylvania!!Estimate',
+       'Pennsylvania!!Margin of Error', 'Pennsylvania!!Percent',
+       'Pennsylvania!!Percent Margin of Error'],
+      dtype='object')
+
+Columns in DP05:
+Index(['Label (Grouping)', 'Pennsylvania!!Estimate',
+       'Pennsylvania!!Margin of Error', 'Pennsylvania!!Percent',
+       'Pennsylvania!!Percent Margin of Error'],
+      dtype='object')
+
+Columns in S0801:
+Index(['Label (Grouping)', 'Pennsylvania!!Total!!Estimate',
+       'Pennsylvania!!Total!!Margin of Error', 'Pennsylvania!!Male!!Estimate',
+       'Pennsylvania!!Male!!Margin of Error', 'Pennsylvania!!Female!!Estimate',
+       'Pennsylvania!!Female!!Margin of Error'],
+      dtype='object')
+
+Columns in S1901:
+Index(['Label (Grouping)', 'Pennsylvania!!Households!!Estimate',
+       'Pennsylvania!!Households!!Margin of Error',
+       'Pennsylvania!!Families!!Estimate',
+       'Pennsylvania!!Families!!Margin of Error',
+       'Pennsylvania!!Married-couple families!!Estimate',
+       'Pennsylvania!!Married-couple families!!Margin of Error',
+       'Pennsylvania!!Nonfamily households!!Estimate',
+       'Pennsylvania!!Nonfamily households!!Margin of Error'],
+      dtype='object')
+
+
+Script for Overpass Turbo -
+[out:json][timeout:60];
+area["ISO3166-2"="US-PA"]->.searchArea;
+(
+  node["cuisine"="italian"]["amenity"="restaurant"](area.searchArea);
+  way["cuisine"="italian"]["amenity"="restaurant"](area.searchArea);
+  relation["cuisine"="italian"]["amenity"="restaurant"](area.searchArea);
+);
+out center;

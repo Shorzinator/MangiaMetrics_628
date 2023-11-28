@@ -11,6 +11,7 @@ Script 6: Analyze search trend data to gauge interest in Italian cuisine over ti
 Transportation Accessibility Analysis:
 Script 7: Examine transportation patterns to identify high-traffic areas and typical travel distances for dining out.
 Script 8: Correlate transportation data with restaurant locations to assess the impact of accessibility on restaurant success.
+
 Modeling Scripts:
 Predictive Analytics for Market Demand:
 Model 1: Build a predictive model to forecast demand for Italian restaurants based on current trends and demographic shifts.

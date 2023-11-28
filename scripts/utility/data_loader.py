@@ -53,7 +53,6 @@ def get_clean_business_df():
     return pd.DataFrame()
 
 
-
 def get_clean_review_df():
     path = get_path_from_root("data", "interim", "cleaned_reviews.json")
     try:

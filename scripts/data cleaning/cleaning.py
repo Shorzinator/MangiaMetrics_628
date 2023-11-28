@@ -1,16 +1,16 @@
 import collections
 import json
+import logging
 import os
 import re
 
 import nltk
-from nltk.corpus import stopwords
 import pandas as pd
+from nltk.corpus import stopwords
 
 from config import BUSINESS_CLEANING_CONFIG, REVIEW_CLEANING_CONFIG
 from scripts.utility.data_loader import get_business_df
 from scripts.utility.path_utils import get_path_from_root
-import logging
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO)
@@ -20,9 +20,9 @@ logger = logging.getLogger(__name__)
 pd.set_option('display.max_columns', None)
 
 
-# nltk.download("stopwords")
-# nltk.download("wordnet")
-# nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("wordnet")
+nltk.download("punkt")
 
 def get_cleaned_business_ids():
     path = get_path_from_root("data", "interim", "cleaned_business.json")
@@ -168,7 +168,6 @@ def clean_reviews_chunk(chunk):
 
 def clean_reviews():
     try:
-        cleaned_reviews_df = pd.DataFrame()
         chunks = []
 
         for chunk in pd.read_json(get_path_from_root("data", "raw", "Yelp Data", "review.json"), lines=True,
@@ -207,54 +206,64 @@ def clean_trips_data():
 
     # Save the cleaned dataset to a new file
     df_cleaned.to_csv(os.path.join(output_path, "cleaned_transportation.csv"), index=False)
-    print(f"Cleaned data saved to {output_path}")
+    logger.info(f"Cleaned transportation data saved to {output_path}")
 
 
 def clean_dp03():
-    input_path = "/Users/shouryamaheshwari/Desktop/UW/STAT 628/MangiaMetrics_628/data/raw/Census Bureau Data/ACSDP5Y2017.DP03-2023-11-15T172523.csv"
+    input_path = os.path.join(get_path_from_root("data", "raw", "Census Bureau Data"),
+                              "ACSDP5Y2017.DP03-2023-11-15T172523.csv")
     output_path = os.path.join(get_path_from_root("data", "interim"), "cleaned_dp03.csv")
 
+    # Read the CSV file
     dp03_df = pd.read_csv(input_path)
 
-    # Replace non-breaking spaces with a standard space and strip whitespace
-    dp03_df['Label (Grouping)'] = dp03_df['Label (Grouping)'].str.replace(u'\xa0', ' ').str.strip()
+    # Function to count leading non-breaking spaces
+    def count_leading_spaces(s):
+        return len(s) - len(s.lstrip(u'\xa0'))
 
-    # Identify main categories and subcategories based on all-caps and indentation
-    dp03_df['Category'] = dp03_df['Label (Grouping)'].apply(lambda x: x if x.isupper() else None)
-    dp03_df['Category'] = dp03_df['Category'].ffill()
-    dp03_df['Subcategory'] = dp03_df.apply(
-        lambda x: x['Label (Grouping)'] if not x['Label (Grouping)'].isupper() else None, axis=1)
+    # Add a new column for indent level
+    dp03_df['IndentLevel'] = dp03_df['Label (Grouping)'].apply(count_leading_spaces)
 
-    # Remove 'Pennsylvania!!' from column headers and Margin of Error columns
-    dp03_df.columns = dp03_df.columns.str.replace('Pennsylvania!!', '', regex=False).str.replace(' Margin of Error', '',
-                                                                                                 regex=False)
+    # Identify hierarchical levels and create columns for each level
+    max_indent = dp03_df['IndentLevel'].max()
+    for level in range(max_indent + 1):
+        dp03_df[f'Level_{level}'] = None
+        mask = dp03_df['IndentLevel'] == level
+        dp03_df.loc[mask, f'Level_{level}'] = dp03_df.loc[mask, 'Label (Grouping)'].str.strip()
 
-    # Convert percentages and estimates to numeric values
+    # Forward fill the hierarchical levels
+    for level in range(max_indent + 1):
+        dp03_df[f'Level_{level}'] = dp03_df[f'Level_{level}'].ffill()
+
+    # Drop the original 'Label (Grouping)' and 'IndentLevel' columns as they're no longer needed
+    dp03_df.drop(columns=['Label (Grouping)', 'IndentLevel', 'Pennsylvania!!Percent', 'Pennsylvania!!Percent Margin of Error'], inplace=True)
+
+    # Drop columns with all null values
+    dp03_df.dropna(axis=1, how='all', inplace=True)
+
+    # Remove commas from the first two columns
+    dp03_df.iloc[:, 0] = dp03_df.iloc[:, 0].str.replace(',', '')
+    dp03_df.iloc[:, 1] = dp03_df.iloc[:, 1].str.replace(',', '')
+
+    # Remove '±' sign from the 2nd and 4th columns
+    dp03_df.iloc[:, 1] = dp03_df.iloc[:, 1].str.replace('±', '')
+    dp03_df.iloc[:, 3] = dp03_df.iloc[:, 3].str.replace('±', '')
+
+    # Remove '%' sign from columns with 'Percent' in their header
     for col in dp03_df.columns:
-        if 'Estimate' in col or 'Percent' in col:
-            # Ensure the column is string before replacing
-            dp03_df[col] = pd.to_numeric(dp03_df[col].astype(str).str.replace(',', '').str.replace('%', ''),
-                                         errors='coerce')
         if 'Percent' in col:
-            dp03_df[col] /= 100
+            dp03_df[col] = dp03_df[col].str.replace('%', '')
 
-    # Set the multi-level index
-    dp03_df.set_index(['Category', 'Subcategory'], inplace=True)
-
-    # Drop unnecessary columns
-    dp03_df.drop(columns=['Label (Grouping)'], inplace=True)
-
-    # Save the cleaned dataframe
-    dp03_df.to_csv(output_path, index=True)
+    # Save the cleaned DataFrame
+    dp03_df.to_csv(output_path, index=False)
 
 
 if __name__ == "__main__":
-    # clean_business()
+    clean_business()
 
-    # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
-    # clean_reviews()
+    REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
+    clean_reviews()
 
-    # clean_trips_data()
+    clean_trips_data()
 
-    clean_dp03()
-    # pass
+    # clean_dp03()

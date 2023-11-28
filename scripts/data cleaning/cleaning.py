@@ -20,9 +20,9 @@ logger = logging.getLogger(__name__)
 pd.set_option('display.max_columns', None)
 
 
-# nltk.download("stopwords")
-# nltk.download("wordnet")
-# nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("wordnet")
+nltk.download("punkt")
 
 def get_cleaned_business_ids():
     path = get_path_from_root("data", "interim", "cleaned_business.json")
@@ -206,7 +206,7 @@ def clean_trips_data():
 
     # Save the cleaned dataset to a new file
     df_cleaned.to_csv(os.path.join(output_path, "cleaned_transportation.csv"), index=False)
-    print(f"Cleaned data saved to {output_path}")
+    logger.info(f"Cleaned transportation data saved to {output_path}")
 
 
 def clean_dp03():
@@ -217,41 +217,53 @@ def clean_dp03():
     # Read the CSV file
     dp03_df = pd.read_csv(input_path)
 
-    # Remove non-breaking spaces and strip whitespace
-    dp03_df['Label (Grouping)'] = dp03_df['Label (Grouping)'].str.replace(u'\xa0', ' ').str.strip()
+    # Function to count leading non-breaking spaces
+    def count_leading_spaces(s):
+        return len(s) - len(s.lstrip(u'\xa0'))
 
-    # Identify main categories and subcategories
-    dp03_df['Category'] = dp03_df['Label (Grouping)'].apply(lambda x: x if x.isupper() else None)
-    dp03_df['Category'] = dp03_df['Category'].ffill()
-    dp03_df['Subcategory'] = dp03_df.apply(
-        lambda x: x['Label (Grouping)'] if not x['Label (Grouping)'].isupper() else None, axis=1)
+    # Add a new column for indent level
+    dp03_df['IndentLevel'] = dp03_df['Label (Grouping)'].apply(count_leading_spaces)
 
-    # Clean column names
-    dp03_df.columns = dp03_df.columns.str.replace('Pennsylvania!!', '').str.replace(' Margin of Error', '', regex=False)
+    # Identify hierarchical levels and create columns for each level
+    max_indent = dp03_df['IndentLevel'].max()
+    for level in range(max_indent + 1):
+        dp03_df[f'Level_{level}'] = None
+        mask = dp03_df['IndentLevel'] == level
+        dp03_df.loc[mask, f'Level_{level}'] = dp03_df.loc[mask, 'Label (Grouping)'].str.strip()
 
-    # Remove commas from the last four columns
-    print(dp03_df.columns)
-    last_four_columns = dp03_df.columns[-4:]
-    print(last_four_columns)
-    for col in last_four_columns:
-        dp03_df[col] = dp03_df[col].apply(lambda x: x.replace(',', '') if isinstance(x, str) else x)
+    # Forward fill the hierarchical levels
+    for level in range(max_indent + 1):
+        dp03_df[f'Level_{level}'] = dp03_df[f'Level_{level}'].ffill()
 
-    # Set the multi-level index
-    dp03_df.set_index(['Category', 'Subcategory'], inplace=True)
+    # Drop the original 'Label (Grouping)' and 'IndentLevel' columns as they're no longer needed
+    dp03_df.drop(columns=['Label (Grouping)', 'IndentLevel', 'Pennsylvania!!Percent', 'Pennsylvania!!Percent Margin of Error'], inplace=True)
 
-    # Drop the original 'Label (Grouping)' column as it's no longer needed
-    dp03_df.drop(columns=['Label (Grouping)'], inplace=True)
+    # Drop columns with all null values
+    dp03_df.dropna(axis=1, how='all', inplace=True)
+
+    # Remove commas from the first two columns
+    dp03_df.iloc[:, 0] = dp03_df.iloc[:, 0].str.replace(',', '')
+    dp03_df.iloc[:, 1] = dp03_df.iloc[:, 1].str.replace(',', '')
+
+    # Remove '±' sign from the 2nd and 4th columns
+    dp03_df.iloc[:, 1] = dp03_df.iloc[:, 1].str.replace('±', '')
+    dp03_df.iloc[:, 3] = dp03_df.iloc[:, 3].str.replace('±', '')
+
+    # Remove '%' sign from columns with 'Percent' in their header
+    for col in dp03_df.columns:
+        if 'Percent' in col:
+            dp03_df[col] = dp03_df[col].str.replace('%', '')
 
     # Save the cleaned DataFrame
-    dp03_df.to_csv(output_path, index=True)
+    dp03_df.to_csv(output_path, index=False)
 
 
 if __name__ == "__main__":
-    # clean_business()
+    clean_business()
 
-    # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
-    # clean_reviews()
+    REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
+    clean_reviews()
 
-    # clean_trips_data()
+    clean_trips_data()
 
-    clean_dp03()
+    # clean_dp03()

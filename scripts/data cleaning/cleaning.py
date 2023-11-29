@@ -19,10 +19,10 @@ logger = logging.getLogger(__name__)
 # Display all columns
 pd.set_option('display.max_columns', None)
 
+# nltk.download("stopwords")
+# nltk.download("wordnet")
+# nltk.download("punkt")
 
-nltk.download("stopwords")
-nltk.download("wordnet")
-nltk.download("punkt")
 
 def get_cleaned_business_ids():
     path = get_path_from_root("data", "interim", "cleaned_business.json")
@@ -194,8 +194,11 @@ def clean_trips_data():
     # Load the dataset
     df = pd.read_csv(input_path)
 
+    df = df[df["State Postal Code"] == "PA"]
+
     # Define columns to drop
-    columns_to_drop = ['State FIPS', 'State Postal Code', 'Level', 'Row ID', 'Week', 'Number of Trips >=500']
+    columns_to_drop = ['State FIPS', 'State Postal Code', 'Level', 'Row ID', 'Week', 'Number of Trips >=500',
+                       'County FIPS']
 
     # Drop the unnecessary columns
     df_cleaned = df.drop(columns=columns_to_drop, axis=1)
@@ -209,61 +212,84 @@ def clean_trips_data():
     logger.info(f"Cleaned transportation data saved to {output_path}")
 
 
-def clean_dp03():
+def clean_new_dp03():
     input_path = os.path.join(get_path_from_root("data", "raw", "Census Bureau Data"),
-                              "ACSDP5Y2017.DP03-2023-11-15T172523.csv")
-    output_path = os.path.join(get_path_from_root("data", "interim"), "cleaned_dp03.csv")
+                              "DP03.csv")
+    output_path = os.path.join(get_path_from_root("data", "interim"), "new_cleaned_dp03.csv")
 
     # Read the CSV file
-    dp03_df = pd.read_csv(input_path)
+    df = pd.read_csv(input_path)
 
-    # Function to count leading non-breaking spaces
-    def count_leading_spaces(s):
-        return len(s) - len(s.lstrip(u'\xa0'))
+    # Process initial hierarchical structure
+    def count_leading_spaces(value):
+        if isinstance(value, str):
+            return len(value) - len(value.lstrip(' '))
+        else:
+            return 0
 
-    # Add a new column for indent level
-    dp03_df['IndentLevel'] = dp03_df['Label (Grouping)'].apply(count_leading_spaces)
+    df['IndentLevel'] = df['Label (Grouping)'].apply(count_leading_spaces)
 
-    # Identify hierarchical levels and create columns for each level
-    max_indent = dp03_df['IndentLevel'].max()
+    max_indent = df['IndentLevel'].max()
     for level in range(max_indent + 1):
-        dp03_df[f'Level_{level}'] = None
-        mask = dp03_df['IndentLevel'] == level
-        dp03_df.loc[mask, f'Level_{level}'] = dp03_df.loc[mask, 'Label (Grouping)'].str.strip()
+        df[f'Level_{level}'] = None
+        mask = df['IndentLevel'] == level
+        df.loc[mask, f'Level_{level}'] = df.loc[mask, 'Label (Grouping)'].str.strip()
 
-    # Forward fill the hierarchical levels
     for level in range(max_indent + 1):
-        dp03_df[f'Level_{level}'] = dp03_df[f'Level_{level}'].ffill()
+        df[f'Level_{level}'] = df[f'Level_{level}'].ffill()
 
-    # Drop the original 'Label (Grouping)' and 'IndentLevel' columns as they're no longer needed
-    dp03_df.drop(columns=['Label (Grouping)', 'IndentLevel', 'Pennsylvania!!Percent', 'Pennsylvania!!Percent Margin of Error'], inplace=True)
+    df.drop(columns=['Label (Grouping)', 'IndentLevel'], inplace=True)
 
-    # Drop columns with all null values
-    dp03_df.dropna(axis=1, how='all', inplace=True)
+    # Update 'Level_0' to represent the hierarchy
+    def update_hierarchy_column(df):
+        current_path = []  # Initialize an empty list to store the current hierarchy path
+        hierarchy = []  # Initialize an empty list to store the final hierarchy for each row
 
-    # Remove commas from the first two columns
-    dp03_df.iloc[:, 0] = dp03_df.iloc[:, 0].str.replace(',', '')
-    dp03_df.iloc[:, 1] = dp03_df.iloc[:, 1].str.replace(',', '')
+        for label in df['Level_0']:
+            print(label)
+            if label.isupper():  # Major category
+                current_path = [label]  # Start a new path
+                print("current path:", current_path)
+            elif label.endswith(':'):  # Subcategory
+                current_path.append(label)  # Append to the current path
+            else:  # Continuation of the current hierarchy
+                if current_path:
+                    current_path[-1] = label  # Replace the last part of the current path
+                else:
+                    current_path.append(label)  # Start a new path if empty
 
-    # Remove '±' sign from the 2nd and 4th columns
-    dp03_df.iloc[:, 1] = dp03_df.iloc[:, 1].str.replace('±', '')
-    dp03_df.iloc[:, 3] = dp03_df.iloc[:, 3].str.replace('±', '')
+            hierarchy.append(' -> '.join(current_path))
+            print("hierarchy:", hierarchy)
 
-    # Remove '%' sign from columns with 'Percent' in their header
-    for col in dp03_df.columns:
-        if 'Percent' in col:
-            dp03_df[col] = dp03_df[col].str.replace('%', '')
+        df['Level_0'] = hierarchy
+        return df
+
+    # df = update_hierarchy_column(df)
+
+    # Standardize ZIP code column names
+    def standardize_zip_code_columns(df):
+        for col in df.columns:
+            if 'ZCTA5' in col and '!!Estimate' in col:
+                new_col_name = col.split()[1]  # Extracting the ZIP code
+                df.rename(columns={col: new_col_name}, inplace=True)
+
+        df.columns = [col.replace("!!Estimate", "") for col in df.columns]
+        return df
+
+    df = standardize_zip_code_columns(df)
+
+    # Drop redundant columns
+    columns_to_drop = [col for col in df.columns if 'Margin of Error' in col or 'Percent' in col]
+    df.drop(columns=columns_to_drop, inplace=True)
 
     # Save the cleaned DataFrame
-    dp03_df.to_csv(output_path, index=False)
+    df.to_csv(output_path, index=False)
 
 
 if __name__ == "__main__":
-    clean_business()
-
-    REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
-    clean_reviews()
+    # clean_business()
+    #
+    # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
+    # clean_reviews()
 
     clean_trips_data()
-
-    # clean_dp03()

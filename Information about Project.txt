@@ -168,7 +168,7 @@ Index(['Label (Grouping)', 'Pennsylvania!!Households!!Estimate',
       dtype='object')
 
 
-Script for Overpass Turbo -
+Query used to get geojson data from Overpass Turbo -
 [out:json][timeout:60];
 area["ISO3166-2"="US-PA"]->.searchArea;
 (

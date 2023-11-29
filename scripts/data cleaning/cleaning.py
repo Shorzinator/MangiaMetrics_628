@@ -19,6 +19,7 @@ logger = logging.getLogger(__name__)
 # Display all columns
 pd.set_option('display.max_columns', None)
 
+
 # nltk.download("stopwords")
 # nltk.download("wordnet")
 # nltk.download("punkt")
@@ -212,84 +213,15 @@ def clean_trips_data():
     logger.info(f"Cleaned transportation data saved to {output_path}")
 
 
-def clean_new_dp03():
-    input_path = os.path.join(get_path_from_root("data", "raw", "Census Bureau Data"),
-                              "DP03.csv")
-    output_path = os.path.join(get_path_from_root("data", "interim"), "new_cleaned_dp03.csv")
-
-    # Read the CSV file
-    df = pd.read_csv(input_path)
-
-    # Process initial hierarchical structure
-    def count_leading_spaces(value):
-        if isinstance(value, str):
-            return len(value) - len(value.lstrip(' '))
-        else:
-            return 0
-
-    df['IndentLevel'] = df['Label (Grouping)'].apply(count_leading_spaces)
-
-    max_indent = df['IndentLevel'].max()
-    for level in range(max_indent + 1):
-        df[f'Level_{level}'] = None
-        mask = df['IndentLevel'] == level
-        df.loc[mask, f'Level_{level}'] = df.loc[mask, 'Label (Grouping)'].str.strip()
-
-    for level in range(max_indent + 1):
-        df[f'Level_{level}'] = df[f'Level_{level}'].ffill()
-
-    df.drop(columns=['Label (Grouping)', 'IndentLevel'], inplace=True)
-
-    # Update 'Level_0' to represent the hierarchy
-    def update_hierarchy_column(df):
-        current_path = []  # Initialize an empty list to store the current hierarchy path
-        hierarchy = []  # Initialize an empty list to store the final hierarchy for each row
-
-        for label in df['Level_0']:
-            print(label)
-            if label.isupper():  # Major category
-                current_path = [label]  # Start a new path
-                print("current path:", current_path)
-            elif label.endswith(':'):  # Subcategory
-                current_path.append(label)  # Append to the current path
-            else:  # Continuation of the current hierarchy
-                if current_path:
-                    current_path[-1] = label  # Replace the last part of the current path
-                else:
-                    current_path.append(label)  # Start a new path if empty
-
-            hierarchy.append(' -> '.join(current_path))
-            print("hierarchy:", hierarchy)
-
-        df['Level_0'] = hierarchy
-        return df
-
-    # df = update_hierarchy_column(df)
-
-    # Standardize ZIP code column names
-    def standardize_zip_code_columns(df):
-        for col in df.columns:
-            if 'ZCTA5' in col and '!!Estimate' in col:
-                new_col_name = col.split()[1]  # Extracting the ZIP code
-                df.rename(columns={col: new_col_name}, inplace=True)
-
-        df.columns = [col.replace("!!Estimate", "") for col in df.columns]
-        return df
-
-    df = standardize_zip_code_columns(df)
-
-    # Drop redundant columns
-    columns_to_drop = [col for col in df.columns if 'Margin of Error' in col or 'Percent' in col]
-    df.drop(columns=columns_to_drop, inplace=True)
-
-    # Save the cleaned DataFrame
-    df.to_csv(output_path, index=False)
-
-
 if __name__ == "__main__":
+    # Clean business.json
     # clean_business()
-    #
+
+    # Clean review.json
     # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
     # clean_reviews()
 
-    clean_trips_data()
+    # Clean Trips_by_Distance.csv
+    # clean_trips_data()
+    pass
+

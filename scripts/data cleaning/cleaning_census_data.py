@@ -10,7 +10,7 @@ def clean_census_data(input_path, output_path):
     output_path = output_path
 
     # Read the CSV file
-    df = pd.read_csv(input_path)
+    df = pd.read_csv(input_path, low_memory=False)
 
     # Process initial hierarchical structure
     def count_leading_spaces(value):
@@ -95,8 +95,8 @@ def main():
         "DP05": os.path.join(get_path_from_root("Data", "interim"), "cleaned_dp05.csv")
     }
 
-    for key in input_paths.keys():
-        clean_census_data(input_paths[key], output_paths[key])
+    clean_census_data(os.path.join(get_path_from_root("data", "raw", "Census Bureau Data"), "DP04.csv"),
+                      os.path.join(get_path_from_root("data", "interim"), "cleaned_dp04.csv"))
 
 
 if __name__ == "__main__":

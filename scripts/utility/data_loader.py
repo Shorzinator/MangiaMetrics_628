@@ -64,7 +64,7 @@ def get_clean_review_df():
 
 # Function to load GeoJSON data
 def get_geodata():
-    path = get_path_from_root("data", "GIS Data", "export.geojson")
+    path = get_path_from_root("data", "raw", "GIS Data", "export.geojson")
     try:
         return gpd.read_file(path)
     except Exception as e:

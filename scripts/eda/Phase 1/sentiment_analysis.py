@@ -15,6 +15,9 @@ logger = logging.getLogger(__name__)
 
 
 def sentiment_analysis(reviews):
+    # Convert non-string text to empty strings to prevent errors
+    reviews['text'] = reviews['text'].fillna('').astype(str)
+
     reviews["sentiment"] = reviews["text"].apply(lambda x: TextBlob(x).sentiment.polarity)
     reviews["sentiment_category"] = pd.cut(reviews["sentiment"], bins=3, labels=["negative", "neutral", "positive"])
     return reviews
@@ -26,7 +29,8 @@ def plot_sentiment_distribution(reviews, title, file_name):
     plt.title(title)
     plt.xlabel("Sentiment")
     plt.ylabel("Count")
-    plt.savefig(os.path.join(get_path_from_root("results", "eda"), file_name))
+    # plt.savefig(os.path.join(get_path_from_root("results", "eda"), file_name))
+    plt.show()
     plt.close()
 
 
@@ -45,7 +49,8 @@ def plot_word_cloud(word_freq, title, file_name):
     plt.axis("off")
     plt.title(title)
     plt.tight_layout(pad=0)
-    plt.savefig(os.path.join(get_path_from_root("results", "eda"), file_name))
+    # plt.savefig(os.path.join(get_path_from_root("results", "eda"), file_name))
+    plt.show()
     plt.close()
 
 

@@ -39,24 +39,24 @@ def get_review_df():
 
 # Function to load cleaned business data
 def get_clean_business_df():
-    path = get_path_from_root("data", "interim", "cleaned_business.json")
+    path = get_path_from_root("data", "interim", "flattened_business.csv")
     try:
         # Attempt to read the file in the JSON lines format
-        return pd.read_json(path, lines=True)
+        return pd.read_csv(path)
     except ValueError as e:
         logger.error(f"Error loading cleaned business data: {e}")
         try:
             # Attempt to read a JSON file that is an array of objects
-            return pd.read_json(path)
+            return pd.read_csv(path)
         except ValueError as e2:
             logger.error(f"Error loading cleaned business data: {e2}")
     return pd.DataFrame()
 
 
 def get_clean_review_df():
-    path = get_path_from_root("data", "interim", "cleaned_reviews.json")
+    path = get_path_from_root("data", "interim", "flattened_review.csv")
     try:
-        return pd.read_json(path, lines=True)
+        return pd.read_csv(path)
     except Exception as e:
         logger.error(f"Error loading cleaned review data: {e}")
         return pd.DataFrame()

@@ -131,42 +131,6 @@ Index(['Date', 'County FIPS', 'County Name', 'Population Staying at Home',
        'Number of Trips >=500', 'Month'],
       dtype='object')
 
-Columns in DP03:
-Index(['Label (Grouping)', 'Pennsylvania!!Estimate',
-       'Pennsylvania!!Margin of Error', 'Pennsylvania!!Percent',
-       'Pennsylvania!!Percent Margin of Error'],
-      dtype='object')
-
-Columns in DP04:
-Index(['Label (Grouping)', 'Pennsylvania!!Estimate',
-       'Pennsylvania!!Margin of Error', 'Pennsylvania!!Percent',
-       'Pennsylvania!!Percent Margin of Error'],
-      dtype='object')
-
-Columns in DP05:
-Index(['Label (Grouping)', 'Pennsylvania!!Estimate',
-       'Pennsylvania!!Margin of Error', 'Pennsylvania!!Percent',
-       'Pennsylvania!!Percent Margin of Error'],
-      dtype='object')
-
-Columns in S0801:
-Index(['Label (Grouping)', 'Pennsylvania!!Total!!Estimate',
-       'Pennsylvania!!Total!!Margin of Error', 'Pennsylvania!!Male!!Estimate',
-       'Pennsylvania!!Male!!Margin of Error', 'Pennsylvania!!Female!!Estimate',
-       'Pennsylvania!!Female!!Margin of Error'],
-      dtype='object')
-
-Columns in S1901:
-Index(['Label (Grouping)', 'Pennsylvania!!Households!!Estimate',
-       'Pennsylvania!!Households!!Margin of Error',
-       'Pennsylvania!!Families!!Estimate',
-       'Pennsylvania!!Families!!Margin of Error',
-       'Pennsylvania!!Married-couple families!!Estimate',
-       'Pennsylvania!!Married-couple families!!Margin of Error',
-       'Pennsylvania!!Nonfamily households!!Estimate',
-       'Pennsylvania!!Nonfamily households!!Margin of Error'],
-      dtype='object')
-
 
 Query used to get geojson data from Overpass Turbo -
 [out:json][timeout:60];

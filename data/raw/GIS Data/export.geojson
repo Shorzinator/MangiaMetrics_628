@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2023-11-23T14:40:13Z",
+  "timestamp": "2023-11-29T20:01:27Z",
   "features": [
     {
       "type": "Feature",
@@ -4348,31 +4348,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/988524015",
-        "addr:city": "Lansdale",
-        "addr:housenumber": "541",
-        "addr:postcode": "19446",
-        "addr:state": "PA",
-        "addr:street": "South Broad Street",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "italian",
-        "name": "Amici Italian Market and Deli",
-        "opening_hours": "Mo-Fr 09:00-17:00; Sa 09:00-16:00; Su 09:00-15:00",
-        "@geometry": "center"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -75.2890432,
-          40.2351787
-        ]
-      },
-      "id": "way/988524015"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "way/988628751",
         "addr:city": "Flourtown",
         "addr:housenumber": "738",
@@ -8554,8 +8529,13 @@
         "addr:state": "PA",
         "addr:street": "Main Street",
         "amenity": "restaurant",
+        "check_date": "2023-11-25",
+        "contact:facebook": "https://www.facebook.com/ToscosItalianDelight",
         "cuisine": "italian",
-        "name": "Tosco's Italian Delight"
+        "name": "Tosco's Italian Delight",
+        "opening_hours": "Mo-Th 10:00-21:00; Fr-Sa 10:00-22:00; Su 11:00-20:00",
+        "phone": "+1 215-541-2308",
+        "website": "https://toscositaliandelight.net"
       },
       "geometry": {
         "type": "Point",
@@ -9690,6 +9670,46 @@
         ]
       },
       "id": "node/11268204461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11380709555",
+        "addr:city": "Lansdale",
+        "addr:housenumber": "541",
+        "addr:postcode": "19446",
+        "addr:state": "PA",
+        "addr:street": "South Broad Street",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Amici Italian Market and Deli",
+        "opening_hours": "Mo-Fr 09:00-17:00; Sa 09:00-16:00; Su 09:00-15:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2891021,
+          40.2352139
+        ]
+      },
+      "id": "node/11380709555"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11382060873",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Italian Village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6071869,
+          39.9932228
+        ]
+      },
+      "id": "node/11382060873"
     }
   ]
 }

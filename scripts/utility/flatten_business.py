@@ -1,9 +1,11 @@
 import pandas as pd
-
-from scripts.utility.data_loader import get_clean_business_df
+import geopandas as gpd
+import matplotlib.pyplot as plt
+from shapely.geometry import Point
+from scripts.utility.data_loader import get_clean_business_df, get_business_df
 
 # Call the function to load the data
-df = get_clean_business_df()
+# df = get_business_df()
 
 
 # Function to safely evaluate a string representation of a dictionary
@@ -39,7 +41,7 @@ if any(df.map(lambda x: isinstance(x, dict)).any()):
     # Remove 'attributes_' prefix from column names
     df.columns = [col.replace('attributes_', '') for col in df.columns]
 
-    df.to_csv("flattened_business.csv", index=False)
+    df.to_csv("unclean_flattened_business.csv", index=False)
 
 # print(df.columns)
 # print(df.head(10))

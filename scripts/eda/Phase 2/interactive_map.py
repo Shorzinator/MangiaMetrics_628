@@ -1,12 +1,17 @@
+import os
+
 import pandas as pd
 import geopandas as gpd
 import folium
 from folium.plugins import MarkerCluster
 
+from scripts.utility.path_utils import get_path_from_root
+
 # Replace these with the paths to your files
-path_to_demographic_data = 'path_to_your_final_dp05.csv'
-path_to_restaurant_data = 'path_to_your_flattened_gis.csv'
-path_to_pa_shapefile = 'path_to_your_pennsylvania_administrative.shp'
+path_to_demographic_data = os.path.join(get_path_from_root("data", "final"), "final_dp03.csv")
+path_to_restaurant_data = os.path.join(get_path_from_root("data", "interim"), "flattened_gis.csv")
+path_to_pa_shapefile = os.path.join(get_path_from_root("data", "raw", "shape_files_for_pa"),
+                                    "pennsylvania_administrative.shp")
 
 # Load the demographic data
 demographic_data = pd.read_csv(path_to_demographic_data)
@@ -44,7 +49,7 @@ for idx, row in gdf_restaurants.iterrows():
     ).add_to(marker_cluster)
 
 # Save the interactive map to an HTML file
-output_html = 'path_to_save_your_pa_italian_restaurants_map.html'
+output_html = os.path.join(get_path_from_root("results", "eda", "Phase 2"), "interactive_map.html")
 m.save(output_html)
 
 # This path is where the map is saved, you can open this file in a web browser

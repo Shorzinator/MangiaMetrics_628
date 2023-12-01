@@ -1,11 +1,9 @@
+import logging
 import os
-import pandas as pd
+
 import geopandas as gpd
 import matplotlib.pyplot as plt
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-from matplotlib.colors import Normalize
-
-import logging
+import pandas as pd
 
 from scripts.utility.path_utils import get_path_from_root
 

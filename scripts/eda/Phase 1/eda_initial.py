@@ -1,5 +1,7 @@
 import logging
+
 import matplotlib.pyplot as plt
+
 from scripts.utility.data_loader import get_clean_business_df, get_geodata
 
 # Set up logging

@@ -1,13 +1,13 @@
+import logging
 import os
+from collections import Counter
 
+import matplotlib.pyplot as plt
 import pandas as pd
 from textblob import TextBlob
-from collections import Counter
-import matplotlib.pyplot as plt
 from wordcloud import WordCloud
-from scripts.utility.data_loader import get_review_df, get_clean_review_df
-import logging
 
+from scripts.utility.data_loader import get_clean_review_df
 from scripts.utility.path_utils import get_path_from_root
 
 logging.basicConfig(level=logging.INFO)

@@ -1,8 +1,9 @@
-import os
-import pandas as pd
-import matplotlib.pyplot as plt
 import json
+import os
 from datetime import datetime, time
+
+import matplotlib.pyplot as plt
+import pandas as pd
 
 from scripts.utility.path_utils import get_path_from_root
 

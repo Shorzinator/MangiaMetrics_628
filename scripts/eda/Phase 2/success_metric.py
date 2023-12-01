@@ -1,4 +1,5 @@
 import os
+
 import pandas as pd
 from textblob import TextBlob
 
@@ -9,6 +10,8 @@ from scripts.utility.path_utils import get_path_from_root
 # Function to calculate the weighted rating score
 def calculate_weighted_rating(reviews, businesses):
     # Merge the reviews with the business data to get the star ratings and review counts
+    print(businesses.columns, "\n")
+    print(reviews.columns)
     merged_data = reviews.merge(businesses[['business_id', 'stars', 'review_count']], on='business_id', how='left')
     # Calculate weighted rating score for each review
     max_review_count = merged_data['review_count'].max()

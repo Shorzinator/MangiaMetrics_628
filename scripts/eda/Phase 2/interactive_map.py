@@ -1,8 +1,8 @@
 import os
 
-import pandas as pd
-import geopandas as gpd
 import folium
+import geopandas as gpd
+import pandas as pd
 from folium.plugins import MarkerCluster
 
 from scripts.utility.path_utils import get_path_from_root

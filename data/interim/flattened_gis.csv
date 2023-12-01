@@ -1,430 +1,430 @@
-@id,name,@geometry,longitude,latitude,addr:city,addr:postcode,addr:street,building,delivery,email,internet_access,opening_hours,phone,reservation,smoking,takeaway,website,addr:state,contact:facebook,outdoor_seating,brand,brand:wikidata,brand:wikipedia,check_date,source,addr:unit,contact:phone,contact:website,addr:county,building:levels,roof:levels,roof:shape,alt_name,opening_hours:covid19,created_by,building:material,facebook,diet:gluten_free,source:geometry,wheelchair,wheelchair:description,old_name,branch,internet_access:fee,contact:instagram,contact:linkedin,start_date,description,diet:organic,fax,capacity,payment:cash,addr:housename,layer,payment:mastercard,payment:visa,diet:pescetarian,toilets:wheelchair,payment:credit_cards,payment:debit_cards,survey:date,building:part,air_conditioning,fixme,payment:american_express,payment:cryptocurrencies,payment:discover_card,payment:visa_debit,level,note,dish,amenity_1,name:en,cocktails,diet:vegetarian,drink:beer,drink:coffee,drink:liquor,drink:wine,payment:contactless,microbrewery,craft,toilets,website:menu,indoor_seating,contact:yelp,operator,bar,short_name,county
-relation/6176471,Monte Cello's,center,-80.0523498,40.6064814,,15090,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-relation/14702526,Villa Ballanca,center,-79.7357004,40.5903043,Lower Burrell,15068,Leechburg Road,commercial,no,info@villaballanca.com,no,We-Sa 11:00-21:00; Su 11:00-20:00,+1 724 339 6111,no,no,yes,https://villaballanca.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/43000780,Sal's Brick Oven Pizza,center,-75.3782697,40.6115597,Bethlehem,18015,South New Street,yes,yes,,,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00,+1 610 317 0400,,,yes,https://www.salsbrickovenpizzamenu.com/,PA,https://www.facebook.com/Sals-Brick-Oven-Pizza-270007646397977/,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/44871151,Cafe Classico,center,-75.6505935,41.4034765,,18510,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-way/44873379,Sambucca Grille,center,-75.6651849,41.4102002,Scranton,18503,Penn Avenue,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-way/53637204,Carrabba's Italian Grill,center,-75.5229068,40.5807228,,18104,,yes,,,,,,,,,,,,,Carrabba's Italian Grill,Q5045999,en:Carrabba's Italian Grill,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-way/55634786,Olive Garden,center,-74.8809801,40.1777936,Langhorne,19047,Lincoln Highway,yes,,,,,,,,,,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/60921704,Buca di Beppo,center,-75.985659,40.3593283,Wyomissing,19610,Papermill Road,yes,,,,"Mo-We,Su 11:00-21:30; Th 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-374-3482,,,,https://locations.bucadibeppo.com/us/pa/wyomissing/2745-paper-mill-rd,,,,Buca di Beppo,Q4982340,en:Buca di Beppo,2023-09-29,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-way/60945102,Olive Garden,center,-75.9669587,40.3469662,Wyomissing,19610,Crossing Drive,yes,,,,"Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-373-1311,,,,https://m.olivegarden.com/locations/pa/wyomissing/wyomissing/1525,,,,Olive Garden,Q3045312,en:Olive Garden,2023-06-29,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-way/61756575,Olive Garden,center,-76.8025898,40.3110936,,17109,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-way/63514361,Carrabba's Italian Grill,center,-75.1253943,40.1616458,Willow Grove,19090,Maryland Road,yes,,,,"Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-21:30",+1 215 659 3950,,,,https://www.carrabbas.com/locations/pa/willow-grove,PA,,,Carrabba's Italian Grill,Q5045999,en:Carrabba's Italian Grill,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/94395437,The Olive Garden,center,-75.4760878,40.6355358,,18052,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-way/94395439,Buca di Beppo,center,-75.4759246,40.634501,,18052,,yes,,,,,,,,,,,,,Buca di Beppo,Q4982340,en:Buca di Beppo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-way/99712613,Gargano's,center,-76.3539293,40.099895,East Petersburg,17520,Main Street,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/116779935,Olive Garden,center,-75.8405887,41.2430917,Wilkes-Barre Township,18702,Arena Hub Plaza,yes,,,,,,,,,,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-way/133801462,Maggiano's Little Italy,center,-75.3959733,40.0871242,King of Prussia,19406,Mall Boulevard,yes,,,,"Mo,Su 11:00-21:00; Tu-Th 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-992-3333,,,,https://www.maggianos.com/locations/Pennsylvania/King%20of%20Prussia/205-mall-blvd.,PA,,,Maggiano's Little Italy,Q6730149,,2023-10-26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/141995710,Olive Garden,center,-76.764598,39.9736294,,17404,Kenneth Road,yes,,,,,,,,,https://www.olivegarden.com/,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-way/152422569,Fiorelloâ€™s Cafe,center,-75.5926137,39.9657681,West Chester,19380,East Gay Street,yes,,,,"Mo-Th 11:00-21:00; Fr,Sa 11:00-22:00; Su 12:00-21:00",+1 610-430-8941,,,,https://www.fiorelloscafemenu.com/,,,,,,,2023-07-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/156862101,Olive Garden,center,-79.4992563,40.3030154,,15601,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Westmoreland County
-way/160772468,Olive Garden,center,-76.3447191,40.066798,Lancaster,17601,Plaza Boulevard,yes,,,,,+1 (717) 299-2202,,,,,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/163400669,Buca di Beppo,center,-80.1607417,40.4553468,,15244,,yes,,,,,,,,,,,,,Buca di Beppo,Q4982340,en:Buca di Beppo,,bing,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/163788988,,center,-80.1684163,40.4565912,,15244,,yes,,,,,,,,,,,,,,,,,bing; survey,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/165336030,Mendicino's Pizza,center,-75.5164288,41.3093329,,18444,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-way/180562797,Kay's Italian Restaurant and Pizzeria,center,-75.5135845,41.3083833,,18444,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-way/185718506,Anile's Ristorante,center,-77.1297417,40.1508487,,17007,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cumberland County
-way/193228511,Olive Garden,center,-76.1932936,40.0221001,,17602,South Willowdale Drive,yes,,,,"Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00",,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,2023-04-03,,1001,+1 717-392-3235,https://www.olivegarden.com/locations/pa/lancaster/lancaster-rockvale-outlets/1742,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/200250680,Amatoâ€™s Wood Fire Pizza & Italian Restaurant,center,-76.5238477,40.115369,Mount Joy,17552,West Main Street,yes,,,,"Mo,We-Su 11:00-22:00; Tu off",+1 717-653-6181,,,,https://amatoswoodfirepizza.com/,PA,https://www.facebook.com/100063504461325,,,,,2023-07-01,,,,,Lancaster,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/200349271,Babbos Pizza,center,-76.6118575,40.1581096,,17022,North Market Street,yes,,,,,717-492-4360,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/203411105,Common Plea Restaurant,center,-79.9964466,40.4372397,Pittsburgh,15219,Ross Street,yes,,,(412) 697-3100,"Tu-Fr 11:30-14:30, 17:00-21:00; Sa 17:00-21:00",,,,,commonplea-restaurant.com,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/207671661,Carrabba's Italian Grill,center,-75.549185,39.8832938,,19014,Painters Crossing,yes,,,,Mo-Th 16:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:30,+1 610-358-0156,,,,https://locations.carrabbas.com/pennsylvania/west-chester/102-painters-crossing-painters-crossing-shopping-mall,,,,Carrabba's Italian Grill,Q5045999,en:Carrabba's Italian Grill,2023-08-23,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-way/209290413,Olive Garden,center,-79.7869033,40.4340749,,15146,,retail,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,Bing,,,,,1.0,1.0,quadruple_saltbox,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/224762207,Faccia Luna,center,-77.8473917,40.7848025,State College,16801,South Atherton Street,yes,no,,,,+1-814-234-9000,,,yes,http://www.faccialuna.com/state-college,PA,,,,,,,,,,,,,,,Faccia Luna Pizzeria,Su-We 16:00-20:30 Th-Sa 16:00-21:30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/227502452,Olive Garden,center,-79.7986236,40.5700918,,15049,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/228796795,Bella Frutetto,center,-80.0912995,40.6139041,,15015,Brandt School Road,retail,,,,,,,,,,,,,,,,,,,,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/239066554,Olive Garden,center,-77.8991431,40.8171177,State College,16803,Waddle Road,retail,,,,,+1-814-861-1620,,,,https://www.olivegarden.com/locations/pa/state-college/state-college/1552,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/251276905,Alioto's Italian Eatery and Sports Bar,center,-79.9488804,40.5036947,Etna,15223,Grant Avenue,yes,,,,,+1-412-781-1390,,,,https://www.aliotos.biz/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/256038255,Caruso's Italiant Restaurant and Pizzeria,center,-76.2508757,40.151259,Rothsville,17543,Main Street,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/259498354,,,-75.5002683,40.696987,,18067,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-node/259499262,Assante,,-75.4994807,40.6904677,,18037,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Potlatch 0.10f,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-node/259500711,Mario's Pizzeria,,-75.487016,40.6768891,,18032,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Potlatch 0.8b,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-node/259618819,Feasta Pizza,,-75.3398291,40.5640455,,18055,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/260657298,Margarita's Pizzeria and Italian Cuisine,center,-77.8619705,40.791991,State College,16801,West Beaver Avenue,yes,,,,Mo-Fr 09:00-21:00,+1-814-235-3060,,,,,PA,,,,,,,,,,,,1.0,,,,,,brick,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/260697082,Alice's Diner & Family Restaurant,center,-76.2665359,40.0379028,,17602,Lincoln Highway East,yes,,,,07:00-14:00,,,,,,,https://www.facebook.com/100065385732828,,,,,2023-04-04,,,+1 717-207-0655,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/260697090,Two Cousins Pizza,center,-76.2694381,40.0380186,Lancaster,17602,Lincoln Highway East,yes,,,,"Mo,We-Th,Su 11:00-21:00; Tu off; Fr-Sa 11:00-22:00",,,,,https://www.twocousinspizzaoflancaster.com,PA,,,,,,2023-11-04,,,+1 717-291-1900,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/260697100,Pasqueles,center,-76.2665974,40.0394834,Lancaster,17601,Old Philadelphia Pike,yes,,,,"Mo,Su off; Tu-Th 10:30-21:00; Fr-Sa 10:30-22:00",+1 717-509-9921,,,,https://pasqualespizzapa.com,PA,,,,,,2023-11-04,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/273389728,Mercato Mio,center,-77.8351962,40.8090784,State College,16801,East College Avenue,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,https://www.facebook.com/mercatomioitalianmarket/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/286299001,Olive Garden,center,-75.1170659,40.1409996,,19090,,commercial,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/305731028,Pasta Too,center,-80.0227397,40.3307318,Bethel Park,15102,Library Road,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/306428653,Olive Garden,center,-80.050226,40.3479459,,15102,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/323166964,Yolanda's,center,-80.2714488,40.6876232,,15061,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Beaver County
-way/337628444,Luigi's Ristorante,center,-79.0119171,40.6678148,Clymer,15728,Franklin Street,commercial,,,,"Tu-Th 11:00-21:00, Fr-Sa 11:00-22:00, Su 12:00-20:00",,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Indiana County
-way/338203105,Hill's Restruant,center,-79.9407988,40.2071967,,15067,,retail,,,,,+1 724 258 5422,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Washington County
-way/338681056,Paganini,center,-75.1325431,40.3091309,Doylestown,18901,West State Street,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/338681061,Domani Star,center,-75.1320261,40.3094089,Doylestown,18901,West State Street,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/339552139,Sarina's,center,-78.2332021,40.9037368,Philipsburg,16866,,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/339654250,Mimmo's,center,-75.9266846,40.3201175,,19611,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-way/343935568,Bravo's Italian Kitchen,center,-80.009262,40.5313238,,15237,,retail,,,,,,,,,https://www.bravoitalian.com/,,,,,,,,,,,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/344455984,Olive Garden,center,-80.019411,40.5532662,,15237,,retail,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/346603093,Rocco's Pizzeria,center,-75.3416442,40.5853637,,18055,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/346981770,Terry's Italian Restaurant,center,-75.1838725,40.677827,Easton,18042,South Delaware Drive,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Warren County
-way/346984022,Crivellaro's Ristorante,center,-75.2149442,40.6536217,,18042,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/348439180,Olive Garden,center,-75.253367,40.6851471,,18045,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/348782152,Steve's Pizzeria and Italian Family Restaurant,center,-75.2571516,40.669947,,18045,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/348799023,Carrabba's Italian Grill,center,-75.2608676,40.6948366,,18045,,yes,,,,,,,,,,,,,Carrabba's Italian Grill,Q5045999,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/349727967,La Felice Pizza & Pasta,center,-80.0184619,40.5335054,Pittsburgh,15237,Babcock Boulevard,yes,,,,Mo-Th 10:00-23:00; Fr-Sa 10:00-24:00; Su 11:00-23:00,+1 412 358 9770,,,,http://pizzalafelice.com,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/350451680,Bruno Scipioni's Italian Ristorante & Pizzeria,center,-75.3196281,40.6639749,,18020,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/351529399,Pastorante,center,-76.8879003,40.2677534,Harrisburg,17102,North 3rd Street,yes,no,,,,,,,yes,http://pastorantepa.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-way/351849045,Antica Italian Restaurant & BYOB,center,-75.5909022,39.8723753,,19173,Baltimore Pike,yes,,,,"Mo off; Tu-Th,Su 11:30-21:00; Fr-Sa 11:30-22:00",,,,,,,,,,,,,,,+1 484-770-8631,https://www.anticapa.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/354171297,Burnham OIP,center,-77.5664976,40.6286494,,17009,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mifflin County
-way/354205043,Tommy's Sole Mio Italian Restaurant,center,-75.2108353,40.6831883,,18042,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/356331600,Dafno's Restaurant,center,-76.6822377,40.2689301,Hummelstown,17036,West Chocolate Avenue,industrial,,,,Mo-Sa 11:00-21:00; Su off,+1 717-533-8999,,,,http://dafnos.com,,,,,,,2023-07-12,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-way/356331603,Piazza Sorrento Restaurant & Bar,center,-76.6712778,40.2692692,Hershey,17033,Briarcrest Square,yes,,,,Mo-Sa 16:00-21:00; Su off,+1 717-835-1919,,,,https://www.piazzasorrento.com/,PA,,,,,,2023-07-12,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-way/360964993,Alvaro's Bread and Pastry Shoppe,center,-76.8962212,40.2771855,,17102,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-way/366325826,Caruso's Italian Restaurant,center,-76.3051113,40.1008611,,17601,Lititz Pike,yes,,,,,+1 717 569 7989,,,,,,,,,,,,,,,https://carusospizzeria.com/,,,,,,,,,,,Bing 2012,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-way/366662297,Trattoria Totaro,center,-75.2945094,40.0750254,Conshohocken,19428,Spring Mill Avenue,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/368071351,Olive Garden,center,-75.225565,40.20994,North Wales,19454,Bethlehem Pike,yes,,,,,,,,,,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/372329029,Monte Cello's,center,-79.9933452,40.5111023,,15237,,retail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/372351542,,center,-75.1308339,40.3105977,Doylestown,18901,North Main Street,yes,,,,,,,,,http://www.cafealessiodoylestown.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/373919347,Brother's Pizza,center,-77.6878403,40.8478578,Centre Hall,16828,North Pennsylvania Avenue,yes,no,,,,,,,yes,,PA,,,,,,,Centre County GIS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/385685898,Olive Garden,center,-79.9457033,40.3329856,,15025,,retail,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/387587941,Pugliano's,center,-79.713523,40.4474991,,15239,,retail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Westmoreland County
-way/397178210,Pica's Restaurant,center,-75.2752581,39.9652774,Upper Darby,19082,West Chester Pike,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/398637744,Hofbrau Pizza,center,-77.7769516,40.9106916,Bellefonte,16823,East Bishop Street,yes,,,,16:00-22:00,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,yes,Call ahead because the accessible entrance is located in the back and they will need to move the garbage cans out of the way.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/411855211,,center,-75.9919459,40.9654117,,18201,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-way/414010596,Amadeo's Italian Restaurant and Catering,center,-75.7109825,41.3690701,,18507,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-way/414308846,Olive Garden,center,-75.2331945,40.9878652,Stroudsburg,18360,Mission Drive,yes,,,,,,,,,,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Monroe County
-way/418969330,Woody's Little Italy,center,-79.8299052,40.3144584,,15132,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/419477005,Olive Garden,,-77.0272173,40.2467869,Mechanicsburg,17050,Carlisle Pike,,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cumberland County
-way/420021931,Nana's Pasta House,center,-75.7150628,41.3517904,Moosic,18507,Springbrook Avenue,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-way/420919460,Olive Garden,center,-76.9994654,39.8288198,,17344,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Adams County
-way/421328625,Luigi's,center,-80.0568847,40.4959006,Bellevue,15202,Lincoln Avenue,retail,yes,,,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00,+1 412 734 0980,,,,http://luigis-pizzeria-restaurant.com,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/430457722,Bella Sera,center,-80.1533572,40.280936,Canonsburg,15317,Morganza Road,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Washington County
-way/431256386,Mambo Italia,center,-80.1806803,40.5396846,,15143,Broad Street,retail,,,,,,,,,,,,,,,,,,,,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/451962851,Castellanos Family Restaurant,center,-75.3594258,41.1267134,Mount Pocono,18344,Sterling Road,yes,,,,,570-972-2333,,,,http://castellanosfamilyrestaurant.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,Pizza Hut,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Monroe County
-way/461776334,Brio,center,-77.5778746,39.7553748,Waynesboro,17268,East Main Street,yes,,,yes,Mo-Fr 06:00-16:00; Sa 07:30-16:00; Su 08:00-16:00,717-889-0412,,,,https://www.briocoffeehouse.com/,PA,,yes,Brio,Q64055835,,,,,,,,,,,Brio Tuscan Grille,,,,,,,,,,Coffee House,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Franklin County
-way/468483225,Bella Rosa Italian Eatery,center,-75.7420839,39.9522338,West Bradford Township,19320,West Strasburg Road,yes,yes,,,"Mo-Th 10:00-21:30; Fr,Sa 10:00-22:30; Su 11:00-21:30",,,,yes,http://bellarosapizzapasta.com/index.html,PA,,patio,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/472702713,Nino's Pizza,center,-78.2371936,40.6726224,,16686,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-way/472820708,Gabriella Italian Restaurant,center,-76.8301771,40.2926304,,17109,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-way/474685194,Olive Garden,center,-78.40052,40.483537,Altoona,16602,Pleasant Valley Boulevard,yes,,,,,,,,,,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-way/478647573,Venice Pizzeria,center,-79.9848333,40.366103,,15227,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/481688981,Olive Garden,center,-80.0456546,40.4198494,,15220,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/482047953,Ciccanti Ristorante,center,-79.9385747,40.3122317,Jefferson Hills,15025,Route 51,yes,,,,Mo off; Tu-Fr 12:00-20:00; Sa 15:00-20:00; Su 14:00-20:00,+1 412 384 7868,,,,https://www.ciccantis.com,PA,ciccantis,,,,,,,,,,,,,,,,,,,,,,,,,,ciccanti_risorante,ciccanti-risorante,1987.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/482422081,Mama Randazzo's,center,-78.3979671,40.5380211,,16601,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-way/482968800,Villaggio,center,-75.031999,40.3459666,Lahaska,18931,Lower York Road,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/483505938,Pie's On Italian Restaurant,center,-74.9236002,41.2761757,Dingmans Ferry,18328,PA-739,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Pike County
-way/504486226,Bravo,center,-79.9170807,40.4068827,,15120,,commercial,,,,,,,,,,,,yes,Bravo,Q64055574,,,,,,,,,,,Bravo Cucina Italiana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/505422992,Tillie's,center,-79.8398567,40.3279824,McKeesport,15132,36th Street,commercial,,info@tillies.con,,Mo-Sa 12:00-20:00; Su 12:00-19:00,+1 412 672 7557,,,yes,http://www.tillies.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1962.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/507426755,Segneri's Italian Restaurant,center,-80.1638736,40.5185858,Coraopolis,15108,Mill Street,yes,,,,,,,,,http://segneris.com,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/508031082,Luciano's Pizza,center,-80.007081,40.567594,,15237,,retail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Also sells beer to go.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/510273897,Bettina's Italian Restaurant,center,-79.1213903,41.4710788,Marienville,16239,Chestnut Street,commercial,no,,,"Tu-Th 10:30-20:00, Fr-Sa 10:30-21:00, Su 11:30-04:00",814-927-7888,,outside,,https://www.facebook.com/Bettinas-Italian-Restaurant-141551502575836,PA,,no,,,,,,,,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Forest County
-way/517476200,Olive Garden,center,-75.6371994,41.4700565,,18519,,retail,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-way/519069502,Anna's,center,-79.5847546,40.6017879,,15690,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Westmoreland County
-way/519461574,Bertucci's Italian Restaurant,center,-75.2421685,40.2370577,North Wales,19454,Bethlehem Pike,yes,,,,"Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-22:00",+1-267-498-5538,,,,https://www.bertuccis.com/locations/montgomeryville,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/524513310,Villa Sena Restaurant,center,-76.4480034,41.7459267,Towanda,18848,Villa Sena Boulevard,yes,,,,,570-265-9986,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bradford County
-way/525070528,Baci Ristorante,center,-75.0619985,40.3247596,Buckingham,18912,Bogarts Tavern Road,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/527174458,Piero's Italian Restaurant,center,-75.0715489,40.1577989,Huntingdon Valley,19006,Reading Way,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/532135890,Donato's Fox Chapel,,-79.8826677,40.4882975,Pittsburgh,15238,Fox Chapel Road,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/533501161,Lenzi's Italian Restaurant,center,-79.9204335,40.1983496,,15063,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Washington County
-way/535064181,DiAnoia's Eatery,center,-79.9787822,40.4549331,Pittsburgh,15222,Penn Avenue,yes,,,,"Tu-Th 08:00-21:00; Fr,Sa 08:00-22:00; Su 10:00-14:30",412-918-1875,,,,https://www.dianoiaseatery.com/,PA,,,,,,2023-06-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/536209352,,,-76.5478803,40.8617525,,17824,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northumberland County
-way/539271214,Roberto's Pizza,center,-76.9187566,40.2402607,Camp Hill,17011,Market Street,yes,no,,,Mo-Th 10:00-21:15; Fr 10:00-22:15; Sa 10:00-23:15; Su 11:00-21:15,+1 717-737-7195,,,yes,https://www.robertospizzapa.com,PA,,no,,,,2023-10-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cumberland County
-way/541467881,Luigi's,center,-75.0907074,40.2480469,Jamison,18929,York Road,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/543016672,Olive Garden,center,-80.1615379,40.4503613,,15244,,commercial,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/543623626,Cafe Alessio's,center,-75.1362575,40.2368677,,18901,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/554091194,La Sponda,center,-75.7043915,40.006162,,19335,East Lancaster Avenue,yes,,,,"Mo-Th,Su 11:30-21:00; Fr-Sa 11:30-22:00",4845934488,,,,https://www.lasponda.com/,,,,,,,2023-04-06,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/554091203,Amani's BYOB,center,-75.7029464,40.0069142,Downingtown,19335,East Lancaster Avenue,yes,,amanisbyob@gmail.com,,16:00-21:00,+1 484-237-8179,,,,https://amanisbyob.com/,PA,,,,,,2023-03-22,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/554302607,Anthony's Cucina Fresca,center,-75.7078421,40.0038458,Downingtown,19335,West Lancaster Avenue,yes,,,,Mo-Th 10:30-21:30; Fr-Sa 10:30-22:30; Su 11:30-21:00,+1 610-873-5544,,,,https://anthonyscucinafresca.com/,PA,,,,,,2023-03-22,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/555549879,Olive Garden,center,-75.6729568,40.0171003,Downingtown,19335,Quarry Road,yes,,,,Su-Th 11:00-22:00; Fr-Sa 11:00-23:00,+1-610-518-6323,,,,https://www.olivegarden.com/locations/pa/downingtown/downingtown-quarry-crossings/1857,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/562950511,Olive Garden,center,-79.7428565,39.9082274,,15401,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Fayette County
-way/564869617,Villa Grande,center,-79.9227609,40.8672087,Butler,16001,New Castle Road,yes,no,,,,724-282-7888,,,,www.villagrandeonline.com,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Butler County
-way/571733110,Vincenzo's,center,-75.7367532,40.3016882,Douglassville,19518,Old Swede Road,yes,,,,"Mo-Th 10:00-22:00, Fr-Sa 10:00-23:00, Su 11:00-21:00",,,,yes,,PA,,no,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-way/574764851,Santino's Italian Cuisine,center,-77.2539272,41.2023797,Jersey Shore,17740,South Main Street,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lycoming County
-way/585284319,Toscana 52,center,-74.979687,40.1354254,Feasterville-Trevose,19053,Street Road,yes,yes,toscana52@hotmail.com,,Mo-Th 11:00-21:00; Fr 11:00-22:00; Sa 12:00-22:00; Su 12:00-21:00,+1-215-942-7770;+1-215-942-7783,,,yes,https://toscana52.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+1-215-942-7787,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/586146670,A Mano Eatery,center,-79.5183378,40.8117067,,16201,,yes,,,,,,,,,https://www.amanoeatery.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Armstrong County
-way/603041704,Marcello's Oizza,center,-76.64886,39.9819513,,17402,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-way/615986844,Sweet Basil,center,-79.4274257,41.2401021,,16254,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Clarion County
-node/616557005,Villa Rosa,,-74.871801,40.2214636,,19067,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/628667128,Arugula,center,-75.2734925,40.10854,,19462,,yes,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/637849194,Olive Garden,center,-80.0839383,40.6848545,Cranberry,16066,Mars Road,yes,,,,,,,,,,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Butler County
-way/641339374,Gianilli's 2,center,-79.4688805,40.2931971,,15601,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Westmoreland County
-way/641693294,Olive Garden,center,-75.0319846,40.0785487,Philadelphia,19114,Roosevelt Boulevard,yes,,,,,,,,,,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/641918205,Salvatore's Pizzeria,center,-75.5522644,40.5138735,,18062,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-way/645536131,Pane e Pronto,center,-79.9779677,40.4555512,Pittsburgh,15222,Penn Avenue,yes,,,,Tu-Sa 08:00-18:00,+14128153300,,,,https://www.paneepronto.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-way/650884393,Riviera D'Italia,center,-75.1326801,40.1246194,,19001,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/653662738,Forcella,center,-75.1255512,40.0955623,Jenkintown,19046,Old York Road,yes,yes,,,"Tu-Th 17:00-22:00, Fr-Sa 17:00-23:00",+1-267-400-6155,,,,http://forcellabyob.com/,PA,,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/654762291,Olive Garden,center,-77.6277114,39.9392141,,17201,,yes,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Franklin County
-way/658000819,Pat's Pizza & Bistro,center,-75.4028829,40.6230681,Bethlehem,18018,West Broad Street,commercial,,,,,+1 610 419 8100,,,,https://www.patsbistro.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-way/664587396,Carrabba's Italian Grill,center,-76.9795757,40.2381313,Mechanicsburg,17050,Carlisle Pike,yes,,,,Mo-Th 11:00-22:00;Fr 11:00-22:30;Sa-Su 11:00-21:00,+1 717 795 9200,,,yes,https://www.carrabbas.com/locations/pa/mechanicsburg,PA,,,Carrabba's Italian Grill,Q5045999,en:Carrabba's Italian Grill,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cumberland County
-way/667796660,Enzo's Italian Eatery,center,-75.5637326,39.9007404,West Chester,19014,Wilmington Pike,yes,,,,Mo-Th 11:00-21:30; Fr-Sa 11:00-22:30; Su 12:00-20:30,+1 610-947-5540,,,,https://www.enzositalianeatery.com/,,,,,,,2023-05-04,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/670642594,Pizza Mia,center,-75.7632488,40.0327805,,19335,Horseshoe Pike,yes,,,,Mo-Th 10:30-21:30; Fr-Sa 10:30-22:00; Su 11:00-21:00,+1 610-269-1000,,,,,,https://www.facebook.com/100041363426233,,,,,2023-03-26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/680929143,Little Vince's Pizza,center,-77.5840589,39.966631,,17201,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Franklin County
-way/681014443,Michaelangelo's Cafe,center,-75.0159131,40.1213721,,19116,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/684447206,Affamatoâ€™s Pizza,center,-75.4013367,40.1313239,,19403,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/700194781,That's Amore,center,-76.4584415,41.0025662,Bloomsburg,17815,West Main Street,yes,,,,,(570) 387-1975,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Columbia County
-way/701412559,Mangia! Italian Restaurant & Pizzeria,center,-75.9783278,40.2901416,,19607,East Wyomissing Avenue,yes,,,,"Mo,We-Th 11:00-21:00; Tu off; Fr-Sa 11:00-22:00; Su 09:00-20:00",+1-610-777-6626,,,,,,,,,,,2023-04-08,,,,http://www.mangiaitalianrestaurant.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-way/701988756,Mannino's Pizzeria & Restaurant 2,center,-75.5986827,40.2450644,Pottstown,19464-3215,East High Street,yes,,Manninospizza2@gmail.com,,Mo-Th 10:30-21:00; Fr-Sa 10:30-22:00; Su 11:00-19:30,+1 610-970-0700,,,,,PA,https://www.facebook.com/100083135891920,,,,,2023-06-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/711021181,PizzaVille,center,-75.3692233,40.7786385,,18064,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/723913080,Meglio,center,-74.9376194,40.2328296,,18940,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/728803353,King's,center,-76.2340734,41.0543208,,18603,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Columbia County
-way/728803367,Bob's Subs & Pizza,center,-76.2359145,41.0542719,,18603,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Columbia County
-way/729079530,Jimmy's Lakeside Pizza,center,-74.9435146,41.320002,Milford,,Log Tavern Way,yes,,,,,+1 570-409-3377,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Pike County
-way/730421103,Bacio's Italian Cuicina,center,-75.2140918,40.0922493,Springfield Township,19038,Bethlehem Pike,yes,,,,,+1-215-248-2740,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/761509761,Giannotti's Ristorante,center,-75.8014463,40.4992749,,19536,Kutztown Road,yes,,,,,+1 610 894 9694,,,,http://www.giannottisristorante.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-way/769964151,Vinny V's Pizza,center,-75.205811,40.6998015,Easton,18042,Cattell Street,yes,,,,Mo 11:00-20:00; Tu off; We-Th 11:00-20:00; Fr-Sa 11:00-21:00; Su 12:00-19:45,+1 610-253-5533,,,,https://vinnyvspizza.com,PA,,,,,,2023-10-22,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Warren County
-node/821207194,DePaul's Table,,-75.2908039,40.0080061,Ardmore,19003,East Lancaster Avenue,,,,,"Mo-Th,Su 17:00-21:00; Fr-Sa 17:00-22:00",+1 610-589-0500,,,,https://www.depaulstable.com/,,https://www.facebook.com/depaulstable,,,,,2023-06-08,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/829452192,Avanti's,center,-80.1218584,42.1137559,Erie,16505,West 8th Street,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/831649245,Mama Nina's Foccacheria,,-75.3818469,40.6216019,,18108,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/837382087,John's Italian Restaurant,center,-75.3117213,41.3440515,Greentown,18426,PA-507,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Monroe County
-way/839084257,Olive Garden,center,-80.0927672,42.0640508,Erie,16509,Peach Street,yes,,,,,,,,,https://www.olivegarden.com/,PA,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-way/839964056,Panache,center,-75.2667273,40.1523832,Blue Bell,19422,Skippack Pike,yes,,,,,,,,,https://panachewoodfiregrill.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/846399636,Giacomo's Italian Market and Grille,center,-75.2082344,40.7041322,Easton,18042,Cattell Street,yes,,,,Mo-Sa 09:00-15:00; Su off,+1 610-438-1945,,,,,PA,,,,,,2023-01-28,microsoft/BuildingFootprints,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/851668074,Casa Mia,center,-75.438275,39.9131341,Media,19063,Baltimore Pike,yes,,,,Mo off; Tu-Th 16:00-21:30; Fr-Sa 16:00-22:30; Su 16:00-21:00,+1 610-891-9090,,,,https://casamiamedia.com,PA,,,,,,2023-07-29,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-way/870501958,Anthony's Trattoria,center,-75.874335,40.3392183,Reading,19606,Byram Street,yes,,,,"Tu-Th,Su 12:00-21:00; Fr,Sa 12:00-22:00; Mo off",,,,,,PA,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-way/879982410,Olive Garden,center,-75.4768357,40.1650276,,19426,Town Center Drive,yes,,,,"Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-831-8814,,,,https://m.olivegarden.com/locations/pa/collegeville/collegeville-providence-town-center/1819,,,,Olive Garden,Q3045312,en:Olive Garden,2023-06-23,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/881032882,Chiodo's Ferro Cocina,center,-79.1671004,41.8399867,,16365,Pennsylvania Avenue West,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Warren County
-way/895101380,Brother's Pizza,center,-77.9499226,41.0304702,Snow Shoe,16874,West Olive Street,yes,,,,,,,,,,PA,,,,,,,Centre County GIS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/896326244,Little Mama's,center,-77.7461111,40.8679831,Pleasant Gap,16823,South Main Street,yes,,,,,,,,,,PA,,,,,,,Centre County GIS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-way/908466746,Mi Scuzi,center,-80.0787636,42.10861,Erie,16508,Myrtle Street,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/916278307,Carrabba's Italian Grill,,-76.3028735,40.069791,,17601,North Pointe Boulevard,,,,,"Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-21:00",,,,,,,,,Carrabba's Italian Grill,Q5045999,en:Carrabba's Italian Grill,2023-04-04,,,+1 717-560-6756,https://locations.carrabbas.com/pennsylvania/lancaster/100-north-pointe-blvd,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/916286726,Fiorentino's Italian Restaurant,,-76.2996044,40.1190128,,17543,Airport Road,,,,,"Mo-We,Su 11:00-22:00; Th 11:00-23:00; Fr-Sa 11:00-24:00",,,,,,,,,,,,2023-04-08,,,,https://www.fiorentinos.net/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/928661730,Romano's Macaroni Grill,,-76.8449962,40.3034026,Harrisburg,17110,Brindle Drive,,,,,,,,,,,PA,,,Romano's Macaroni Grill,Q7362714,en:Romano's Macaroni Grill,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-way/963792169,Muscarella's Cafe Italia,center,-80.4820874,41.2626231,,16150,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mercer County
-way/988524015,Amici Italian Market and Deli,center,-75.2890432,40.2351787,Lansdale,19446,South Broad Street,yes,,,,Mo-Fr 09:00-17:00; Sa 09:00-16:00; Su 09:00-15:00,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/988628751,Scoogi's Classic Italian,center,-75.2142298,40.1135426,Flourtown,19031,South Bethlehem Pike,,,,,"738 Bethlehem Pike, , PA 19031, United States",,,,,http://www.scoogis.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/989306169,Teresa's Cafe and Next Door,,-75.3879904,40.0450827,Wayne,19087,North Wayne Avenue,,,,,"11:30-21:00; Fr,Sa 11:30-22:00",(610) 293-9909,,,,https://www.teresas-cafe.com/,PA,,,,,,2023-06-07,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2022-05-02,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-node/993739560,Martelucci'S Pizza,,-75.3682804,40.6323973,Bethlehem,18018,Easton Avenue,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-way/1005464664,OIP Original Italian Pizza,center,-78.2440708,40.2154221,Saxton,16678,Main Street,retail,no,,,11:00-21:00,,,,yes,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-way/1017623156,Combine Brothers,center,-80.4568305,41.201757,,16159,,yes,,,,,,,,,,,,,,,,,microsoft/BuildingFootprints,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mercer County
-way/1033648456,From the Boot,center,-75.2209927,40.1547634,Ambler,19002,East Butler Avenue,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/1037203397,Carrabba's Italian Grill,center,-74.9589771,40.1153693,Bensalem,19020,Tillman Drive,yes,,,,,,,,,,PA,,,Carrabba's Italian Grill,Q5045999,en:Carrabba's Italian Grill,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-way/1071333971,Mamma Ventura Restaurant,center,-77.2319097,39.8311135,Gettysburg,17325,Chambersburg Street,yes,,,,"Mo,Th 16:00-21:00; Tu,We 11:00-21:00; Fr,Sa 11:00-22:00; Su off",+1 717-334-5548,,,,https://www.mammaventura.com,PA,https://www.facebook.com/people/Mamma-Ventura-Restaurant-Lounge/100048543774260,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,Adams County
-way/1082129303,Sal's Ristorante & Bar,center,-80.3886575,40.7787068,,15010,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Beaver County
-node/1083613601,La Prima Vera,,-76.9138561,40.9562947,,17837,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Union County
-way/1085675766,Trattoria San Nicola,center,-75.4945786,40.0411905,Paoli,19301,Manor Road,commercial,,,,"Mo-Th 11:30-14:00,17:30-21:00; Fr 11:30-14:00,17:30-21:30; Sa 17:30-21:30; Su 17:00-20:30",+1 610-695-8990,,,,http://sannicola.net/,PA,,,,,,2023-06-06,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/1087785044,Olive Garden,center,-76.9672604,41.2497554,Williamsport,17701,East 3rd Street,yes,,,,,570-321-9250,,,,,PA,,,Olive Garden,Q3045312,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lycoming County
-way/1093400735,Victor's,center,-76.6979178,39.9605385,York,17403,South Ogontz Street,yes,,,,,+1-717-854-7958,,,,https://victorsofyork.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-node/1129803906,TD Alfredo's,,-75.5249795,40.1279278,,19460,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-way/1140077778,Maria's Ristorante on Summit,center,-75.2363333,40.0567404,Philadelphia,19128,Ridge Avenue,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-way/1143772401,Village Tavern,center,-77.4369653,41.1342131,,17745,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Clinton County
-way/1152245525,Sorrento's,center,-75.2598852,40.0872302,Lafayette Hill,19444,Ridge Pike,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/1181063239,Numero Uno,,-78.9581324,40.3232668,,15905,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cambria County
-way/1188089617,La Porta Ristorante,center,-75.460135,39.9389816,Media,19063,Middletown Road,yes,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-way/1191444076,Roma Gardens,center,-78.8105968,41.6593583,Kane,16735,Greeves Street,yes,,,,,+1-814-837-9691,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,McKean County
-way/1202437692,Olive Garden,center,-76.4875237,41.0098675,Bloomsburg,17815,Plaza Drive,restaurant,yes,,,"Su-Th 11:00-22:00, Fr-Sa 11:00-23:00",+1 (570) 784-2229,recommended,,,https://www.olivegarden.com/locations/pa/bloomsburg/bloomsburg/4449,PA,,,Olive Garden,Q3045312,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Needs updates regarding in-restaurant info.,,,,,,,,,,,,,,,,,,,,,,,,,,Columbia County
-node/1203395407,Frankie's Fellini Cafe,,-75.4426996,40.047341,Berwyn,19301,Lancaster Ave,,,felliniscafeberwyn@gmail.com,,Mo-Th 16:00-21:00; Fr-Sa 16:00-22:00; Su 13:00-21:00,+1 610-647-1737,,,,https://frankiesfellinicafe.com/,,,,,,,2023-06-06,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/1307472342,Asiagos,,-78.9285492,40.3252766,,15905,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cambria County
-node/1357878929,Mangia Qui,,-76.8859347,40.2650522,,17102,North Street,,,,,,,,,,https://www.mangiaqui.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-node/1371543274,Pino's Italian Kitchen,,-79.9143949,40.4503353,,15208,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/1373370413,Sapore Restaurant,,-75.704912,40.8272295,Lehighton,18235,East Bridge Street,,,,,,610 377 5666,,,,https://www.saporelehighton.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Carbon County
-node/1376928128,Girasole,,-79.9347254,40.4511589,,15232,Copeland St,,,,,,+1 412-682-2130,,,,http://www.733copeland.com/,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,yes,yes,,,yes,yes,,,,,yes,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/1388435296,Pepperoncini Sotto,,-75.5154493,40.1338272,,19460,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.0,,,,,,,,,,,,,,,,,,,,,Chester County
-node/1482514639,Girasole,,-75.1654742,39.9455278,,19102,Pine Street,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/1559467250,Skippack Village Italian Market,,-75.4042816,40.2276616,,19474,Skippack Pike,,,,,,,,,,https://skippackrestaurants.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/1599081328,Lombardo's,,-76.3104397,40.0460284,Lancaster,17603,Harrisburg Avenue,,,,,"Mo,Su off; Tu-Th 11:00-14:30,16:00-21:30; Fr-Sa 11:00-14:30,16:00-22:00",+1 717-394-3749,,,,https://lombardosrestaurant.com/,,https://www.facebook.com/lombardoslancaster,,,,,2023-10-13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/1637339902,D'Ottavio's,,-78.2365279,40.6740662,,16686,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-node/1695365684,Cafe Antonio's,,-74.7806608,40.217434,,19067,"East Trenton Avenue Morrisville, PA 19067",,,,,Sunday-Thursday 11:00 AM to 10:00 PM Friday-Saturday 11:00 AM to 11:00 PM,215-428-3999,,,,https://www.cafeantonio.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-node/1712004131,Shef's Pizza,,-75.0318147,40.0365975,,19136,Sheffield Avenue,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Shef's Pizza,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Burlington County
-node/1796197117,Minutello's Restaurant and Lounge,,-79.9222772,40.4587877,,15206,,,,,,Mo-Th 11:00-23:00; Fr 11:00-24:00; Sa 15:00-23:00; Su 15:00-21:00,+1-412-361-9311,,,,http://www.minutellosrestaurant.com/,,,,,,,,survey,,,,,,,,,,,,,,,,,,,,,,,,,+1-412-361-6927,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/1838834929,Lucca Ristorante,,-79.9485562,40.4451909,Pittsburgh,15213,S Craig St,,,,,"Mo-Fr 11:30-14:00,17:00+; Sa 17:00+; Su 16:30+",+1-412-682-3310,,,,https://luccaristorante.com/,PA,,,,,,,survey,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/1918053404,Ron's Original Bar & Grille,,-75.654135,40.0590047,Exton,19341,East Uwchlan Avenue,,,,,"Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-594-9900,,,,https://ronsoriginal.com/,,,,,,,2023-06-25,survey,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/1940776523,Melograno,,-75.1741414,39.9512797,Philadelphia,19103,Sansom Street,,,,,"Mo off; Tu-Th,Su 17:00-21:30; Fr-Sa 17:00-22:00",+1 215-875-8116,,,,https://www.melogranophilly.com,,,,,,,2023-10-15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/1966014847,Sammy's Authentic Italian Restaurant,,-76.8852506,40.2642017,,17124,North Third Street,,,,,,,,,,http://www.sammysitalianrestaurant.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-node/2000395030,Franconi's Ristorante,,-75.2579059,40.2286799,,19454,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/2003096867,Little Anthony's,,-75.7887481,39.9892646,Coatesville,19320,East Lincoln Highway,,,,,"Mo-Th,Su 10:00-22:00; Fr-Sa 10:00-23:00",+1 610-384-2292;+1 610-384-3386,,,,https://www.littleanthonyspizza-grille.com,PA,,,,,,2023-09-25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Little Anthony's,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/2014454568,Joseph Tambellini Restaurant,,-79.9214814,40.4764926,,15206,Bryant St.,,,,,,412665000,,,,http://www.josephtambellini.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2018681935,Bella Italia,,-75.7928786,40.3858241,,19547,,,,,,,,,,,,,,,Bella Italia,Q4883362,en:Bella Italia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/2040424579,Vetri Cucina,,-75.163189,39.9467368,,19109,Spruce Street,,,,,"17:00+ ""Dinner every day starting at 5PM""",,,,,https://vetricucina.com,,,,,,,2023-04-11,,,+1 215-732-3478,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2040436590,Osteria,,-75.1611073,39.964982,,19122,North Broad Street,,,,,,,,,,https://www.osteriaphilly.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2040440589,Alla Spina,,-75.1615233,39.9644178,,19130,Mount Vernon Street,,,,,,,,,,www.allaspinaphilly.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2040446963,Ralph's,,-75.1576476,39.940255,Philadelphia,19147,South 9th Street,,,,,Mo-Th 16:00-21:00; Fr 16:00-21:30; Sa 13:00-21:30; Su 13:00-21:00,+1-215-627-6011,,,,https://ralphsrestaurant.com,PA,,,,,,,,,,,,,,,Ralph's Italian Restaurant,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2096187242,Aurora Pizzeria & Pasta Kitchen,,-75.8750657,39.8236181,,19390,Jenners Village Center,,,,,11:00-21:00,,,,,,,,,,,,2023-04-05,Personal Knowledge,,+1 610-869-8811,https://www.aurorawestgrove.com,,,,,,,,,,,,,,,,,,,,,,,,,The Shoppes at Jennersville,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/2133394211,Storms Restaurant,,-79.9983932,40.4384415,,15219,,,,,,Mo-Fr 11:30-19:00,412-281-4321,,,,http://www.stormsrestaurant.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2211627790,Two Cousins,,-76.3531461,40.0378537,,17603,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/2256040035,Maggiano's,,-75.1598822,39.9531112,,19107,Filbert Street,,,,,11:30-22:00,,,,,,,,,,,,2023-04-12,,,,https://maggianos.com/locations/pennsylvania/philadelphia/1201-filbert-st.,,,,,,,,,,,,yes,,,,,,,,Carryout: 215-567-2233  Reserve a table: 215-567-2020,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2256040037,Sotto,,-75.1793805,39.9513778,Philadelphia,19103,South 24th Street,,,,,Tu-Th 12:00-21:00; Fr-Sa 12:00-22:00,+1-215-496-9222,,no,,http://sottorestaurant.net/,PA,,,,,,,,,,,,,,,,,,,,,,no,,,,,,,,,,,max ~25,,,,,,,,,,,,,,,,,,,ele: 24th St. at grade level;ca. 24 ft below Walnut St.,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2296211827,Cucina Forte,,-75.1561811,39.9397655,Philadelphia,19147,South 8th Street,,,,,,(215) 238-0778,,,,https://www.cucinaforte.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2296287498,Mr. Martino's Trattoria,,-75.1646756,39.9290161,Philadelphia,19148,East Passyunk Avenue,,,,,,(215) 755-0663,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2296287516,Chiarella's,,-75.1632687,39.9297279,,19145,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2296287523,Le Virtu,,-75.1678021,39.9259892,Philadelphia,19148,East Passyunk Avenue,,,,,Mo-Th 17:00-22:00; Fr-Sa 17:00-22:30; Su 16:00-21:30,,,,,https://www.levirtu.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2330847457,Spello,,-80.0564075,40.6874806,Mars,16046,Adams Shoppes,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Butler County
-node/2333113603,Pizza Roma,,-80.1042259,40.6917513,,16066,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Butler County
-node/2340613008,Cry Baby Pasta,,-75.1476433,39.9406306,Philadelphia,19147,South 3rd Street,,,,,Mo off; Tu-Su 17:00+,+1-267-534-3076,,,,http://crybabypasta.com,PA,,,,,,2023-10-17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2351613922,Mamma Rosa's,,-79.908202,40.8293597,,16002,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Butler County
-node/2419077037,Valentino's Italian Restaurant,,-76.6830436,39.9325717,York,17402,Pauline Drive,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-node/2433031845,Luciano's Italian Brick Oven,,-80.035947,40.6959539,,16046,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Butler County
-node/2453409143,Panevino,,-75.9335895,40.3366201,,19601,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/2498441914,Osteria 2350,,-79.9825463,40.4543288,,15222,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2500236520,Bravo,,-80.0510516,40.3564018,,15228,,,,,,,,,,,,,,,Bravo,Q64055574,,,,,,,,,,,Bravo Cucina Italiana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2501937312,La Eda's,,-79.8804143,40.1437506,,15062,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Westmoreland County
-node/2503424779,Olive Garden,,-80.2200304,40.1883427,,15347,,,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Washington County
-node/2507820891,Bravo,,-80.1805162,40.4484651,,15275,,,,,,,,,,,,,,,Bravo,Q64055574,,,,,,,,,,,Bravo Cucina Italiana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2508719228,Buca di Beppo,,-80.0043859,40.4334995,,15211,,,,,,,,,,,,,,,Buca di Beppo,Q4982340,en:Buca di Beppo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2548048900,Davinci Italian Eatery,,-77.037732,40.2441196,Mechanicsburg,17050,Carlisle Pike,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cumberland County
-node/2570203918,Mario's Italian,,-80.2131741,40.5114762,,15108,Beaver Grade Road,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2583051316,Ringside,,-80.141808,42.0803144,Erie,16506,Sterrettania Road,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/2610107943,The Deli of Italy,,-76.6696255,39.9831923,York,17402,Concord Road,,,,,,,,,,http://deliofitaly.co,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-node/2623019333,Rocco's Pizza,,-77.1147631,40.0074726,York Springs,17372,Main Street,,no,,,,,,,yes,https://www.roccosyorksprings.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,pizza;stromboli,,,,,,,,,,,,,,,,,,,Adams County
-node/2698620952,Original Italian Pizza,,-76.5539334,40.7918413,Shamokin,17872,E Independence St,,,,,11:00-22:00,+1 570 644 7621,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northumberland County
-node/2701472727,Quick Fixx,,-75.1675414,39.9439783,Philadelphia,19146,South Street,,,,,11:00-21:00,+1 267-273-1066,,,,https://thequickfixx.com/,,https://www.facebook.com/thequickfixx,,,,,2023-10-15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/2757613001,Vivo,,-80.1807499,40.5403961,,15143,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2771204405,Vincent's of Greentree,,-80.0501,40.420994,Pittsburgh,15220,Mansfield Avenue,,yes,,,Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00; Su 12:00-22:00,+1-412-921-8811,,,yes,https://vincentsgreentree.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/2966541286,Tomasino's,,-75.9539245,41.3326202,,18612,Dallas Shopping Center,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2970523860,Angelo's Restaurant and Pizza,,-75.8532388,41.3002844,,18644,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2970524470,Marianos,,-75.8155793,41.3218866,Exeter,18643,Wyoming Avenue,,,,,,5708831960,,,,https://marianos-la-puccia.business.site/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2970524513,Villa Foglia,,-75.8161337,41.3216621,Exeter,18643,Wyoming Avenue,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2971738053,Agolino's,,-75.7954508,41.3270657,,18643,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2973133327,Grico's,,-75.8146832,41.3225602,Exeter,18643,Wyoming Avenue,,,,,,,,,,https://www.gricosrestaurant.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2973133572,Valenti's Restaurant,,-75.8175147,41.3213348,Exeter,18643,Wyoming Avenue,,,,,Tu-Su 17:00-21:30,,,,,https://valentirestaurant.net/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2973133748,2 Chefs Italian Restaurant,,-75.8154842,41.3222146,Exeter,18643,Wyoming Avenue,,,,,,5706544111,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2973223020,Antonio's Pizza and Subs,,-75.7966171,41.3275781,,18643,,,,,,,5706556685,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/2981726851,Pizza Mia,,-77.7795233,40.9121132,,16823,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-node/2984499658,Lino's Pizza and Restaurant,,-75.8865845,41.2712658,,18704,,,,,,,5702834322,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/3013502971,Millio's Itallian Restaurant,,-78.3864909,40.4865666,,16602,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-node/3023560082,Jethro's,,-78.4054019,40.4576448,,16601,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-node/3090068196,La Bella Italia,,-77.2234011,39.8329437,,17325,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Adams County
-node/3115119195,Italian Village Pizza,,-80.0218369,40.3323447,,15102,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/3129660687,Original Italian Grille,,-76.5218964,41.9909807,,18840,,,,,,,,,outside,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bradford County
-node/3129670931,Original Italian Pizza,,-76.5255438,41.9796407,,18840,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bradford County
-node/3377158476,Olive Garden,,-75.2243301,40.0034691,,19004,,,,,,,,,,,,,,,Olive Garden,Q3045312,en:Olive Garden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/3445316483,Mamma's Pizza,,-76.9337303,40.052474,Wellsville,17365,York Street,,,,,,,,,yes,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-node/3454069369,Aldo's Pizza Town USA,,-76.9821064,40.174703,Mechanicsburg,17055,Pine Tree Drive,,,,,Mo off;Tu-Th 10:30-21:30;Fr-Sa 10:30-22:30;Su 11:30-21:30,+1 717 691 6733,,,yes,https://www.aldospizzatownusa.com/,,,,,,,,website,,,,,,,,Pizza Town USA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cumberland County
-node/3476840061,Carini's Italian Restaurant,,-76.0473144,40.1184699,Blue Ball,17506,Division Highway,,,,,10:00-21:00,+1 717-354-4025,,,,,,https://www.facebook.com/CARINISITALIANRESTAURANT,,,,,2023-05-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/3531172122,DiMaio's Family Ristorante & Pizzeria,,-75.3393147,40.5684168,Hellertown,18055,Main Street,,,,,Mo-Th 11:00-21:30; Fr-Su 11:00-22:00,+1-610-838-8004,,,,https://dimaios.net,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-node/3561965410,Sicily Restaurant,,-75.3078744,40.6661927,,18020,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-node/3562458003,Golden Crust,,-76.6042983,39.9012996,Red Lion,17356,East Broadway,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-node/3575589718,Ecco Domani,,-75.3847814,40.5169714,,18036,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-node/3584425325,Colonial Pizza and Spaghetti House,,-75.2066602,40.6932246,,18042,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-node/3584425331,Sette Luna,,-75.2078255,40.6898899,,18042,,,,,,,610.253.8888,,,,https://www.setteluna.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-node/3629237317,Tre Scalini,,-75.1675615,39.926243,Philadelphia,19148,East Passyunk Avenue,,,,,Tu-Sa 17:00-22:00; Su 16:00-21:00; Mo closed,,,,,https://www.trescaliniphiladelphia.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/3629250848,Noir,,-75.1674991,39.9262992,Philadelphia,19148,East Passyunk Avenue,,,,,,,,,,https://www.noirrestaurantandbar.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bar,,,,,,,,,,,,,,,,,,Philadelphia County
-node/3634830553,Pizza Roma,,-80.0392423,40.5587179,,15237,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/3637892959,Mom Chaffe's Cellarette,,-75.9481187,40.3374417,West Reading,19611,Tulpehocken Avenue,,,,,Mo-Th 17:00-20:30; Fr 16:30-21:00; Sa 16:30-21:30; Su off,+1 610 374-5733,,,,https://momchaffes.com/,PA,https://www.facebook.com/momchaffescellarette,,,,,2023-06-27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/3731607184,dolce Zola,,-75.6028895,39.9613622,West Chester,19380,East Gay Street,,,,,Mo off; Tu-Th 16:00-21:00; Fr-Sa 16:00-22:00; Su 16:00-20:00,+1 484-887-0760,,no,yes,https://www.dolcezola.com/location,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/3809475393,From The Boot,,-75.3017999,40.1551648,,19422,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/3811384359,Original Itialian Pizza,,-77.939001,40.39213,Mapleton,17052,Main,,,,wlan,,(814) 514-3027,,,yes,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Huntingdon County
-node/4010224385,Ristorante Arlecchino,,-80.108779,40.2916312,,15055,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Washington County
-node/4055253177,Gran Caffe L'Aquila,,-75.1694699,39.9514573,Philadelphia,19103,Chestnut Street,,no,,wlan,Mo-Th 07:00-23:00; Fr 07:00-24:00; Sa 08:00-24:00; Su 08:00-23:00,+1 215 568 5600,,,,,PA,,,,,,2023-04-11,,,,https://grancaffelaquila.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/4085097155,Demarco's Italian Restaurant,,-75.7088627,40.5782374,,19538,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/4162229260,Carlos Pizza,,-75.9633766,40.3339986,Reading,19610,Penn Avenue,,yes,,,Mo-Su 10:00-22:00,+1 610-478-4871,,,yes,https://www.carlospizzeriarestaurant.com,PA,,,,,,2023-09-29,https://www.facebook.com/pages/Carlos-Pizza/103321076493307,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/4289337993,Mia Madre Trattoria,,-80.0672439,40.5011068,Avalon,15202,California Avenue,,,,,,+14127666662,,,,https://miamadretrattoria.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/4358015165,,,-80.0743876,40.4730313,,15136,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/4358030610,Ricci's' Italian Sausage,,-80.098792,40.4752398,McKees Rocks,15136,Pine Hollow Road,,,,,,+1-412-331-9531,,,,https://www.riccisausage.net,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/4378216051,Bravo,,-75.4815654,40.628818,,18052,,,,,,,,,,,,,,,Bravo,Q64055574,,,,,,,,,,,Bravo Cucina Italiana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-node/4386102969,Thomasine's,,-80.2256448,40.5846796,,15003,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Beaver County
-node/4407505281,Rego's,,-79.8989908,40.1394951,,15022,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Washington County
-node/4534023856,Francoluigi's Italian Restaurant & High Note Cafe,,-75.1660779,39.9302881,Philadelphia,19147,South 13th Street,,,,,,,,,yes,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/4578438551,Original Gyro,,-80.0178802,40.3648962,,15129,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/4655924258,Bacco Italian,,-75.2472119,40.218437,,19454,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/4672370598,Pal-Mino's Italian Village,,-78.405211,40.5043267,Altoona,16602,7th Avenue,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-node/4672370602,Finelli's Italian Villa,,-78.3996835,40.5059253,Altoona,16602,4th Avenue,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Blair County
-node/4736399656,Franco Ristorante,,-75.5172339,40.1337608,Phoenixville,19460,Bridge Street,,,,,,+1 610-933-0880,,,yes,https://www.franco-ristorante.com/index.html,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/4775191247,Nonni's Corner Trattoria,,-80.0869777,41.1582433,Grove City,16127,South Broad Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mercer County
-node/4827583336,A Little Pizza Heaven,,-75.6457721,41.4341946,Scranton,18509,Boulevard Avenue,,,,,,,,,,https://www.alittlepizzaheaven.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-node/4848554650,Oaks Italian Deli,,-75.4508021,40.1351995,,19460,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/4880698721,LaScala's,,-75.152127,39.9495012,,19106,,,,Eat@lascalasphilly.com,wlan,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00,+1 215 928 09 00,,,,http://lascalasphilly.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LaScala's,,,,,,,,,,,,,,,,,Philadelphia County
-node/4916862795,Della Terra Italian Bistro,,-80.1390855,40.8017143,Harmony,16037,Perry Highway,,no,,,"Tu-Th 16:00-21:00, Fr-Sa 16:00-22:00",724-473-0630,,,,https://www.dellaterrapgh.com/,PA,,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Butler County
-node/4954926333,Little Italy,,-76.6617587,40.0892078,,17547,River Road,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Little Italy,,,,,,,,,,,,,,,,,Lancaster County
-node/4960547092,Monte Cello's,,-79.9492532,40.5920547,,15091,,,,,,,,,,,,,,,,,,,,116,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/5035927416,Pizza Plaza,,-75.1038281,40.2069795,Warminster,18974,West Street Road,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-node/5218846003,Sicily's Pizza II,,-75.2184679,40.711777,,18040,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-node/5223887090,Blue Marsh Italian Restaurant & Pizzeria,,-76.0329154,40.4052476,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/5241955436,Piada,,-80.0230491,40.5513402,,15237,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/5258665521,Two Guys from Italy,,-76.5200482,40.7904146,Coal Township,17866,SR 2026,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northumberland County
-node/5369259493,Maria's,,-79.6738361,41.6262732,,16354,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Crawford County
-node/5384512913,Lombardozzi's,,-79.9472811,40.4605649,,15224,Liberty Avenue,,,contact@lombardozzis.com,,"We, Th 11:00-21:00; Fr 11:00-22:00; Sa 13:00-22:00; Su 13:00-21:00",+1-412-682-5785,yes,,yes,http://lombardozzis.com/,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,1973.0,,,,,,,,,,,,,yes,,,,,,,,,,,,,,yes,yes,yes,yes,yes,yes,yes,,,,,,,,,,Allegheny County
-node/5411129607,Piada Italian Street Food,,-80.1746533,40.4499169,,15275,,,,,,,,,,,https://mypiada.com/locations/north-fayette,,,,Piada Italian Street Food,Q7190020,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/5534939768,Spasso Italian Grill,,-75.3896379,39.9181692,Media,19063,West State Street,,,,,Mo 11:30-21:00; Tu-Sa 11:30-22:00; Su 10:00-21:00,+1 610-565-7803,,,,http://www.spassoitaliangrill.com/media,PA,,,,,,2023-07-29,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-node/5569987559,Marzoniâ€™s Brick Oven & Brewing Co.,,-76.8483146,40.8219799,Selinsgrove,17870,North Susquehanna Trail,,,,,Su-Th 11:00-22:00;Fr-Sa 11:00-23:00,+1 570 372 1512,,,,http://www.marzonis.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Snyder County
-node/5587004018,Leola Pizza,,-76.1851048,40.0883198,,17540,West Main Street,,,,,"Mo,Su off; Tu-Th 10:30-19:00; Fr 10:30-20:00; Sa 11:00-19:30",+1 717 656 7230,,,,,,https://www.facebook.com/100067336777859,,,,,,,,,https://www.leolapizzapa.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/5638565067,Little It Deli,,-79.7103904,41.1770652,,16373,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Clarion County
-node/5708669429,Zia Maria,,-76.0891966,40.2279135,Denver,17517,North Reading Road,,,info@ziamaria.com,,11:00-26:00,,,,,,PA,,,,,,2023-04-07,,,+1 717-336-1333,https://www.ziamaria.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/5787781246,Ariano,,-75.3912629,39.9177439,Media,19063,South Olive Street,,,,,Mo-Th 11:30-21:00; Fr-Sa 11:30-22:30; Su 12:00-21:00,+1 610-892-6944,,,,https://arianomedia.com,,https://www.facebook.com/arianomediapa,,,,,2023-07-29,,,,,,,,,,,,,,,,,,,,,https://www.instagram.com/arianomediapa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-node/5802560272,Schiano's Italian Restaurant,,-76.5306366,40.5923931,Tower City,17980,East Grand Avenue,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Schuylkill County
-node/5816768229,Basile Italian Delight Restaurant,,-75.9926903,40.8358378,Tamaqua,18252,Claremont Avenue,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Schuylkill County
-node/5821612308,Tommy's Italian Specialty Shop,,-75.9048966,40.8237565,Coaldale,18218,East Phillips Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Schuylkill County
-node/5828096095,La Dolce Casa,,-75.9706914,40.7970969,Tamaqua,18252,West Broad Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Schuylkill County
-node/5829815242,Romano's,,-75.8620173,40.7211193,New Ringgold,17960,West Penn Pike,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Carbon County
-node/5837050693,Mannino Italian Garden,,-80.1518681,41.6381179,Meadville,16335,Chestnut Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Crawford County
-node/5840019881,Roman Delight,,-76.0828275,40.6391939,Orwigsburg,17961,Centre Turnpike,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Schuylkill County
-node/5861280806,Angela & Adriana,,-75.9141672,40.928183,Beaver Meadows,18216,Broad Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/5861280820,Graziano's,,-75.9174157,40.9310756,,18216,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/5876415695,Picasso Pizza,,-75.4299727,40.6393857,Allentown,18109,Catasauqua Road,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-node/5891888091,Siro's,,-75.6011416,40.8055932,Palmerton,18071,Delaware Avenue,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Carbon County
-node/5891916205,Papa Al's,,-75.6092492,40.8008296,Palmerton,18071,Lehigh Avenue,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Carbon County
-node/6037904166,Villa Schiano,,-76.7824709,40.5624152,,17023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://www.facebook.com/VillaSchiano/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-node/6056301836,Stoke Coal Fire Pizza & Bar,,-75.208487,40.6907893,Easton,18042,Lehns Court,,,info@coalfirepizza.com,,"Mo-Th,Su 12:00-22:00; Fr-Sa 12:00-24:00",+1 610 829 1400,,,,https://www.stokecoalfirepizza.com/,PA,,no,,,,2023-02-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,no,,,,,,,,,Northampton County
-node/6072022838,Pasquales Ristorante,,-75.9284131,41.22674,Wilkes-Barre,18706,Sans Souci Parkway,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/6076837752,Piazza Talarico and Papa Joeâ€™s Wine Cellar,,-79.9602603,40.4646729,,15224,Penn Avenue,,,,,"Tu-Th 12:00-20:00; Fr, Sa 12:00-21:00; PH off",+1-412-652-9426,no,,yes,https://piazzatalarico.com/,,,yes,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,yes,,yes,,,,,,,,,,,,,,,yes,yes,yes,yes,yes,,,caterer,yes,,,,,,,Allegheny County
-node/6101156268,Franco's,,-75.8883431,41.2421471,Wilkes-Barre,18701,South Main Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/6139343791,Villa Rosa,,-75.6117489,40.6721984,,18078,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-node/6144529716,Francisco's on the River,,-74.8956853,40.3135926,Washington Crossing,18977,River Road,,,,,"Tu-Th 17:00-21:00; Fr,Sa 17:00-22:00; Su 16:00-21:00",+1 215-321-8789,,,,https://www.franciscosontheriver.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Hunterdon County
-node/6154211008,Olyvia's Itaiian Eatery,,-75.8227597,40.4271997,Fleetwood,19522,Pricetown Road,,,,,,+1 610 944-9654,,,,http://olyvias.letseat.at/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/6154214228,Mazzola's,,-75.8226417,40.4267015,Fleetwood,19522,Pricetown Road,,,,,,+1 610 944-7651,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/6173049835,Luigi's,,-78.7614102,41.1188369,,15801,,,,,,,,,,,,,,,,,,2023-08-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Clearfield County
-node/6196973096,The Vineyard,,-75.390035,40.6068569,,18015,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-node/6221940190,Tre Scalini Ristorante,,-75.3723745,40.6223747,Bethlehem,18018,East Broad Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-node/6274317898,La Verona,,-75.7110693,39.8467464,Kennett Square,19348,East State Street,,,,,"Mo-Su 11:45-21:00; Fr,Sa 12:00-22:00",+1 610-444-2244,,,,https://www.laveronapa.com/,,,,,,,2023-04-26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/6379713470,Milroy OIP,,-77.5912638,40.7004985,,17063,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mifflin County
-node/6412185644,Carrazza's,,-75.2886216,41.1401019,Cresco,18326,Route 191,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Monroe County
-node/6418351509,Basso,,-75.2800362,41.158214,Cresco,18326,Route 191,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Monroe County
-node/6434733216,teca,,-75.6041271,39.9608542,West Chester,19380,East Gay Street,,,,,"Tu-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-21:00",+1 610-738-8244,,,,https://www.tecarestaurants.com/,,,,,,,2023-03-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/6439962380,Arugula Ristorante,,-75.5391081,39.8540954,,19173,Wilmington W Chester Pike,,,,,"Mo-Tu off; We-Th,Su 15:00-21:00; Fr-Sa 15:00-22:00",+1 610-358-0888,,,,https://www.arugulachaddsford.com,,,,,,,2023-03-23,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-node/6441475012,mercato,,-75.6054537,39.9593789,West Chester,19382,West Market Street,,,,,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00,+1 610-701-6326,,,,https://mercato-restaurant-and-bar.business.site/,,,,,,,2023-03-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/6443975209,Wesoâ€™s Italian Restaurant and Bar,,-75.6372772,40.0478331,,19381,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/6482655531,Ristorante Gennaro,,-75.4267043,39.8581632,Aston,19014,Pennell Road,,,,,Mo off; Tu-Th 16:00-20:30; Fr-Sa 16:00-21:00; Su 16:00-20:00,+1 610-497-3393,,,,https://gennarosaston.com,,https://www.facebook.com/gennarositaliankitchen,,,,,2023-08-12,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-node/6545606464,Mamaâ€™s Italian Grill,,-75.6074606,40.5510906,,18069,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lehigh County
-node/6632033963,Rocco's Brick Oven Pizzeria,,-75.4519009,40.1810427,Collegeville,19426,2nd Avenue,,,,,"Mo-Th 11:30-21:30; Fr,Sa 11:30-22:00; Su 11:00-21:00",(610) 831-0100,,,,https://www.roccosbrickoven.net/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/6682051476,Ambrosia,,-75.1796671,39.9500093,Philadelphia,19103,S 24th St,,,info@ambrosiabyob.com,,"Mo-Sa 11:30-14:30,17:00-22:00; Su 17:00-21:00",+1-215-703-2010,,,,https://www.ambrosiabyob.com/,PA,,yes,,,,2023-07-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,https://www.ambrosiabyob.com/menus/,,,,,,Philadelphia County
-node/6712736545,Venice Pizza & Pasta,,-75.8583502,39.9845294,Coatesville,19369,West Lincoln Highway,,,,,Mo-Th 10:00-22:00; Fr-Sa 10:00-23:00; Su 11:00-22:00,+1 610-380-9600,,,,https://www.venicepizzapa.com,,,,,,,2023-09-25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/6765579596,Roma Pizza,,-75.1311089,40.2295012,,18976,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/6770822501,Meco's,,-78.9177996,40.3225587,,15901,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cambria County
-node/6919112249,Napoli Restaurant & Lounge,,-80.1929002,40.2123332,,15347,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Washington County
-node/7015447886,Marinoâ€™s Pizza & Pasta,,-76.6535782,39.9818762,,17402,East Market Street,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-node/7107915694,Camillo's,,-75.7797891,40.5213447,,19530,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/7223169299,Little Nikki's,,-75.4997908,41.5751896,Carbondale,18407,North Main Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lackawanna County
-node/7322437943,Trattoria,,-75.3816437,40.3498435,,18971,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/7332028631,Tosco's Italian Delight,,-75.4826442,40.3715219,Red Hill,18076,Main Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/7376037024,Giovanni's Cafe,,-75.6897987,40.3150806,,19512,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/7403766600,Pomodoro,,-80.0893625,40.6135155,,15015,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/7439537171,Neapolitan Italian Eatery,,-76.1157059,40.7199816,New Philadelphia,17959,Valley Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Schuylkill County
-node/7567573172,Mama Mia's Pizzeria,,-80.0982149,42.0896612,Erie,16508,West 38th Street,,,,,,,,,,,PA,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/7626273045,Barbato's Italian Restaurant,,-80.0429134,42.0721632,Erie,16509,Perry Highway,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/7681823947,Fiamma,,-75.3991896,40.6399302,Bethlehem,18017,Schoenersville Road,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Northampton County
-node/7700509062,Skippereno's Italian Restaurant,,-80.0961149,42.0835308,Erie,16509,West Grandview Boulevard,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/7817709248,Vinnys II,,-75.3153711,41.3553498,Greentown,18426,Ledgedale Road,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Wayne County
-node/7838241735,Ristorante Castello,,-75.2683549,40.1548411,,19422,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/7844505006,Nova's Pizza & Pasta,,-75.9202061,39.9581729,,19365,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/7844815200,Piacquadio's Restaurant,,-80.0349354,40.3688017,Pittsburgh,15234,Mount Lebanon Boulevard,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/7846495146,Carbonara's Ristorante & Pizzeria,,-80.0373845,40.3680141,Pittsburgh,15234,Mount Lebanon Boulevard,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/7870989464,Piccolo Mondo Italian Restaurant,,-75.6673074,40.2338176,,19465,West Schuylkill Road,,,,,,+1 610-970-6173,,,,https://piccolomondopottstown.com,PA,,,,,,2023-03-22,,A11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chester County
-node/8071779648,Trattoria 903,,-75.6811391,40.9043192,Jim Thorpe,18229,Route 903,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Carbon County
-node/8074889933,The Other Place,,-80.0743665,40.390327,Pittsburgh,15220,Swallow Hill Road,,,,,"Su 12:00-21:00; Mo-Th,Sa 11:00-22:00; Fr 11:00-23:00",+1-412-279-7777,,,,https://otherplacepgh.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/8112596475,CafÃ© Carmela,,-75.0303755,40.0572232,,19114,Holme Avenue,,,,,Mo off; Tu-Th 12:00-20:00; Fr-Sa 12:00-21:30; Su 12:00-20:00,,,,,https://cafecarmelaphilly.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Burlington County
-node/8116871018,Fresco Pizza & Grill,,-75.3985244,39.9760382,Newtown Square,19073,South Newtown Street Road,,,,,"Su-Th 12:00-20:00, Fr-Sa 12:00-21:00",,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-node/8184922242,Bova's,,-79.8367152,42.2113699,North East,16428,South Lake Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/8214361008,Ricardo's,,-80.03949,42.14695,Erie,16511,East Lake Road,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/8262841798,Mike N Dangelo's Italian,,-80.3153118,42.001386,Girard,16417,East Main Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Erie County
-node/8332072572,Jim's Italian Cuisine,,-77.7760859,40.9117907,Bellefonte,16823,East Cherry Lane,,no,,,,,,no,yes,,PA,,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-node/8332072586,Mama Lucrezia's,,-77.7773318,40.911102,Bellefonte,16823,South Allegheny Street,,,,,Tu-Th 16:00-21:00,+1-814-353-1200,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Centre County
-node/8344642584,La Locanda Ristorante,,-75.4500227,39.975011,Newtown Square,19073,West Chester Pike,,,,,Mo-Sa 11:30-22:00; Su 11:30-21:00,+1 610-353-7033,,,,http://www.lalocandapa.com,PA,,,,,,2023-06-04,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-node/8421740707,Napoli,,-80.098929,40.3752637,Bridgeville,15017,Washington Pike,,,,,Mo 11:00-22:00; Tu-Sa 11:00-23:00; Su 11:00-21:00,+1-412-221-2484,,,,https://napolipa.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/8464701746,Emerald Garden,,-76.6694852,39.7701564,,17361,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,York County
-node/8881675382,Primanti Bros. Restaurant,,-80.0026622,40.4403011,Pittsburgh,15222,Market Street,,,,,10:00-24:00,+1-412-261-1599,,,,https://primantibros.com/,PA,,pedestrian_zone,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,Allegheny County
-node/8910868588,Meloni's Restaurant,,-79.7289259,39.9008269,Uniontown,15401,West Main Street,,,,,,724-437-2061,,,,https://melonisrestaurant.com/,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Fayette County
-node/8919464940,Papa Sal's,,-79.2380934,40.4425542,,15717,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Indiana County
-node/8925192299,Severina,,-80.0445388,40.5182717,,15229,,,,,,,+1 412 931 3610,,,yes,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/9027168853,Schmeck's Villa,,-75.8446238,40.323935,,19606,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Berks County
-node/9142902550,Piada Italian Street Food,,-80.0529301,40.3491969,,15241,,,,,,,,,,,https://mypiada.com/locations/south-hills,,,,Piada Italian Street Food,Q7190020,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/9380028344,Villa Nova West,,-76.3839482,40.0416096,Lancaster,17554,Columbia Avenue,,,,,,,,,,,,,,,,,2023-08-27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lancaster County
-node/9498480942,Core de Roma,,-75.2380558,40.0283739,Belmont Hills,19004,Jefferson Street,,,,,Wed- Thu : 4:00PM - 9:00PM  Friday- Sat : 3:00PM - 10:00PM  Sunday: 3:00pm -8pm,484-278-4567,,,,https://www.corederomabelmont.com,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://www.corederomabelmont.com/menu,,,,,,Montgomery County
-node/9558849513,La Stalla,,-74.9399581,40.2298237,,19840,,,,,,,,,,,https://www.lastallarestaurant.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
-node/9707425686,Rustic Kitchen Bistro & Bar,,-75.821295,41.2694772,Wilkes-Barre,18702,PA 315,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Luzerne County
-node/9710435817,Paola's Cucina,,-75.3879775,40.0451717,,19087,North Wayne Avenue,,,,,"Tu-Su 11:00-20:00; Fr,Sa 11:00-21:00",(610) 688-6898,,,,https://www.paolascucina.com/,,,,,,,2023-06-07,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2022-05-02,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Delaware County
-node/9750254594,Franco's Trattoria,,-80.1310024,40.2646171,,15317,,,,,,Mo-Sa 16:00-21:00,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Washington County
-node/9896581851,LIFeSTYLE,,-78.5033577,40.0189377,,15522,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bedford County
-node/10014394576,Toledo's Pizza II,,-77.9050772,39.9146506,,17224,Mullen St,,,,,Mo-Su 10:00-21:00,(717) 595-0156,,,,https://toledos2pizza.e-tab.com/todelos2/venue/60ede266b84f802da8915cd7/menu,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Franklin County
-node/10048527684,La Tavola,,-80.0056248,40.4269387,Pittsburgh,15211,Boggs Avenue,,,,,Tu-Sa 17:00-22:00; Su-Mo off,+1 412 481 3336,,,,http://www.latavolaitalianarestaurant.com/,PA,latavolaitaliana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,la-tavola-italiana-pittsburgh,,,,Allegheny County
-node/10069976385,O Sole Mio Restaurant,,-75.1564779,39.9388697,Philadelphia,19147,South 8th Street,,,,,Tu-Sa 11:00-22:00; Su 13:00-22:00,+1-215-468-1689,,,,https://osolemioitaliancuisine.net,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,yes,yes,,,,,,,,,yes,,yes,,,,,,,,,,,,,,,,,,,,Salvatore Virgi,,,Philadelphia County
-node/10134136354,Cianci's Resturant,,-80.450754,41.226897,,16148,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mercer County
-node/10293863909,Bacco Pizzeria & Wine Bar,,-76.8827,40.2600544,Harrisburg,17101,North 2nd Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Dauphin County
-node/10591234136,Via Roma Italian Restaurant & Sports Bar,,-75.4060771,40.1568326,Eagleville,19403,Ridge Pike,,,,,Sa-Th 11:00-21:00; Fr 11:00-22:00,+1-610-631-0669,,,,https://viaromapizzasb.com,PA,,,,,,,,500,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://viaromapizzasb.com/take-out-menu/,,,,yes,Via Roma,Montgomery County
-node/10612935919,Bravo,,-80.0992856,40.6741459,Cranberry Township,16066,Perry Highway,,,,,,,,,,,PA,,,Bravo,Q64055574,,,,,,,,,,,Bravo Cucina Italiana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Butler County
-node/10655409198,Napoli Restaurant,,-80.2357551,40.658199,Baden,15005,West State Street,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Beaver County
-node/10683754052,Bella's On Fort Couch,,-80.0521716,40.3389518,Pittsburgh,15241,Fort Couch Road,,,,,,,,,,,PA,,,,,,,,,,,,,,,,,,,,,,,,DeLallo's Fort Couch Cafe,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Allegheny County
-node/10698482170,Pizza Town,,-78.9832583,40.9413498,,15767,,,,,,,,,,,https://www.pizzatownpunxsy.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Jefferson County
-node/10769245176,A Mano,,-75.1752861,39.9672087,,19130,,,,,,,,,,,https://www.amanophl.com/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Philadelphia County
-node/11057538813,Ricky & Maria Pizza and Pasta,,-75.2234934,40.0392445,,19427,,,,,,,,,,,,,,,,,,2023-07-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Montgomery County
-node/11146548023,Maria's Fresh Pasta,,-78.7326713,41.1248275,,15801,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2023-08-26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Clearfield County
-node/11268204461,Angelo's,,-75.0451557,40.1671732,,18966,,,,,,,,,,,,,,,,,,2023-10-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bucks County
+@id,name,longitude,latitude,addr:city,addr:postcode,building,opening_hours,phone,website,county
+relation/6176471,Monte Cello's,-80.0523498,40.6064814,,15090,,,,,Allegheny County
+relation/14702526,Villa Ballanca,-79.7357004,40.5903043,Lower Burrell,15068,commercial,We-Sa 11:00-21:00; Su 11:00-20:00,+1 724 339 6111,https://villaballanca.com,Allegheny County
+way/43000780,Sal's Brick Oven Pizza,-75.3782697,40.6115597,Bethlehem,18015,yes,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00,+1 610 317 0400,https://www.salsbrickovenpizzamenu.com/,Northampton County
+way/44871151,Cafe Classico,-75.6505935,41.4034765,,18510,yes,,,,Lackawanna County
+way/44873379,Sambucca Grille,-75.6651849,41.4102002,Scranton,18503,yes,,,,Lackawanna County
+way/53637204,Carrabba's Italian Grill,-75.5229068,40.5807228,,18104,yes,,,,Lehigh County
+way/55634786,Olive Garden,-74.8809801,40.1777936,Langhorne,19047,yes,,,,Bucks County
+way/60921704,Buca di Beppo,-75.985659,40.3593283,Wyomissing,19610,yes,"Mo-We,Su 11:00-21:30; Th 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-374-3482,https://locations.bucadibeppo.com/us/pa/wyomissing/2745-paper-mill-rd,Berks County
+way/60945102,Olive Garden,-75.9669587,40.3469662,Wyomissing,19610,yes,"Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-373-1311,https://m.olivegarden.com/locations/pa/wyomissing/wyomissing/1525,Berks County
+way/61756575,Olive Garden,-76.8025898,40.3110936,,17109,yes,,,,Dauphin County
+way/63514361,Carrabba's Italian Grill,-75.1253943,40.1616458,Willow Grove,19090,yes,"Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-21:30",+1 215 659 3950,https://www.carrabbas.com/locations/pa/willow-grove,Montgomery County
+way/94395437,The Olive Garden,-75.4760878,40.6355358,,18052,yes,,,,Lehigh County
+way/94395439,Buca di Beppo,-75.4759246,40.634501,,18052,yes,,,,Lehigh County
+way/99712613,Gargano's,-76.3539293,40.099895,East Petersburg,17520,yes,,,,Lancaster County
+way/116779935,Olive Garden,-75.8405887,41.2430917,Wilkes-Barre Township,18702,yes,,,,Luzerne County
+way/133801462,Maggiano's Little Italy,-75.3959733,40.0871242,King of Prussia,19406,yes,"Mo,Su 11:00-21:00; Tu-Th 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-992-3333,https://www.maggianos.com/locations/Pennsylvania/King%20of%20Prussia/205-mall-blvd.,Montgomery County
+way/141995710,Olive Garden,-76.764598,39.9736294,,17404,yes,,,https://www.olivegarden.com/,York County
+way/152422569,Fiorelloâ€™s Cafe,-75.5926137,39.9657681,West Chester,19380,yes,"Mo-Th 11:00-21:00; Fr,Sa 11:00-22:00; Su 12:00-21:00",+1 610-430-8941,https://www.fiorelloscafemenu.com/,Chester County
+way/156862101,Olive Garden,-79.4992563,40.3030154,,15601,yes,,,,Westmoreland County
+way/160772468,Olive Garden,-76.3447191,40.066798,Lancaster,17601,yes,,+1 (717) 299-2202,,Lancaster County
+way/163400669,Buca di Beppo,-80.1607417,40.4553468,,15244,yes,,,,Allegheny County
+way/163788988,,-80.1684163,40.4565912,,15244,yes,,,,Allegheny County
+way/165336030,Mendicino's Pizza,-75.5164288,41.3093329,,18444,yes,,,,Lackawanna County
+way/180562797,Kay's Italian Restaurant and Pizzeria,-75.5135845,41.3083833,,18444,yes,,,,Lackawanna County
+way/185718506,Anile's Ristorante,-77.1297417,40.1508487,,17007,,,,,Cumberland County
+way/193228511,Olive Garden,-76.1932936,40.0221001,,17602,yes,"Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00",,,Lancaster County
+way/200250680,Amatoâ€™s Wood Fire Pizza & Italian Restaurant,-76.5238477,40.115369,Mount Joy,17552,yes,"Mo,We-Su 11:00-22:00; Tu off",+1 717-653-6181,https://amatoswoodfirepizza.com/,Lancaster County
+way/200349271,Babbos Pizza,-76.6118575,40.1581096,,17022,yes,,717-492-4360,,Lancaster County
+way/203411105,Common Plea Restaurant,-79.9964466,40.4372397,Pittsburgh,15219,yes,"Tu-Fr 11:30-14:30, 17:00-21:00; Sa 17:00-21:00",,commonplea-restaurant.com,Allegheny County
+way/207671661,Carrabba's Italian Grill,-75.549185,39.8832938,,19014,yes,Mo-Th 16:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:30,+1 610-358-0156,https://locations.carrabbas.com/pennsylvania/west-chester/102-painters-crossing-painters-crossing-shopping-mall,Delaware County
+way/209290413,Olive Garden,-79.7869033,40.4340749,,15146,retail,,,,Allegheny County
+way/224762207,Faccia Luna,-77.8473917,40.7848025,State College,16801,yes,,+1-814-234-9000,http://www.faccialuna.com/state-college,Centre County
+way/227502452,Olive Garden,-79.7986236,40.5700918,,15049,yes,,,,Allegheny County
+way/228796795,Bella Frutetto,-80.0912995,40.6139041,,15015,retail,,,,Allegheny County
+way/239066554,Olive Garden,-77.8991431,40.8171177,State College,16803,retail,,+1-814-861-1620,https://www.olivegarden.com/locations/pa/state-college/state-college/1552,Centre County
+way/251276905,Alioto's Italian Eatery and Sports Bar,-79.9488804,40.5036947,Etna,15223,yes,,+1-412-781-1390,https://www.aliotos.biz/,Allegheny County
+way/256038255,Caruso's Italiant Restaurant and Pizzeria,-76.2508757,40.151259,Rothsville,17543,yes,,,,Lancaster County
+node/259498354,,-75.5002683,40.696987,,18067,,,,,Lehigh County
+node/259499262,Assante,-75.4994807,40.6904677,,18037,,,,,Northampton County
+node/259500711,Mario's Pizzeria,-75.487016,40.6768891,,18032,,,,,Lehigh County
+node/259618819,Feasta Pizza,-75.3398291,40.5640455,,18055,,,,,Northampton County
+way/260657298,Margarita's Pizzeria and Italian Cuisine,-77.8619705,40.791991,State College,16801,yes,Mo-Fr 09:00-21:00,+1-814-235-3060,,Centre County
+way/260697082,Alice's Diner & Family Restaurant,-76.2665359,40.0379028,,17602,yes,07:00-14:00,,,Lancaster County
+way/260697090,Two Cousins Pizza,-76.2694381,40.0380186,Lancaster,17602,yes,"Mo,We-Th,Su 11:00-21:00; Tu off; Fr-Sa 11:00-22:00",,https://www.twocousinspizzaoflancaster.com,Lancaster County
+way/260697100,Pasqueles,-76.2665974,40.0394834,Lancaster,17601,yes,"Mo,Su off; Tu-Th 10:30-21:00; Fr-Sa 10:30-22:00",+1 717-509-9921,https://pasqualespizzapa.com,Lancaster County
+way/273389728,Mercato Mio,-77.8351962,40.8090784,State College,16801,yes,,,,Centre County
+way/286299001,Olive Garden,-75.1170659,40.1409996,,19090,commercial,,,,Montgomery County
+way/305731028,Pasta Too,-80.0227397,40.3307318,Bethel Park,15102,yes,,,,Allegheny County
+way/306428653,Olive Garden,-80.050226,40.3479459,,15102,yes,,,,Allegheny County
+way/323166964,Yolanda's,-80.2714488,40.6876232,,15061,yes,,,,Beaver County
+way/337628444,Luigi's Ristorante,-79.0119171,40.6678148,Clymer,15728,commercial,"Tu-Th 11:00-21:00, Fr-Sa 11:00-22:00, Su 12:00-20:00",,,Indiana County
+way/338203105,Hill's Restruant,-79.9407988,40.2071967,,15067,retail,,+1 724 258 5422,,Washington County
+way/338681056,Paganini,-75.1325431,40.3091309,Doylestown,18901,yes,,,,Bucks County
+way/338681061,Domani Star,-75.1320261,40.3094089,Doylestown,18901,yes,,,,Bucks County
+way/339552139,Sarina's,-78.2332021,40.9037368,Philipsburg,16866,yes,,,,Centre County
+way/339654250,Mimmo's,-75.9266846,40.3201175,,19611,yes,,,,Berks County
+way/343935568,Bravo's Italian Kitchen,-80.009262,40.5313238,,15237,retail,,,https://www.bravoitalian.com/,Allegheny County
+way/344455984,Olive Garden,-80.019411,40.5532662,,15237,retail,,,,Allegheny County
+way/346603093,Rocco's Pizzeria,-75.3416442,40.5853637,,18055,yes,,,,Northampton County
+way/346981770,Terry's Italian Restaurant,-75.1838725,40.677827,Easton,18042,yes,,,,Warren County
+way/346984022,Crivellaro's Ristorante,-75.2149442,40.6536217,,18042,yes,,,,Northampton County
+way/348439180,Olive Garden,-75.253367,40.6851471,,18045,yes,,,,Northampton County
+way/348782152,Steve's Pizzeria and Italian Family Restaurant,-75.2571516,40.669947,,18045,yes,,,,Northampton County
+way/348799023,Carrabba's Italian Grill,-75.2608676,40.6948366,,18045,yes,,,,Northampton County
+way/349727967,La Felice Pizza & Pasta,-80.0184619,40.5335054,Pittsburgh,15237,yes,Mo-Th 10:00-23:00; Fr-Sa 10:00-24:00; Su 11:00-23:00,+1 412 358 9770,http://pizzalafelice.com,Allegheny County
+way/350451680,Bruno Scipioni's Italian Ristorante & Pizzeria,-75.3196281,40.6639749,,18020,yes,,,,Northampton County
+way/351529399,Pastorante,-76.8879003,40.2677534,Harrisburg,17102,yes,,,http://pastorantepa.com/,Dauphin County
+way/351849045,Antica Italian Restaurant & BYOB,-75.5909022,39.8723753,,19173,yes,"Mo off; Tu-Th,Su 11:30-21:00; Fr-Sa 11:30-22:00",,,Chester County
+way/354171297,Burnham OIP,-77.5664976,40.6286494,,17009,yes,,,,Mifflin County
+way/354205043,Tommy's Sole Mio Italian Restaurant,-75.2108353,40.6831883,,18042,yes,,,,Northampton County
+way/356331600,Dafno's Restaurant,-76.6822377,40.2689301,Hummelstown,17036,industrial,Mo-Sa 11:00-21:00; Su off,+1 717-533-8999,http://dafnos.com,Dauphin County
+way/356331603,Piazza Sorrento Restaurant & Bar,-76.6712778,40.2692692,Hershey,17033,yes,Mo-Sa 16:00-21:00; Su off,+1 717-835-1919,https://www.piazzasorrento.com/,Dauphin County
+way/360964993,Alvaro's Bread and Pastry Shoppe,-76.8962212,40.2771855,,17102,yes,,,,Dauphin County
+way/366325826,Caruso's Italian Restaurant,-76.3051113,40.1008611,,17601,yes,,+1 717 569 7989,,Lancaster County
+way/366662297,Trattoria Totaro,-75.2945094,40.0750254,Conshohocken,19428,yes,,,,Montgomery County
+way/368071351,Olive Garden,-75.225565,40.20994,North Wales,19454,yes,,,,Montgomery County
+way/372329029,Monte Cello's,-79.9933452,40.5111023,,15237,retail,,,,Allegheny County
+way/372351542,,-75.1308339,40.3105977,Doylestown,18901,yes,,,http://www.cafealessiodoylestown.com/,Bucks County
+way/373919347,Brother's Pizza,-77.6878403,40.8478578,Centre Hall,16828,yes,,,,Centre County
+way/385685898,Olive Garden,-79.9457033,40.3329856,,15025,retail,,,,Allegheny County
+way/387587941,Pugliano's,-79.713523,40.4474991,,15239,retail,,,,Westmoreland County
+way/397178210,Pica's Restaurant,-75.2752581,39.9652774,Upper Darby,19082,yes,,,,Montgomery County
+way/398637744,Hofbrau Pizza,-77.7769516,40.9106916,Bellefonte,16823,yes,16:00-22:00,,,Centre County
+way/411855211,,-75.9919459,40.9654117,,18201,yes,,,,Luzerne County
+way/414010596,Amadeo's Italian Restaurant and Catering,-75.7109825,41.3690701,,18507,yes,,,,Lackawanna County
+way/414308846,Olive Garden,-75.2331945,40.9878652,Stroudsburg,18360,yes,,,,Monroe County
+way/418969330,Woody's Little Italy,-79.8299052,40.3144584,,15132,yes,,,,Allegheny County
+node/419477005,Olive Garden,-77.0272173,40.2467869,Mechanicsburg,17050,,,,,Cumberland County
+way/420021931,Nana's Pasta House,-75.7150628,41.3517904,Moosic,18507,yes,,,,Lackawanna County
+way/420919460,Olive Garden,-76.9994654,39.8288198,,17344,yes,,,,Adams County
+way/421328625,Luigi's,-80.0568847,40.4959006,Bellevue,15202,retail,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00,+1 412 734 0980,http://luigis-pizzeria-restaurant.com,Allegheny County
+way/430457722,Bella Sera,-80.1533572,40.280936,Canonsburg,15317,yes,,,,Washington County
+way/431256386,Mambo Italia,-80.1806803,40.5396846,,15143,retail,,,,Allegheny County
+way/451962851,Castellanos Family Restaurant,-75.3594258,41.1267134,Mount Pocono,18344,yes,,570-972-2333,http://castellanosfamilyrestaurant.com/,Monroe County
+way/461776334,Brio,-77.5778746,39.7553748,Waynesboro,17268,yes,Mo-Fr 06:00-16:00; Sa 07:30-16:00; Su 08:00-16:00,717-889-0412,https://www.briocoffeehouse.com/,Franklin County
+way/468483225,Bella Rosa Italian Eatery,-75.7420839,39.9522338,West Bradford Township,19320,yes,"Mo-Th 10:00-21:30; Fr,Sa 10:00-22:30; Su 11:00-21:30",,http://bellarosapizzapasta.com/index.html,Chester County
+way/472702713,Nino's Pizza,-78.2371936,40.6726224,,16686,yes,,,,Blair County
+way/472820708,Gabriella Italian Restaurant,-76.8301771,40.2926304,,17109,yes,,,,Dauphin County
+way/474685194,Olive Garden,-78.40052,40.483537,Altoona,16602,yes,,,,Blair County
+way/478647573,Venice Pizzeria,-79.9848333,40.366103,,15227,yes,,,,Allegheny County
+way/481688981,Olive Garden,-80.0456546,40.4198494,,15220,yes,,,,Allegheny County
+way/482047953,Ciccanti Ristorante,-79.9385747,40.3122317,Jefferson Hills,15025,yes,Mo off; Tu-Fr 12:00-20:00; Sa 15:00-20:00; Su 14:00-20:00,+1 412 384 7868,https://www.ciccantis.com,Allegheny County
+way/482422081,Mama Randazzo's,-78.3979671,40.5380211,,16601,yes,,,,Blair County
+way/482968800,Villaggio,-75.031999,40.3459666,Lahaska,18931,yes,,,,Bucks County
+way/483505938,Pie's On Italian Restaurant,-74.9236002,41.2761757,Dingmans Ferry,18328,yes,,,,Pike County
+way/504486226,Bravo,-79.9170807,40.4068827,,15120,commercial,,,,Allegheny County
+way/505422992,Tillie's,-79.8398567,40.3279824,McKeesport,15132,commercial,Mo-Sa 12:00-20:00; Su 12:00-19:00,+1 412 672 7557,http://www.tillies.com/,Allegheny County
+way/507426755,Segneri's Italian Restaurant,-80.1638736,40.5185858,Coraopolis,15108,yes,,,http://segneris.com,Allegheny County
+way/508031082,Luciano's Pizza,-80.007081,40.567594,,15237,retail,,,,Allegheny County
+way/510273897,Bettina's Italian Restaurant,-79.1213903,41.4710788,Marienville,16239,commercial,"Tu-Th 10:30-20:00, Fr-Sa 10:30-21:00, Su 11:30-04:00",814-927-7888,https://www.facebook.com/Bettinas-Italian-Restaurant-141551502575836,Forest County
+way/517476200,Olive Garden,-75.6371994,41.4700565,,18519,retail,,,,Lackawanna County
+way/519069502,Anna's,-79.5847546,40.6017879,,15690,yes,,,,Westmoreland County
+way/519461574,Bertucci's Italian Restaurant,-75.2421685,40.2370577,North Wales,19454,yes,"Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-22:00",+1-267-498-5538,https://www.bertuccis.com/locations/montgomeryville,Montgomery County
+way/524513310,Villa Sena Restaurant,-76.4480034,41.7459267,Towanda,18848,yes,,570-265-9986,,Bradford County
+way/525070528,Baci Ristorante,-75.0619985,40.3247596,Buckingham,18912,yes,,,,Bucks County
+way/527174458,Piero's Italian Restaurant,-75.0715489,40.1577989,Huntingdon Valley,19006,yes,,,,Montgomery County
+node/532135890,Donato's Fox Chapel,-79.8826677,40.4882975,Pittsburgh,15238,,,,,Allegheny County
+way/533501161,Lenzi's Italian Restaurant,-79.9204335,40.1983496,,15063,yes,,,,Washington County
+way/535064181,DiAnoia's Eatery,-79.9787822,40.4549331,Pittsburgh,15222,yes,"Tu-Th 08:00-21:00; Fr,Sa 08:00-22:00; Su 10:00-14:30",412-918-1875,https://www.dianoiaseatery.com/,Allegheny County
+node/536209352,,-76.5478803,40.8617525,,17824,,,,,Northumberland County
+way/539271214,Roberto's Pizza,-76.9187566,40.2402607,Camp Hill,17011,yes,Mo-Th 10:00-21:15; Fr 10:00-22:15; Sa 10:00-23:15; Su 11:00-21:15,+1 717-737-7195,https://www.robertospizzapa.com,Cumberland County
+way/541467881,Luigi's,-75.0907074,40.2480469,Jamison,18929,yes,,,,Bucks County
+way/543016672,Olive Garden,-80.1615379,40.4503613,,15244,commercial,,,,Allegheny County
+way/543623626,Cafe Alessio's,-75.1362575,40.2368677,,18901,yes,,,,Montgomery County
+way/554091194,La Sponda,-75.7043915,40.006162,,19335,yes,"Mo-Th,Su 11:30-21:00; Fr-Sa 11:30-22:00",4845934488,https://www.lasponda.com/,Chester County
+way/554091203,Amani's BYOB,-75.7029464,40.0069142,Downingtown,19335,yes,16:00-21:00,+1 484-237-8179,https://amanisbyob.com/,Chester County
+way/554302607,Anthony's Cucina Fresca,-75.7078421,40.0038458,Downingtown,19335,yes,Mo-Th 10:30-21:30; Fr-Sa 10:30-22:30; Su 11:30-21:00,+1 610-873-5544,https://anthonyscucinafresca.com/,Chester County
+way/555549879,Olive Garden,-75.6729568,40.0171003,Downingtown,19335,yes,Su-Th 11:00-22:00; Fr-Sa 11:00-23:00,+1-610-518-6323,https://www.olivegarden.com/locations/pa/downingtown/downingtown-quarry-crossings/1857,Chester County
+way/562950511,Olive Garden,-79.7428565,39.9082274,,15401,yes,,,,Fayette County
+way/564869617,Villa Grande,-79.9227609,40.8672087,Butler,16001,yes,,724-282-7888,www.villagrandeonline.com,Butler County
+way/571733110,Vincenzo's,-75.7367532,40.3016882,Douglassville,19518,yes,"Mo-Th 10:00-22:00, Fr-Sa 10:00-23:00, Su 11:00-21:00",,,Berks County
+way/574764851,Santino's Italian Cuisine,-77.2539272,41.2023797,Jersey Shore,17740,yes,,,,Lycoming County
+way/585284319,Toscana 52,-74.979687,40.1354254,Feasterville-Trevose,19053,yes,Mo-Th 11:00-21:00; Fr 11:00-22:00; Sa 12:00-22:00; Su 12:00-21:00,+1-215-942-7770;+1-215-942-7783,https://toscana52.com/,Bucks County
+way/586146670,A Mano Eatery,-79.5183378,40.8117067,,16201,yes,,,https://www.amanoeatery.com/,Armstrong County
+way/603041704,Marcello's Oizza,-76.64886,39.9819513,,17402,yes,,,,York County
+way/615986844,Sweet Basil,-79.4274257,41.2401021,,16254,yes,,,,Clarion County
+node/616557005,Villa Rosa,-74.871801,40.2214636,,19067,,,,,Bucks County
+way/628667128,Arugula,-75.2734925,40.10854,,19462,yes,,,,Montgomery County
+way/637849194,Olive Garden,-80.0839383,40.6848545,Cranberry,16066,yes,,,,Butler County
+way/641339374,Gianilli's 2,-79.4688805,40.2931971,,15601,yes,,,,Westmoreland County
+way/641693294,Olive Garden,-75.0319846,40.0785487,Philadelphia,19114,yes,,,,Montgomery County
+way/641918205,Salvatore's Pizzeria,-75.5522644,40.5138735,,18062,yes,,,,Lehigh County
+way/645536131,Pane e Pronto,-79.9779677,40.4555512,Pittsburgh,15222,yes,Tu-Sa 08:00-18:00,+14128153300,https://www.paneepronto.com/,Allegheny County
+way/650884393,Riviera D'Italia,-75.1326801,40.1246194,,19001,yes,,,,Montgomery County
+way/653662738,Forcella,-75.1255512,40.0955623,Jenkintown,19046,yes,"Tu-Th 17:00-22:00, Fr-Sa 17:00-23:00",+1-267-400-6155,http://forcellabyob.com/,Montgomery County
+way/654762291,Olive Garden,-77.6277114,39.9392141,,17201,yes,,,,Franklin County
+way/658000819,Pat's Pizza & Bistro,-75.4028829,40.6230681,Bethlehem,18018,commercial,,+1 610 419 8100,https://www.patsbistro.com/,Lehigh County
+way/664587396,Carrabba's Italian Grill,-76.9795757,40.2381313,Mechanicsburg,17050,yes,Mo-Th 11:00-22:00;Fr 11:00-22:30;Sa-Su 11:00-21:00,+1 717 795 9200,https://www.carrabbas.com/locations/pa/mechanicsburg,Cumberland County
+way/667796660,Enzo's Italian Eatery,-75.5637326,39.9007404,West Chester,19014,yes,Mo-Th 11:00-21:30; Fr-Sa 11:00-22:30; Su 12:00-20:30,+1 610-947-5540,https://www.enzositalianeatery.com/,Chester County
+way/670642594,Pizza Mia,-75.7632488,40.0327805,,19335,yes,Mo-Th 10:30-21:30; Fr-Sa 10:30-22:00; Su 11:00-21:00,+1 610-269-1000,,Chester County
+way/680929143,Little Vince's Pizza,-77.5840589,39.966631,,17201,yes,,,,Franklin County
+way/681014443,Michaelangelo's Cafe,-75.0159131,40.1213721,,19116,yes,,,,Bucks County
+way/684447206,Affamatoâ€™s Pizza,-75.4013367,40.1313239,,19403,yes,,,,Montgomery County
+way/700194781,That's Amore,-76.4584415,41.0025662,Bloomsburg,17815,yes,,(570) 387-1975,,Columbia County
+way/701412559,Mangia! Italian Restaurant & Pizzeria,-75.9783278,40.2901416,,19607,yes,"Mo,We-Th 11:00-21:00; Tu off; Fr-Sa 11:00-22:00; Su 09:00-20:00",+1-610-777-6626,,Berks County
+way/701988756,Mannino's Pizzeria & Restaurant 2,-75.5986827,40.2450644,Pottstown,19464-3215,yes,Mo-Th 10:30-21:00; Fr-Sa 10:30-22:00; Su 11:00-19:30,+1 610-970-0700,,Montgomery County
+way/711021181,PizzaVille,-75.3692233,40.7786385,,18064,yes,,,,Northampton County
+way/723913080,Meglio,-74.9376194,40.2328296,,18940,yes,,,,Bucks County
+way/728803353,King's,-76.2340734,41.0543208,,18603,yes,,,,Columbia County
+way/728803367,Bob's Subs & Pizza,-76.2359145,41.0542719,,18603,yes,,,,Columbia County
+way/729079530,Jimmy's Lakeside Pizza,-74.9435146,41.320002,Milford,,yes,,+1 570-409-3377,,Pike County
+way/730421103,Bacio's Italian Cuicina,-75.2140918,40.0922493,Springfield Township,19038,yes,,+1-215-248-2740,,Montgomery County
+way/761509761,Giannotti's Ristorante,-75.8014463,40.4992749,,19536,yes,,+1 610 894 9694,http://www.giannottisristorante.com/,Berks County
+way/769964151,Vinny V's Pizza,-75.205811,40.6998015,Easton,18042,yes,Mo 11:00-20:00; Tu off; We-Th 11:00-20:00; Fr-Sa 11:00-21:00; Su 12:00-19:45,+1 610-253-5533,https://vinnyvspizza.com,Warren County
+node/821207194,DePaul's Table,-75.2908039,40.0080061,Ardmore,19003,,"Mo-Th,Su 17:00-21:00; Fr-Sa 17:00-22:00",+1 610-589-0500,https://www.depaulstable.com/,Montgomery County
+way/829452192,Avanti's,-80.1218584,42.1137559,Erie,16505,yes,,,,Erie County
+node/831649245,Mama Nina's Foccacheria,-75.3818469,40.6216019,,18108,,,,,Northampton County
+way/837382087,John's Italian Restaurant,-75.3117213,41.3440515,Greentown,18426,yes,,,,Monroe County
+way/839084257,Olive Garden,-80.0927672,42.0640508,Erie,16509,yes,,,https://www.olivegarden.com/,Erie County
+way/839964056,Panache,-75.2667273,40.1523832,Blue Bell,19422,yes,,,https://panachewoodfiregrill.com/,Montgomery County
+way/846399636,Giacomo's Italian Market and Grille,-75.2082344,40.7041322,Easton,18042,yes,Mo-Sa 09:00-15:00; Su off,+1 610-438-1945,,Northampton County
+way/851668074,Casa Mia,-75.438275,39.9131341,Media,19063,yes,Mo off; Tu-Th 16:00-21:30; Fr-Sa 16:00-22:30; Su 16:00-21:00,+1 610-891-9090,https://casamiamedia.com,Delaware County
+way/870501958,Anthony's Trattoria,-75.874335,40.3392183,Reading,19606,yes,"Tu-Th,Su 12:00-21:00; Fr,Sa 12:00-22:00; Mo off",,,Berks County
+way/879982410,Olive Garden,-75.4768357,40.1650276,,19426,yes,"Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-831-8814,https://m.olivegarden.com/locations/pa/collegeville/collegeville-providence-town-center/1819,Montgomery County
+way/881032882,Chiodo's Ferro Cocina,-79.1671004,41.8399867,,16365,yes,,,,Warren County
+way/895101380,Brother's Pizza,-77.9499226,41.0304702,Snow Shoe,16874,yes,,,,Centre County
+way/896326244,Little Mama's,-77.7461111,40.8679831,Pleasant Gap,16823,yes,,,,Centre County
+way/908466746,Mi Scuzi,-80.0787636,42.10861,Erie,16508,yes,,,,Erie County
+node/916278307,Carrabba's Italian Grill,-76.3028735,40.069791,,17601,,"Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-21:00",,,Lancaster County
+node/916286726,Fiorentino's Italian Restaurant,-76.2996044,40.1190128,,17543,,"Mo-We,Su 11:00-22:00; Th 11:00-23:00; Fr-Sa 11:00-24:00",,,Lancaster County
+node/928661730,Romano's Macaroni Grill,-76.8449962,40.3034026,Harrisburg,17110,,,,,Dauphin County
+way/963792169,Muscarella's Cafe Italia,-80.4820874,41.2626231,,16150,yes,,,,Mercer County
+way/988524015,Amici Italian Market and Deli,-75.2890432,40.2351787,Lansdale,19446,yes,Mo-Fr 09:00-17:00; Sa 09:00-16:00; Su 09:00-15:00,,,Montgomery County
+way/988628751,Scoogi's Classic Italian,-75.2142298,40.1135426,Flourtown,19031,,"738 Bethlehem Pike, , PA 19031, United States",,http://www.scoogis.com/,Montgomery County
+node/989306169,Teresa's Cafe and Next Door,-75.3879904,40.0450827,Wayne,19087,,"11:30-21:00; Fr,Sa 11:30-22:00",(610) 293-9909,https://www.teresas-cafe.com/,Delaware County
+node/993739560,Martelucci'S Pizza,-75.3682804,40.6323973,Bethlehem,18018,,,,,Northampton County
+way/1005464664,OIP Original Italian Pizza,-78.2440708,40.2154221,Saxton,16678,retail,11:00-21:00,,,Blair County
+way/1017623156,Combine Brothers,-80.4568305,41.201757,,16159,yes,,,,Mercer County
+way/1033648456,From the Boot,-75.2209927,40.1547634,Ambler,19002,,,,,Montgomery County
+way/1037203397,Carrabba's Italian Grill,-74.9589771,40.1153693,Bensalem,19020,yes,,,,Bucks County
+way/1071333971,Mamma Ventura Restaurant,-77.2319097,39.8311135,Gettysburg,17325,yes,"Mo,Th 16:00-21:00; Tu,We 11:00-21:00; Fr,Sa 11:00-22:00; Su off",+1 717-334-5548,https://www.mammaventura.com,Adams County
+way/1082129303,Sal's Ristorante & Bar,-80.3886575,40.7787068,,15010,yes,,,,Beaver County
+node/1083613601,La Prima Vera,-76.9138561,40.9562947,,17837,,,,,Union County
+way/1085675766,Trattoria San Nicola,-75.4945786,40.0411905,Paoli,19301,commercial,"Mo-Th 11:30-14:00,17:30-21:00; Fr 11:30-14:00,17:30-21:30; Sa 17:30-21:30; Su 17:00-20:30",+1 610-695-8990,http://sannicola.net/,Chester County
+way/1087785044,Olive Garden,-76.9672604,41.2497554,Williamsport,17701,yes,,570-321-9250,,Lycoming County
+way/1093400735,Victor's,-76.6979178,39.9605385,York,17403,yes,,+1-717-854-7958,https://victorsofyork.com/,York County
+node/1129803906,TD Alfredo's,-75.5249795,40.1279278,,19460,,,,,Chester County
+way/1140077778,Maria's Ristorante on Summit,-75.2363333,40.0567404,Philadelphia,19128,yes,,,,Montgomery County
+way/1143772401,Village Tavern,-77.4369653,41.1342131,,17745,yes,,,,Clinton County
+way/1152245525,Sorrento's,-75.2598852,40.0872302,Lafayette Hill,19444,yes,,,,Montgomery County
+node/1181063239,Numero Uno,-78.9581324,40.3232668,,15905,,,,,Cambria County
+way/1188089617,La Porta Ristorante,-75.460135,39.9389816,Media,19063,yes,,,,Delaware County
+way/1191444076,Roma Gardens,-78.8105968,41.6593583,Kane,16735,yes,,+1-814-837-9691,,McKean County
+way/1202437692,Olive Garden,-76.4875237,41.0098675,Bloomsburg,17815,restaurant,"Su-Th 11:00-22:00, Fr-Sa 11:00-23:00",+1 (570) 784-2229,https://www.olivegarden.com/locations/pa/bloomsburg/bloomsburg/4449,Columbia County
+node/1203395407,Frankie's Fellini Cafe,-75.4426996,40.047341,Berwyn,19301,,Mo-Th 16:00-21:00; Fr-Sa 16:00-22:00; Su 13:00-21:00,+1 610-647-1737,https://frankiesfellinicafe.com/,Chester County
+node/1307472342,Asiagos,-78.9285492,40.3252766,,15905,,,,,Cambria County
+node/1357878929,Mangia Qui,-76.8859347,40.2650522,,17102,,,,https://www.mangiaqui.com/,Dauphin County
+node/1371543274,Pino's Italian Kitchen,-79.9143949,40.4503353,,15208,,,,,Allegheny County
+node/1373370413,Sapore Restaurant,-75.704912,40.8272295,Lehighton,18235,,,610 377 5666,https://www.saporelehighton.com/,Carbon County
+node/1376928128,Girasole,-79.9347254,40.4511589,,15232,,,+1 412-682-2130,http://www.733copeland.com/,Allegheny County
+node/1388435296,Pepperoncini Sotto,-75.5154493,40.1338272,,19460,,,,,Chester County
+node/1482514639,Girasole,-75.1654742,39.9455278,,19102,,,,,Philadelphia County
+node/1559467250,Skippack Village Italian Market,-75.4042816,40.2276616,,19474,,,,https://skippackrestaurants.com/,Montgomery County
+node/1599081328,Lombardo's,-76.3104397,40.0460284,Lancaster,17603,,"Mo,Su off; Tu-Th 11:00-14:30,16:00-21:30; Fr-Sa 11:00-14:30,16:00-22:00",+1 717-394-3749,https://lombardosrestaurant.com/,Lancaster County
+node/1637339902,D'Ottavio's,-78.2365279,40.6740662,,16686,,,,,Blair County
+node/1695365684,Cafe Antonio's,-74.7806608,40.217434,,19067,,Sunday-Thursday 11:00 AM to 10:00 PM Friday-Saturday 11:00 AM to 11:00 PM,215-428-3999,https://www.cafeantonio.com/,Bucks County
+node/1712004131,Shef's Pizza,-75.0318147,40.0365975,,19136,,,,,Burlington County
+node/1796197117,Minutello's Restaurant and Lounge,-79.9222772,40.4587877,,15206,,Mo-Th 11:00-23:00; Fr 11:00-24:00; Sa 15:00-23:00; Su 15:00-21:00,+1-412-361-9311,http://www.minutellosrestaurant.com/,Allegheny County
+node/1838834929,Lucca Ristorante,-79.9485562,40.4451909,Pittsburgh,15213,,"Mo-Fr 11:30-14:00,17:00+; Sa 17:00+; Su 16:30+",+1-412-682-3310,https://luccaristorante.com/,Allegheny County
+node/1918053404,Ron's Original Bar & Grille,-75.654135,40.0590047,Exton,19341,,"Mo-Th,Su 11:00-22:00; Fr-Sa 11:00-23:00",+1 610-594-9900,https://ronsoriginal.com/,Chester County
+node/1940776523,Melograno,-75.1741414,39.9512797,Philadelphia,19103,,"Mo off; Tu-Th,Su 17:00-21:30; Fr-Sa 17:00-22:00",+1 215-875-8116,https://www.melogranophilly.com,Philadelphia County
+node/1966014847,Sammy's Authentic Italian Restaurant,-76.8852506,40.2642017,,17124,,,,http://www.sammysitalianrestaurant.com/,Dauphin County
+node/2000395030,Franconi's Ristorante,-75.2579059,40.2286799,,19454,,,,,Montgomery County
+node/2003096867,Little Anthony's,-75.7887481,39.9892646,Coatesville,19320,,"Mo-Th,Su 10:00-22:00; Fr-Sa 10:00-23:00",+1 610-384-2292;+1 610-384-3386,https://www.littleanthonyspizza-grille.com,Chester County
+node/2014454568,Joseph Tambellini Restaurant,-79.9214814,40.4764926,,15206,,,412665000,http://www.josephtambellini.com/,Allegheny County
+node/2018681935,Bella Italia,-75.7928786,40.3858241,,19547,,,,,Berks County
+node/2040424579,Vetri Cucina,-75.163189,39.9467368,,19109,,"17:00+ ""Dinner every day starting at 5PM""",,https://vetricucina.com,Philadelphia County
+node/2040436590,Osteria,-75.1611073,39.964982,,19122,,,,https://www.osteriaphilly.com/,Philadelphia County
+node/2040440589,Alla Spina,-75.1615233,39.9644178,,19130,,,,www.allaspinaphilly.com,Philadelphia County
+node/2040446963,Ralph's,-75.1576476,39.940255,Philadelphia,19147,,Mo-Th 16:00-21:00; Fr 16:00-21:30; Sa 13:00-21:30; Su 13:00-21:00,+1-215-627-6011,https://ralphsrestaurant.com,Philadelphia County
+node/2096187242,Aurora Pizzeria & Pasta Kitchen,-75.8750657,39.8236181,,19390,,11:00-21:00,,,Chester County
+node/2133394211,Storms Restaurant,-79.9983932,40.4384415,,15219,,Mo-Fr 11:30-19:00,412-281-4321,http://www.stormsrestaurant.com/,Allegheny County
+node/2211627790,Two Cousins,-76.3531461,40.0378537,,17603,,,,,Lancaster County
+node/2256040035,Maggiano's,-75.1598822,39.9531112,,19107,,11:30-22:00,,,Philadelphia County
+node/2256040037,Sotto,-75.1793805,39.9513778,Philadelphia,19103,,Tu-Th 12:00-21:00; Fr-Sa 12:00-22:00,+1-215-496-9222,http://sottorestaurant.net/,Philadelphia County
+node/2296211827,Cucina Forte,-75.1561811,39.9397655,Philadelphia,19147,,,(215) 238-0778,https://www.cucinaforte.com/,Philadelphia County
+node/2296287498,Mr. Martino's Trattoria,-75.1646756,39.9290161,Philadelphia,19148,,,(215) 755-0663,,Philadelphia County
+node/2296287516,Chiarella's,-75.1632687,39.9297279,,19145,,,,,Philadelphia County
+node/2296287523,Le Virtu,-75.1678021,39.9259892,Philadelphia,19148,,Mo-Th 17:00-22:00; Fr-Sa 17:00-22:30; Su 16:00-21:30,,https://www.levirtu.com/,Philadelphia County
+node/2330847457,Spello,-80.0564075,40.6874806,Mars,16046,,,,,Butler County
+node/2333113603,Pizza Roma,-80.1042259,40.6917513,,16066,,,,,Butler County
+node/2340613008,Cry Baby Pasta,-75.1476433,39.9406306,Philadelphia,19147,,Mo off; Tu-Su 17:00+,+1-267-534-3076,http://crybabypasta.com,Philadelphia County
+node/2351613922,Mamma Rosa's,-79.908202,40.8293597,,16002,,,,,Butler County
+node/2419077037,Valentino's Italian Restaurant,-76.6830436,39.9325717,York,17402,,,,,York County
+node/2433031845,Luciano's Italian Brick Oven,-80.035947,40.6959539,,16046,,,,,Butler County
+node/2453409143,Panevino,-75.9335895,40.3366201,,19601,,,,,Berks County
+node/2498441914,Osteria 2350,-79.9825463,40.4543288,,15222,,,,,Allegheny County
+node/2500236520,Bravo,-80.0510516,40.3564018,,15228,,,,,Allegheny County
+node/2501937312,La Eda's,-79.8804143,40.1437506,,15062,,,,,Westmoreland County
+node/2503424779,Olive Garden,-80.2200304,40.1883427,,15347,,,,,Washington County
+node/2507820891,Bravo,-80.1805162,40.4484651,,15275,,,,,Allegheny County
+node/2508719228,Buca di Beppo,-80.0043859,40.4334995,,15211,,,,,Allegheny County
+node/2548048900,Davinci Italian Eatery,-77.037732,40.2441196,Mechanicsburg,17050,,,,,Cumberland County
+node/2570203918,Mario's Italian,-80.2131741,40.5114762,,15108,,,,,Allegheny County
+node/2583051316,Ringside,-80.141808,42.0803144,Erie,16506,,,,,Erie County
+node/2610107943,The Deli of Italy,-76.6696255,39.9831923,York,17402,,,,http://deliofitaly.co,York County
+node/2623019333,Rocco's Pizza,-77.1147631,40.0074726,York Springs,17372,,,,https://www.roccosyorksprings.com/,Adams County
+node/2698620952,Original Italian Pizza,-76.5539334,40.7918413,Shamokin,17872,,11:00-22:00,+1 570 644 7621,,Northumberland County
+node/2701472727,Quick Fixx,-75.1675414,39.9439783,Philadelphia,19146,,11:00-21:00,+1 267-273-1066,https://thequickfixx.com/,Philadelphia County
+node/2757613001,Vivo,-80.1807499,40.5403961,,15143,,,,,Allegheny County
+node/2771204405,Vincent's of Greentree,-80.0501,40.420994,Pittsburgh,15220,,Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00; Su 12:00-22:00,+1-412-921-8811,https://vincentsgreentree.com/,Allegheny County
+node/2966541286,Tomasino's,-75.9539245,41.3326202,,18612,,,,,Luzerne County
+node/2970523860,Angelo's Restaurant and Pizza,-75.8532388,41.3002844,,18644,,,,,Luzerne County
+node/2970524470,Marianos,-75.8155793,41.3218866,Exeter,18643,,,5708831960,https://marianos-la-puccia.business.site/,Luzerne County
+node/2970524513,Villa Foglia,-75.8161337,41.3216621,Exeter,18643,,,,,Luzerne County
+node/2971738053,Agolino's,-75.7954508,41.3270657,,18643,,,,,Luzerne County
+node/2973133327,Grico's,-75.8146832,41.3225602,Exeter,18643,,,,https://www.gricosrestaurant.com/,Luzerne County
+node/2973133572,Valenti's Restaurant,-75.8175147,41.3213348,Exeter,18643,,Tu-Su 17:00-21:30,,https://valentirestaurant.net/,Luzerne County
+node/2973133748,2 Chefs Italian Restaurant,-75.8154842,41.3222146,Exeter,18643,,,5706544111,,Luzerne County
+node/2973223020,Antonio's Pizza and Subs,-75.7966171,41.3275781,,18643,,,5706556685,,Luzerne County
+node/2981726851,Pizza Mia,-77.7795233,40.9121132,,16823,,,,,Centre County
+node/2984499658,Lino's Pizza and Restaurant,-75.8865845,41.2712658,,18704,,,5702834322,,Luzerne County
+node/3013502971,Millio's Itallian Restaurant,-78.3864909,40.4865666,,16602,,,,,Blair County
+node/3023560082,Jethro's,-78.4054019,40.4576448,,16601,,,,,Blair County
+node/3090068196,La Bella Italia,-77.2234011,39.8329437,,17325,,,,,Adams County
+node/3115119195,Italian Village Pizza,-80.0218369,40.3323447,,15102,,,,,Allegheny County
+node/3129660687,Original Italian Grille,-76.5218964,41.9909807,,18840,,,,,Bradford County
+node/3129670931,Original Italian Pizza,-76.5255438,41.9796407,,18840,,,,,Bradford County
+node/3377158476,Olive Garden,-75.2243301,40.0034691,,19004,,,,,Montgomery County
+node/3445316483,Mamma's Pizza,-76.9337303,40.052474,Wellsville,17365,,,,,York County
+node/3454069369,Aldo's Pizza Town USA,-76.9821064,40.174703,Mechanicsburg,17055,,Mo off;Tu-Th 10:30-21:30;Fr-Sa 10:30-22:30;Su 11:30-21:30,+1 717 691 6733,https://www.aldospizzatownusa.com/,Cumberland County
+node/3476840061,Carini's Italian Restaurant,-76.0473144,40.1184699,Blue Ball,17506,,10:00-21:00,+1 717-354-4025,,Lancaster County
+node/3531172122,DiMaio's Family Ristorante & Pizzeria,-75.3393147,40.5684168,Hellertown,18055,,Mo-Th 11:00-21:30; Fr-Su 11:00-22:00,+1-610-838-8004,https://dimaios.net,Northampton County
+node/3561965410,Sicily Restaurant,-75.3078744,40.6661927,,18020,,,,,Northampton County
+node/3562458003,Golden Crust,-76.6042983,39.9012996,Red Lion,17356,,,,,York County
+node/3575589718,Ecco Domani,-75.3847814,40.5169714,,18036,,,,,Lehigh County
+node/3584425325,Colonial Pizza and Spaghetti House,-75.2066602,40.6932246,,18042,,,,,Northampton County
+node/3584425331,Sette Luna,-75.2078255,40.6898899,,18042,,,610.253.8888,https://www.setteluna.com/,Northampton County
+node/3629237317,Tre Scalini,-75.1675615,39.926243,Philadelphia,19148,,Tu-Sa 17:00-22:00; Su 16:00-21:00; Mo closed,,https://www.trescaliniphiladelphia.com/,Philadelphia County
+node/3629250848,Noir,-75.1674991,39.9262992,Philadelphia,19148,,,,https://www.noirrestaurantandbar.com/,Philadelphia County
+node/3634830553,Pizza Roma,-80.0392423,40.5587179,,15237,,,,,Allegheny County
+node/3637892959,Mom Chaffe's Cellarette,-75.9481187,40.3374417,West Reading,19611,,Mo-Th 17:00-20:30; Fr 16:30-21:00; Sa 16:30-21:30; Su off,+1 610 374-5733,https://momchaffes.com/,Berks County
+node/3731607184,dolce Zola,-75.6028895,39.9613622,West Chester,19380,,Mo off; Tu-Th 16:00-21:00; Fr-Sa 16:00-22:00; Su 16:00-20:00,+1 484-887-0760,https://www.dolcezola.com/location,Chester County
+node/3809475393,From The Boot,-75.3017999,40.1551648,,19422,,,,,Montgomery County
+node/3811384359,Original Itialian Pizza,-77.939001,40.39213,Mapleton,17052,,,(814) 514-3027,,Huntingdon County
+node/4010224385,Ristorante Arlecchino,-80.108779,40.2916312,,15055,,,,,Washington County
+node/4055253177,Gran Caffe L'Aquila,-75.1694699,39.9514573,Philadelphia,19103,,Mo-Th 07:00-23:00; Fr 07:00-24:00; Sa 08:00-24:00; Su 08:00-23:00,+1 215 568 5600,,Philadelphia County
+node/4085097155,Demarco's Italian Restaurant,-75.7088627,40.5782374,,19538,,,,,Berks County
+node/4162229260,Carlos Pizza,-75.9633766,40.3339986,Reading,19610,,Mo-Su 10:00-22:00,+1 610-478-4871,https://www.carlospizzeriarestaurant.com,Berks County
+node/4289337993,Mia Madre Trattoria,-80.0672439,40.5011068,Avalon,15202,,,+14127666662,https://miamadretrattoria.com/,Allegheny County
+node/4358015165,,-80.0743876,40.4730313,,15136,,,,,Allegheny County
+node/4358030610,Ricci's' Italian Sausage,-80.098792,40.4752398,McKees Rocks,15136,,,+1-412-331-9531,https://www.riccisausage.net,Allegheny County
+node/4378216051,Bravo,-75.4815654,40.628818,,18052,,,,,Lehigh County
+node/4386102969,Thomasine's,-80.2256448,40.5846796,,15003,,,,,Beaver County
+node/4407505281,Rego's,-79.8989908,40.1394951,,15022,,,,,Washington County
+node/4534023856,Francoluigi's Italian Restaurant & High Note Cafe,-75.1660779,39.9302881,Philadelphia,19147,,,,,Philadelphia County
+node/4578438551,Original Gyro,-80.0178802,40.3648962,,15129,,,,,Allegheny County
+node/4655924258,Bacco Italian,-75.2472119,40.218437,,19454,,,,,Montgomery County
+node/4672370598,Pal-Mino's Italian Village,-78.405211,40.5043267,Altoona,16602,,,,,Blair County
+node/4672370602,Finelli's Italian Villa,-78.3996835,40.5059253,Altoona,16602,,,,,Blair County
+node/4736399656,Franco Ristorante,-75.5172339,40.1337608,Phoenixville,19460,,,+1 610-933-0880,https://www.franco-ristorante.com/index.html,Chester County
+node/4775191247,Nonni's Corner Trattoria,-80.0869777,41.1582433,Grove City,16127,,,,,Mercer County
+node/4827583336,A Little Pizza Heaven,-75.6457721,41.4341946,Scranton,18509,,,,https://www.alittlepizzaheaven.com/,Lackawanna County
+node/4848554650,Oaks Italian Deli,-75.4508021,40.1351995,,19460,,,,,Montgomery County
+node/4880698721,LaScala's,-75.152127,39.9495012,,19106,,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00,+1 215 928 09 00,http://lascalasphilly.com/,Philadelphia County
+node/4916862795,Della Terra Italian Bistro,-80.1390855,40.8017143,Harmony,16037,,"Tu-Th 16:00-21:00, Fr-Sa 16:00-22:00",724-473-0630,https://www.dellaterrapgh.com/,Butler County
+node/4954926333,Little Italy,-76.6617587,40.0892078,,17547,,,,,Lancaster County
+node/4960547092,Monte Cello's,-79.9492532,40.5920547,,15091,,,,,Allegheny County
+node/5035927416,Pizza Plaza,-75.1038281,40.2069795,Warminster,18974,,,,,Bucks County
+node/5218846003,Sicily's Pizza II,-75.2184679,40.711777,,18040,,,,,Northampton County
+node/5223887090,Blue Marsh Italian Restaurant & Pizzeria,-76.0329154,40.4052476,,,,,,,Berks County
+node/5241955436,Piada,-80.0230491,40.5513402,,15237,,,,,Allegheny County
+node/5258665521,Two Guys from Italy,-76.5200482,40.7904146,Coal Township,17866,,,,,Northumberland County
+node/5369259493,Maria's,-79.6738361,41.6262732,,16354,,,,,Crawford County
+node/5384512913,Lombardozzi's,-79.9472811,40.4605649,,15224,,"We, Th 11:00-21:00; Fr 11:00-22:00; Sa 13:00-22:00; Su 13:00-21:00",+1-412-682-5785,http://lombardozzis.com/,Allegheny County
+node/5411129607,Piada Italian Street Food,-80.1746533,40.4499169,,15275,,,,https://mypiada.com/locations/north-fayette,Allegheny County
+node/5534939768,Spasso Italian Grill,-75.3896379,39.9181692,Media,19063,,Mo 11:30-21:00; Tu-Sa 11:30-22:00; Su 10:00-21:00,+1 610-565-7803,http://www.spassoitaliangrill.com/media,Delaware County
+node/5569987559,Marzoniâ€™s Brick Oven & Brewing Co.,-76.8483146,40.8219799,Selinsgrove,17870,,Su-Th 11:00-22:00;Fr-Sa 11:00-23:00,+1 570 372 1512,http://www.marzonis.com,Snyder County
+node/5587004018,Leola Pizza,-76.1851048,40.0883198,,17540,,"Mo,Su off; Tu-Th 10:30-19:00; Fr 10:30-20:00; Sa 11:00-19:30",+1 717 656 7230,,Lancaster County
+node/5638565067,Little It Deli,-79.7103904,41.1770652,,16373,,,,,Clarion County
+node/5708669429,Zia Maria,-76.0891966,40.2279135,Denver,17517,,11:00-26:00,,,Lancaster County
+node/5787781246,Ariano,-75.3912629,39.9177439,Media,19063,,Mo-Th 11:30-21:00; Fr-Sa 11:30-22:30; Su 12:00-21:00,+1 610-892-6944,https://arianomedia.com,Delaware County
+node/5802560272,Schiano's Italian Restaurant,-76.5306366,40.5923931,Tower City,17980,,,,,Schuylkill County
+node/5816768229,Basile Italian Delight Restaurant,-75.9926903,40.8358378,Tamaqua,18252,,,,,Schuylkill County
+node/5821612308,Tommy's Italian Specialty Shop,-75.9048966,40.8237565,Coaldale,18218,,,,,Schuylkill County
+node/5828096095,La Dolce Casa,-75.9706914,40.7970969,Tamaqua,18252,,,,,Schuylkill County
+node/5829815242,Romano's,-75.8620173,40.7211193,New Ringgold,17960,,,,,Carbon County
+node/5837050693,Mannino Italian Garden,-80.1518681,41.6381179,Meadville,16335,,,,,Crawford County
+node/5840019881,Roman Delight,-76.0828275,40.6391939,Orwigsburg,17961,,,,,Schuylkill County
+node/5861280806,Angela & Adriana,-75.9141672,40.928183,Beaver Meadows,18216,,,,,Luzerne County
+node/5861280820,Graziano's,-75.9174157,40.9310756,,18216,,,,,Luzerne County
+node/5876415695,Picasso Pizza,-75.4299727,40.6393857,Allentown,18109,,,,,Lehigh County
+node/5891888091,Siro's,-75.6011416,40.8055932,Palmerton,18071,,,,,Carbon County
+node/5891916205,Papa Al's,-75.6092492,40.8008296,Palmerton,18071,,,,,Carbon County
+node/6037904166,Villa Schiano,-76.7824709,40.5624152,,17023,,,,,Dauphin County
+node/6056301836,Stoke Coal Fire Pizza & Bar,-75.208487,40.6907893,Easton,18042,,"Mo-Th,Su 12:00-22:00; Fr-Sa 12:00-24:00",+1 610 829 1400,https://www.stokecoalfirepizza.com/,Northampton County
+node/6072022838,Pasquales Ristorante,-75.9284131,41.22674,Wilkes-Barre,18706,,,,,Luzerne County
+node/6076837752,Piazza Talarico and Papa Joeâ€™s Wine Cellar,-79.9602603,40.4646729,,15224,,"Tu-Th 12:00-20:00; Fr, Sa 12:00-21:00; PH off",+1-412-652-9426,https://piazzatalarico.com/,Allegheny County
+node/6101156268,Franco's,-75.8883431,41.2421471,Wilkes-Barre,18701,,,,,Luzerne County
+node/6139343791,Villa Rosa,-75.6117489,40.6721984,,18078,,,,,Lehigh County
+node/6144529716,Francisco's on the River,-74.8956853,40.3135926,Washington Crossing,18977,,"Tu-Th 17:00-21:00; Fr,Sa 17:00-22:00; Su 16:00-21:00",+1 215-321-8789,https://www.franciscosontheriver.com/,Hunterdon County
+node/6154211008,Olyvia's Itaiian Eatery,-75.8227597,40.4271997,Fleetwood,19522,,,+1 610 944-9654,http://olyvias.letseat.at/,Berks County
+node/6154214228,Mazzola's,-75.8226417,40.4267015,Fleetwood,19522,,,+1 610 944-7651,,Berks County
+node/6173049835,Luigi's,-78.7614102,41.1188369,,15801,,,,,Clearfield County
+node/6196973096,The Vineyard,-75.390035,40.6068569,,18015,,,,,Lehigh County
+node/6221940190,Tre Scalini Ristorante,-75.3723745,40.6223747,Bethlehem,18018,,,,,Northampton County
+node/6274317898,La Verona,-75.7110693,39.8467464,Kennett Square,19348,,"Mo-Su 11:45-21:00; Fr,Sa 12:00-22:00",+1 610-444-2244,https://www.laveronapa.com/,Chester County
+node/6379713470,Milroy OIP,-77.5912638,40.7004985,,17063,,,,,Mifflin County
+node/6412185644,Carrazza's,-75.2886216,41.1401019,Cresco,18326,,,,,Monroe County
+node/6418351509,Basso,-75.2800362,41.158214,Cresco,18326,,,,,Monroe County
+node/6434733216,teca,-75.6041271,39.9608542,West Chester,19380,,"Tu-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-21:00",+1 610-738-8244,https://www.tecarestaurants.com/,Chester County
+node/6439962380,Arugula Ristorante,-75.5391081,39.8540954,,19173,,"Mo-Tu off; We-Th,Su 15:00-21:00; Fr-Sa 15:00-22:00",+1 610-358-0888,https://www.arugulachaddsford.com,Delaware County
+node/6441475012,mercato,-75.6054537,39.9593789,West Chester,19382,,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00,+1 610-701-6326,https://mercato-restaurant-and-bar.business.site/,Chester County
+node/6443975209,Wesoâ€™s Italian Restaurant and Bar,-75.6372772,40.0478331,,19381,,,,,Chester County
+node/6482655531,Ristorante Gennaro,-75.4267043,39.8581632,Aston,19014,,Mo off; Tu-Th 16:00-20:30; Fr-Sa 16:00-21:00; Su 16:00-20:00,+1 610-497-3393,https://gennarosaston.com,Delaware County
+node/6545606464,Mamaâ€™s Italian Grill,-75.6074606,40.5510906,,18069,,,,,Lehigh County
+node/6632033963,Rocco's Brick Oven Pizzeria,-75.4519009,40.1810427,Collegeville,19426,,"Mo-Th 11:30-21:30; Fr,Sa 11:30-22:00; Su 11:00-21:00",(610) 831-0100,https://www.roccosbrickoven.net/,Montgomery County
+node/6682051476,Ambrosia,-75.1796671,39.9500093,Philadelphia,19103,,"Mo-Sa 11:30-14:30,17:00-22:00; Su 17:00-21:00",+1-215-703-2010,https://www.ambrosiabyob.com/,Philadelphia County
+node/6712736545,Venice Pizza & Pasta,-75.8583502,39.9845294,Coatesville,19369,,Mo-Th 10:00-22:00; Fr-Sa 10:00-23:00; Su 11:00-22:00,+1 610-380-9600,https://www.venicepizzapa.com,Chester County
+node/6765579596,Roma Pizza,-75.1311089,40.2295012,,18976,,,,,Montgomery County
+node/6770822501,Meco's,-78.9177996,40.3225587,,15901,,,,,Cambria County
+node/6919112249,Napoli Restaurant & Lounge,-80.1929002,40.2123332,,15347,,,,,Washington County
+node/7015447886,Marinoâ€™s Pizza & Pasta,-76.6535782,39.9818762,,17402,,,,,York County
+node/7107915694,Camillo's,-75.7797891,40.5213447,,19530,,,,,Berks County
+node/7223169299,Little Nikki's,-75.4997908,41.5751896,Carbondale,18407,,,,,Lackawanna County
+node/7322437943,Trattoria,-75.3816437,40.3498435,,18971,,,,,Montgomery County
+node/7332028631,Tosco's Italian Delight,-75.4826442,40.3715219,Red Hill,18076,,,,,Montgomery County
+node/7376037024,Giovanni's Cafe,-75.6897987,40.3150806,,19512,,,,,Berks County
+node/7403766600,Pomodoro,-80.0893625,40.6135155,,15015,,,,,Allegheny County
+node/7439537171,Neapolitan Italian Eatery,-76.1157059,40.7199816,New Philadelphia,17959,,,,,Schuylkill County
+node/7567573172,Mama Mia's Pizzeria,-80.0982149,42.0896612,Erie,16508,,,,,Erie County
+node/7626273045,Barbato's Italian Restaurant,-80.0429134,42.0721632,Erie,16509,,,,,Erie County
+node/7681823947,Fiamma,-75.3991896,40.6399302,Bethlehem,18017,,,,,Northampton County
+node/7700509062,Skippereno's Italian Restaurant,-80.0961149,42.0835308,Erie,16509,,,,,Erie County
+node/7817709248,Vinnys II,-75.3153711,41.3553498,Greentown,18426,,,,,Wayne County
+node/7838241735,Ristorante Castello,-75.2683549,40.1548411,,19422,,,,,Montgomery County
+node/7844505006,Nova's Pizza & Pasta,-75.9202061,39.9581729,,19365,,,,,Chester County
+node/7844815200,Piacquadio's Restaurant,-80.0349354,40.3688017,Pittsburgh,15234,,,,,Allegheny County
+node/7846495146,Carbonara's Ristorante & Pizzeria,-80.0373845,40.3680141,Pittsburgh,15234,,,,,Allegheny County
+node/7870989464,Piccolo Mondo Italian Restaurant,-75.6673074,40.2338176,,19465,,,+1 610-970-6173,https://piccolomondopottstown.com,Chester County
+node/8071779648,Trattoria 903,-75.6811391,40.9043192,Jim Thorpe,18229,,,,,Carbon County
+node/8074889933,The Other Place,-80.0743665,40.390327,Pittsburgh,15220,,"Su 12:00-21:00; Mo-Th,Sa 11:00-22:00; Fr 11:00-23:00",+1-412-279-7777,https://otherplacepgh.com/,Allegheny County
+node/8112596475,CafÃ© Carmela,-75.0303755,40.0572232,,19114,,Mo off; Tu-Th 12:00-20:00; Fr-Sa 12:00-21:30; Su 12:00-20:00,,https://cafecarmelaphilly.com/,Burlington County
+node/8116871018,Fresco Pizza & Grill,-75.3985244,39.9760382,Newtown Square,19073,,"Su-Th 12:00-20:00, Fr-Sa 12:00-21:00",,,Delaware County
+node/8184922242,Bova's,-79.8367152,42.2113699,North East,16428,,,,,Erie County
+node/8214361008,Ricardo's,-80.03949,42.14695,Erie,16511,,,,,Erie County
+node/8262841798,Mike N Dangelo's Italian,-80.3153118,42.001386,Girard,16417,,,,,Erie County
+node/8332072572,Jim's Italian Cuisine,-77.7760859,40.9117907,Bellefonte,16823,,,,,Centre County
+node/8332072586,Mama Lucrezia's,-77.7773318,40.911102,Bellefonte,16823,,Tu-Th 16:00-21:00,+1-814-353-1200,,Centre County
+node/8344642584,La Locanda Ristorante,-75.4500227,39.975011,Newtown Square,19073,,Mo-Sa 11:30-22:00; Su 11:30-21:00,+1 610-353-7033,http://www.lalocandapa.com,Delaware County
+node/8421740707,Napoli,-80.098929,40.3752637,Bridgeville,15017,,Mo 11:00-22:00; Tu-Sa 11:00-23:00; Su 11:00-21:00,+1-412-221-2484,https://napolipa.com/,Allegheny County
+node/8464701746,Emerald Garden,-76.6694852,39.7701564,,17361,,,,,York County
+node/8881675382,Primanti Bros. Restaurant,-80.0026622,40.4403011,Pittsburgh,15222,,10:00-24:00,+1-412-261-1599,https://primantibros.com/,Allegheny County
+node/8910868588,Meloni's Restaurant,-79.7289259,39.9008269,Uniontown,15401,,,724-437-2061,https://melonisrestaurant.com/,Fayette County
+node/8919464940,Papa Sal's,-79.2380934,40.4425542,,15717,,,,,Indiana County
+node/8925192299,Severina,-80.0445388,40.5182717,,15229,,,+1 412 931 3610,,Allegheny County
+node/9027168853,Schmeck's Villa,-75.8446238,40.323935,,19606,,,,,Berks County
+node/9142902550,Piada Italian Street Food,-80.0529301,40.3491969,,15241,,,,https://mypiada.com/locations/south-hills,Allegheny County
+node/9380028344,Villa Nova West,-76.3839482,40.0416096,Lancaster,17554,,,,,Lancaster County
+node/9498480942,Core de Roma,-75.2380558,40.0283739,Belmont Hills,19004,,Wed- Thu : 4:00PM - 9:00PM  Friday- Sat : 3:00PM - 10:00PM  Sunday: 3:00pm -8pm,484-278-4567,https://www.corederomabelmont.com,Montgomery County
+node/9558849513,La Stalla,-74.9399581,40.2298237,,19840,,,,https://www.lastallarestaurant.com,Bucks County
+node/9707425686,Rustic Kitchen Bistro & Bar,-75.821295,41.2694772,Wilkes-Barre,18702,,,,,Luzerne County
+node/9710435817,Paola's Cucina,-75.3879775,40.0451717,,19087,,"Tu-Su 11:00-20:00; Fr,Sa 11:00-21:00",(610) 688-6898,https://www.paolascucina.com/,Delaware County
+node/9750254594,Franco's Trattoria,-80.1310024,40.2646171,,15317,,Mo-Sa 16:00-21:00,,,Washington County
+node/9896581851,LIFeSTYLE,-78.5033577,40.0189377,,15522,,,,,Bedford County
+node/10014394576,Toledo's Pizza II,-77.9050772,39.9146506,,17224,,Mo-Su 10:00-21:00,(717) 595-0156,https://toledos2pizza.e-tab.com/todelos2/venue/60ede266b84f802da8915cd7/menu,Franklin County
+node/10048527684,La Tavola,-80.0056248,40.4269387,Pittsburgh,15211,,Tu-Sa 17:00-22:00; Su-Mo off,+1 412 481 3336,http://www.latavolaitalianarestaurant.com/,Allegheny County
+node/10069976385,O Sole Mio Restaurant,-75.1564779,39.9388697,Philadelphia,19147,,Tu-Sa 11:00-22:00; Su 13:00-22:00,+1-215-468-1689,https://osolemioitaliancuisine.net,Philadelphia County
+node/10134136354,Cianci's Resturant,-80.450754,41.226897,,16148,,,,,Mercer County
+node/10293863909,Bacco Pizzeria & Wine Bar,-76.8827,40.2600544,Harrisburg,17101,,,,,Dauphin County
+node/10591234136,Via Roma Italian Restaurant & Sports Bar,-75.4060771,40.1568326,Eagleville,19403,,Sa-Th 11:00-21:00; Fr 11:00-22:00,+1-610-631-0669,https://viaromapizzasb.com,Montgomery County
+node/10612935919,Bravo,-80.0992856,40.6741459,Cranberry Township,16066,,,,,Butler County
+node/10655409198,Napoli Restaurant,-80.2357551,40.658199,Baden,15005,,,,,Beaver County
+node/10683754052,Bella's On Fort Couch,-80.0521716,40.3389518,Pittsburgh,15241,,,,,Allegheny County
+node/10698482170,Pizza Town,-78.9832583,40.9413498,,15767,,,,https://www.pizzatownpunxsy.com/,Jefferson County
+node/10769245176,A Mano,-75.1752861,39.9672087,,19130,,,,https://www.amanophl.com/,Philadelphia County
+node/11057538813,Ricky & Maria Pizza and Pasta,-75.2234934,40.0392445,,19427,,,,,Montgomery County
+node/11146548023,Maria's Fresh Pasta,-78.7326713,41.1248275,,15801,,,,,Clearfield County
+node/11268204461,Angelo's,-75.0451557,40.1671732,,18966,,,,,Bucks County

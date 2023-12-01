@@ -198,8 +198,7 @@ def clean_trips_data():
     df = df[df["State Postal Code"] == "PA"]
 
     # Define columns to drop
-    columns_to_drop = ['State FIPS', 'State Postal Code', 'Level', 'Row ID', 'Week', 'Number of Trips >=500',
-                       'County FIPS']
+    columns_to_drop = ['State FIPS', 'Level', 'Row ID', 'Week', 'Number of Trips >=500']
 
     # Drop the unnecessary columns
     df_cleaned = df.drop(columns=columns_to_drop, axis=1)
@@ -222,6 +221,5 @@ if __name__ == "__main__":
     # clean_reviews()
 
     # Clean Trips_by_Distance.csv
-    # clean_trips_data()
-    pass
-
+    clean_trips_data()
+    # pass

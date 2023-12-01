@@ -1,18 +1,21 @@
 import os
 
 import pandas as pd
-import reverse_geocoder as rg
+from geopy.exc import GeocoderTimedOut
+from geopy.geocoders import Nominatim
 from tqdm import tqdm
 
 from scripts.utility.path_utils import get_path_from_root
 
 
 def get_postcode(lat, lon):
-    results = rg.search((lat, lon))
-    if results:
-        # In reverse_geocoder, 'admin2' might not always be the postal code
-        return results[0]['admin2']
-    return None
+    geolocator = Nominatim(user_agent="mangiaMetrics")
+    try:
+        location = geolocator.reverse((lat, lon), exactly_one=True)
+        if location:
+            return location.raw.get('address', {}).get('postcode')
+    except GeocoderTimedOut:
+        return None
 
 
 def main():

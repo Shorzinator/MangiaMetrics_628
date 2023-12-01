@@ -1,8 +1,5 @@
 import pandas as pd
-import geopandas as gpd
-import matplotlib.pyplot as plt
-from shapely.geometry import Point
-from scripts.utility.data_loader import get_clean_business_df, get_business_df
+
 
 # Call the function to load the data
 # df = get_business_df()

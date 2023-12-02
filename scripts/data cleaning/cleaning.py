@@ -95,7 +95,7 @@ def clean_business():
         business_df["address"] = business_df["address"].str.lower()
 
         # Handle missing values
-        business_df.dropna(subset=["latitude", "longitude", "stars", "review_count", "categories"], inplace=True)
+        business_df.dropna(subset=["categories"], inplace=True)
 
         # Data Type Correction
         business_df["stars"] = pd.to_numeric(business_df["stars"], errors='coerce')
@@ -214,7 +214,7 @@ def clean_trips_data():
 
 if __name__ == "__main__":
     # Clean business.json
-    # clean_business()
+    clean_business()
 
     # Clean review.json
     # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()

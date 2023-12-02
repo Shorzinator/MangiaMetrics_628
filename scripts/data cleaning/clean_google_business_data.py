@@ -42,7 +42,7 @@ def extract_address_components(address):
 
 def convert_to_24hr(time_str):
     if time_str in ['Closed', '']:
-        return time_str
+        return ''
     try:
         # Split the time range into start and end times
         start_time, end_time = time_str.split('–')
@@ -132,7 +132,7 @@ def clean_google_business_data(file_path_google):
     })
 
     # Drop the original 'business_address' column as it's no longer needed
-    google_df.drop(['address', 'category'], axis=1, inplace=True)
+    google_df.drop(['address', 'category', 'state'], axis=1, inplace=True)
 
     google_df = convert_hours_columns(google_df)
 

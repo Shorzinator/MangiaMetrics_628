@@ -147,9 +147,9 @@ dimensions. Factor analysis can reduce the number of variables by grouping them 
 correlations. For instance, if various income-related variables all correlate with each other and with restaurant
 success, factor analysis might combine them into a single "economic" factor for further analysis.
 
-### 1. Results from DP03
+### 1. Results from DP03 -
 
-### 2. Results from DP04
+### 2. Results from DP04 -
 
 ### Insights
 
@@ -203,17 +203,78 @@ To leverage these insights effectively:
 Remember, factor analysis offers a broad view of underlying trends and should be complemented with detailed local market
 research to make informed business decisions.
 
-4. **Cluster Analysis**: This method can classify zip codes into clusters based on similarity in the factors identified
-   as important. This will help in identifying not just individual locations but also regions where new Italian
-   restaurants are more likely to succeed. For example, if several zip codes have similar income levels, demographics,
-   and lack of Italian restaurants, they might form a cluster representing a high potential for new ventures.
- on 
-5. **Chi-Square Test**: Useful for categorical data, this test can help you determine if the distribution of Italian
-   restaurants across different categories (such as areas with different levels of access to public transportation) is
-   different from what would be expected by chance. For example, if Italian restaurants are more common in areas with
-   high public transportation access than expected, this factor might be important for location planning.
+### Results from DP05 -
 
-6. **ANOVA (Analysis of Variance)**: Use this to compare means across different groups (such as zip codes with low,
+## Cluster Analysis:
+
+This method can classify zip codes into clusters based on similarity in the factors identified
+as important. This will help in identifying not just individual locations but also regions where new Italian
+restaurants are more likely to succeed. For example, if several zip codes have similar income levels, demographics,
+and lack of Italian restaurants, they might form a cluster representing a high potential for new ventures.
+
+### Results from DP03 - 
+
+### Results from DP04 - 
+### Cluster 3
+
+- **Success Score**: Highest average success score (approximately 2.05), suggesting that ZIP codes in this cluster have
+  the most successful Italian restaurants.
+- **Housing Units**: Moderate number of total housing units, with a high percentage of those units being occupied, which
+  may indicate a stable and potentially lucrative customer base.
+- **Vacancy Rates**: Slightly higher homeowner vacancy rates and significantly higher rental vacancy rates compared to
+  other clusters. This could indicate a more transient population or economic factors to consider.
+
+### Cluster 2
+
+- **Success Score**: Second-highest average success score (approximately 2.02), which also suggests successful Italian
+  restaurants but to a slightly lesser extent than Cluster 3.
+- **Housing Units**: The highest number of total housing units, with the majority being occupied. This cluster likely
+  represents very populous areas with a large customer base.
+- **Vacancy Rates**: Lowest homeowner vacancy rates among all clusters, indicating stable homeownership. Rental vacancy
+  rates are higher than Cluster 1 but lower than Cluster 3.
+
+### Cluster 1
+
+- **Success Score**: Lower average success score (approximately 1.83), which may indicate areas with potential for
+  growth or improvement in the restaurant industry.
+- **Housing Units**: Lower total housing units than Cluster 2 but higher than Cluster 3, with a good percentage of
+  occupied units.
+- **Vacancy Rates**: The lowest rental vacancy rate, suggesting a strong rental market, which could be associated with
+  younger demographics or urban settings.
+
+### Cluster 0
+
+- **Success Score**: The lowest average success score (approximately 1.59), indicating areas where Italian restaurants
+  may struggle or have untapped potential.
+- **Housing Units**: The highest number of vacant housing units, which could suggest economic challenges or a changing
+  neighborhood demographic.
+- **Vacancy Rates**: Moderate homeowner and rental vacancy rates. The high number of vacant units could be indicative of
+  a less stable market for new ventures.
+
+### Project Implications:
+
+- **Most Favorable Locations**: Cluster 3, with the highest success score and a moderate number of occupied housing
+  units, appears to be the most favorable for Italian restaurants. However, the high rental vacancy rate should be
+  considered, as it might affect customer consistency.
+- **Areas for Growth**: Cluster 1, with a lower success score but the lowest rental vacancy rate, could represent an
+  opportunity for growth, targeting markets that are currently under-served.
+- **Populous Markets**: Cluster 2 represents populous areas that already have a significant number of successful Italian
+  restaurants, suggesting a competitive but potentially rewarding market.
+
+    By combining these insights with additional local market research, you can make informed decisions on where to focus
+    expansion efforts or where to look for untapped opportunities within the state of Pennsylvania for new Italian
+    restaurant locations.
+
+### Results from DP05 - 
+
+## Chi-Square Test: 
+   Useful for categorical data, this test can help you determine if the distribution of Italian restaurants across
+   different categories (such as areas with different levels of access to public transportation) is different from what 
+   would be expected by chance. For example, if Italian restaurants are more common in areas with high public 
+   transportation access than expected, this factor might be important for location planning.
+
+## ANOVA (Analysis of Variance): 
+   Use this to compare means across different groups (such as zip codes with low,
    medium, and high median incomes) to determine if the differences in restaurant success measures across these groups
    are statistically significant. For example, ANOVA could tell you if the average revenue of Italian restaurants
    significantly differs across these income groups, indicating the importance of income level in site selection.
@@ -223,6 +284,3 @@ allowing for a comprehensive understanding of the data. By starting with simpler
 show little to no univariate relationship with your outcome of interest before moving on to more complex analyses that
 consider multiple factors simultaneously.
 
-Each step not only provides insights into which factors are important but also how they interrelate. As you progress
-through the analyses, you'll refine your understanding of the data and the relationships within it, leading to more
-informed decision-making for the location and expansion of Italian restaurants.

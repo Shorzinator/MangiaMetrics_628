@@ -31,7 +31,7 @@ def create_chloropleth(gis_data, demographic_data, pa_shapefile, factor, filenam
     plt.ylabel('Latitude')
 
     # Show the map
-    output_path = os.path.join(get_path_from_root("results", "eda", "Phase 2", "DP03_analysis"),
+    output_path = os.path.join(get_path_from_root("results", "eda", "Phase 2", "DP04_analysis"),
                                f"dp03_{filenames}.png")
     plt.savefig(output_path, dpi=400)
     plt.show()
@@ -40,7 +40,7 @@ def create_chloropleth(gis_data, demographic_data, pa_shapefile, factor, filenam
 def main():
     # Define file paths (please adjust these paths as per your directory structure)
     shp_path = os.path.join(get_path_from_root("data", "raw", "shape_files_for_pa"), "PA_ZipCode_data.shp")
-    demographic_path = os.path.join(get_path_from_root("data", "final"), "final_dp03.csv")
+    demographic_path = os.path.join(get_path_from_root("data", "final"), "final_dp04.csv")
     gis_path = os.path.join(get_path_from_root("data", "interim"), "flattened_gis.csv")
 
     # Load shapefile, demographic data, and GIS data
@@ -49,18 +49,11 @@ def main():
     gis_data = pd.read_csv(gis_path)
 
     chosen_factors = {
-        "Employment Status - Population 16 years and over - In labor force - Civilian labor force - Employed":
-            "EmpSta_Pop16&ovr_InLabFor_CivLabFor_Emp",
-        "Income and benefits - Total households - Median household income (dollars)":
-            "Inc&Ben_TotHou_MedHouInc",
-        "Occupation - Civilian employed population 16 years and over - Service occupations":
-            "Occ_CivEmpPop16ovr",
-        "Industry - Civilian employed population 16 years and over - Arts, entertainment, and recreation, and accommodation and food services":
-            "Ind_CivEmpPop16ovr_ArtEnt&Rec&Acc&FooSer",
-        "Commuting to Work - Workers 16 years and over - Car, truck, or van -- drove alone":
-            "Comm2Wor_Wor16ovr_CarTruVan_DriAlo",
-        "Health Insurance Coverage - Civilian noninstitutionalized population - With health insurance coverage":
-            "HeaInsCov_CivNonPop_WitHeaInsCov"
+        "Housing Occupancy - Total housing units - Occupied housing units": "HouOcc_TotHouUni_OccHouUni",
+        "Value - Owner-occupied units - Median (dollars)": "Val_OwnOccUni_Med",
+        "Gross rent - Occupied units paying rent - Median (dollars)": "GroRen_OccUniPayRen_Med",
+        "Rooms - Total housing units - 6 rooms": "Roo_TotHouUni_6Roo",
+        "Units in Structure - Total housing units - 20 or more units": "UniInStr_TotHouUni_20orMorUni"
     }
 
     for keys, values in chosen_factors.items():

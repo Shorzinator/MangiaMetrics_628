@@ -9,8 +9,8 @@ pd.set_option("display.max_rows", 200)
 pd.set_option("display.max_columns", 200)
 
 # Reload the business and review data as the previous code execution state was reset
-business_filepath = 'C:\\Users\\shour\\PycharmProjects\\MangiaMetrics_628\\data\\interim\\flattened_business.csv'
-review_filepath = 'C:\\Users\\shour\\PycharmProjects\\MangiaMetrics_628\\data\\interim\\flattened_review.csv'
+business_filepath = os.path.join(get_path_from_root("data", "interim"), "flattened_business.csv")
+review_filepath = os.path.join(get_path_from_root("data", "interim"), "flattened_review.csv")
 
 # Reading the CSV files
 business_df = pd.read_csv(business_filepath)
@@ -19,7 +19,7 @@ review_df = pd.read_csv(review_filepath)
 # Merging the reviews with the business data
 # Keeping only relevant columns from business data for the merge
 merged_data = review_df.merge(
-    business_df[['business_id', 'stars', 'review_count']],
+    business_df[['business_id', 'stars', 'review_count', 'postal_code']],
     on='business_id',
     how='left',
     suffixes=('_review', '_business')

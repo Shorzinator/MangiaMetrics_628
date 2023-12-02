@@ -26,7 +26,7 @@ def create_chloropleth(gis_data, demographic_data, pa_shapefile, factor, filenam
     gdf_gis.plot(ax=ax, marker='o', color='blue', markersize=5)
 
     # Adding map titles and labels
-    plt.title(f'{factor} with Restaurant Density')
+    plt.title(f'{factor} \n with Restaurant Density')
     plt.xlabel('Longitude')
     plt.ylabel('Latitude')
 

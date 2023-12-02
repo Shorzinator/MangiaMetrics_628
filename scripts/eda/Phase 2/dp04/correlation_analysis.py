@@ -20,7 +20,7 @@ plt.figure(figsize=(10, 8))
 sns.heatmap(correlation_matrix, annot=False, cmap='coolwarm')
 plt.title('Correlation Heatmap')
 plt.savefig(os.path.join(get_path_from_root("results", "eda", "Phase 2", "DP04_analysis"), "correlation_heatmap.png"))
-plt.show()
+# plt.show()
 
 # Print out the correlation of each feature with the success score
 success_correlation = correlation_matrix['success_score'].sort_values(ascending=False)

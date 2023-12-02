@@ -29,8 +29,8 @@ fa.fit(X_scaled)
 loadings = pd.DataFrame(fa.components_.T, columns=['Factor {}'.format(i + 1) for i in range(fa.n_components)],
                         index=numeric_data.columns)
 
-# loadings.to_csv(os.path.join(get_path_from_root("results", "eda", "Phase 2", "DP04_analysis"),
-#                              "factor_loadings.csv"))
+loadings.to_csv(os.path.join(get_path_from_root("results", "eda", "Phase 2", "DP04_analysis"),
+                             "factor_loadings.csv"))
 
 # Plot the loadings for the first couple of factors, for example
 plt.figure(figsize=(50, 50))
@@ -38,4 +38,4 @@ loadings[['Factor 1', 'Factor 2', 'Factor 3', 'Factor 4', 'Factor 5']].head(3).p
 plt.title('Factor Loadings')
 plt.xticks(rotation=45, ha="right")
 # plt.savefig("factor loadings")
-plt.show()
+# plt.show()

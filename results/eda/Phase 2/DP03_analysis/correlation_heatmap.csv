@@ -1,5 +1,103 @@
-,success_score
-success_score,1.0
-feature2,0.0122864879760978
-feature1,-0.016436064617924687
-feature3,-0.12445913950069992
+Feature,success_score
+"Income and benefits - Total households - $200,000 or more",0.2601549140063526
+"Income and benefits - Families - $200,000 or more",0.23976680467011124
+"Income and benefits - Total households - $150,000 to $199,999",0.2206045496633786
+"Income and benefits - Families - $150,000 to $199,999",0.20007533594921492
+Commuting to Work - Workers 16 years and over - Worked from home,0.1677460113263043
+"Industry - Civilian employed population 16 years and over - Finance and insurance, and real estate and rental and leasing",0.16174296281100886
+"Occupation - Civilian employed population 16 years and over - Management, business, science, and arts occupations",0.15424284114298334
+CLass of worker - Civilian employed population 16 years and over - Unpaid family workers,0.1388893071088356
+"Industry - Civilian employed population 16 years and over - Professional, scientific, and management, and administrative and waste management services",0.12383204474858114
+Industry - Civilian employed population 16 years and over - Information,0.12136255965380138
+"Income and benefits - Total households - $100,000 to $149,999",0.0873858487409476
+Employment Status - Population 16 years and over - In labor force - Armed Forces,0.06639223157045061
+Industry - Civilian employed population 16 years and over - Manufacturing,0.05767584154407138
+"Income and benefits - Families - $100,000 to $149,999",0.051917054778999834
+Commuting to Work - Workers 16 years and over - Walked,0.05126753533216915
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Employed - With health insurance coverage - With private health insurance,0.03739898508613556
+Health Insurance Coverage - Civilian noninstitutionalized population - With health insurance coverage - With private health insurance,0.03291874550229623
+Industry - Civilian employed population 16 years and over - Wholesale trade,0.023122693087488915
+ZIP Code,0.012027697851036018
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - Not in labor force - With health insurance coverage - With private health insurance,0.01137064097882296
+"Commuting to Work - Workers 16 years and over - Car, truck, or van -- drove alone",-0.0011644019070419028
+CLass of worker - Civilian employed population 16 years and over - Self-employed in own not incorporated business workers,-0.003496565875442759
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Employed - With health insurance coverage,-0.03464584005607637
+Industry - Civilian employed population 16 years and over - Construction,-0.03519063667902068
+CLass of worker - Civilian employed population 16 years and over - Private wage and salary workers,-0.0463493900029261
+Commuting to Work - Workers 16 years and over - Other means,-0.051445962255489884
+Commuting to Work - Workers 16 years and over,-0.052649071079464066
+"Income and benefits - Total households - $75,000 to $99,999",-0.05605104986613854
+Employment Status - Population 16 years and over - In labor force - Civilian labor force - Employed,-0.05832705448953249
+CLass of worker - Civilian employed population 16 years and over,-0.05832705448953249
+Industry - Civilian employed population 16 years and over,-0.05832705448953249
+Occupation - Civilian employed population 16 years and over,-0.05832705448953249
+Income and benefits - Total households - With retirement income,-0.06284558419239546
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Employed,-0.06875806803412857
+Occupation - Civilian employed population 16 years and over - Sales and office occupations,-0.07411209398935807
+"Industry - Civilian employed population 16 years and over - Other services, except public administration",-0.07861420286770597
+Income and benefits - Total households - With earnings,-0.08362253347274154
+Employment Status - Population 16 years and over - In labor force,-0.08601925740178258
+Employment Status - Civilian labor force,-0.08631476955145329
+Employment Status - Population 16 years and over - In labor force - Civilian labor force,-0.08631476955145329
+"Industry - Civilian employed population 16 years and over - Arts, entertainment, and recreation, and accommodation and food services",-0.08783177586373794
+"Industry - Civilian employed population 16 years and over - Agriculture, forestry, fishing and hunting, and mining",-0.09228404093907083
+Employment Status - Females 16 years and over - In labor force - Civilian labor force - Employed,-0.09331835025750289
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force,-0.09664422286582755
+Employment Status - Females 16 years and over - In labor force - Civilian labor force,-0.11457781334537741
+Employment Status - Females 16 years and over - In labor force,-0.11472972437786969
+Income and benefits - Nonfamily households,-0.11653454844932148
+"Income and benefits - Families - $75,000 to $99,999",-0.11979306341578538
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Unemployed - With health insurance coverage - With private health insurance,-0.12819190006456618
+Income and benefits - Families,-0.1369699257648644
+Income and benefits - Total households,-0.1378916045682086
+Employment Status - Population 16 years and over,-0.14408986854698272
+Industry - Civilian employed population 16 years and over - Retail trade,-0.14751395061755265
+"Industry - Civilian employed population 16 years and over - Educational services, and health care and social assistance",-0.15210843851559863
+"Occupation - Civilian employed population 16 years and over - Natural resources, construction, and maintenance occupations",-0.1536198104657436
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years,-0.1542004102004098
+Health Insurance Coverage - Civilian noninstitutionalized population - With health insurance coverage,-0.15826088683397108
+"Commuting to Work - Workers 16 years and over - Car, truck, or van -- carpooled",-0.16303864145012084
+Employment Status - Females 16 years and over,-0.16477587254143933
+Income and benefits - Total households - With Social Security,-0.169075429887815
+CLass of worker - Civilian employed population 16 years and over - Government workers,-0.16965305634904243
+Health Insurance Coverage - Civilian noninstitutionalized population,-0.17805443620838293
+"Income and benefits - Total households - $50,000 to $74,999",-0.17866654949182056
+Industry - Civilian employed population 16 years and over - Public administration,-0.19161628476082515
+Employment Status - Own children of the householder 6 to 17 years - All parents in family in labor force,-0.22207726905337283
+Employment Status - Population 16 years and over - Not in labor force,-0.23338265757526622
+Employment Status - Own children of the householder 6 to 17 years,-0.24202364305267737
+"Income and benefits - Total households - $35,000 to $49,999",-0.24764139209685315
+"Occupation - Civilian employed population 16 years and over - Production, transportation, and material moving occupations",-0.2647341333330056
+Employment Status - Own children of the householder under 6 years - All parents in family in labor force,-0.26792145088561803
+"Income and benefits - Families - $50,000 to $74,999",-0.27060385987060487
+Employment Status - Own children of the householder under 6 years,-0.27278496940092056
+"Industry - Civilian employed population 16 years and over - Transportation and warehousing, and utilities",-0.2743841375472295
+Health Insurance Coverage - Civilian noninstitutionalized population under 19 years,-0.27644780628885135
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - Not in labor force - With health insurance coverage,-0.29020698425369396
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - Not in labor force,-0.2985780155324494
+Commuting to Work - Workers 16 years and over - Public transportation (excluding taxicab),-0.3024457030340915
+"Income and benefits - Families - $35,000 to $49,999",-0.31908562698649123
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - Not in labor force - No health insurance coverage,-0.3196835695225144
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Employed - No health insurance coverage,-0.3202088739394931
+Health Insurance Coverage - Civilian noninstitutionalized population under 19 years - No health insurance coverage,-0.3205610835401446
+Health Insurance Coverage - Civilian noninstitutionalized population - No health insurance coverage,-0.34140253516793256
+Occupation - Civilian employed population 16 years and over - Service occupations,-0.34321817818899775
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Unemployed - With health insurance coverage,-0.35663596840113965
+"Income and benefits - Total households - $25,000 to $34,999",-0.35946720311575303
+Employment Status - Population 16 years and over - In labor force - Civilian labor force - Unemployed,-0.359687352526883
+"Income and benefits - Total households - $15,000 to $24,999",-0.36408547481484305
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Unemployed - No health insurance coverage,-0.36815062845902424
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Unemployed,-0.3735514005047705
+Health Insurance Coverage - Civilian noninstitutionalized population - With health insurance coverage - With public coverage,-0.37411998664585183
+"Income and benefits - Total households - Less than $10,000",-0.37667460774360956
+Income and benefits - Total households - With cash public assistance income,-0.3836406778318657
+"Income and benefits - Families - $10,000 to $14,999",-0.40319229343583307
+"Income and benefits - Families - $15,000 to $24,999",-0.40852523089768766
+"Income and benefits - Total households - $10,000 to $14,999",-0.4097640286604635
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Employed - With health insurance coverage - With public coverage,-0.409878374145318
+"Income and benefits - Families - Less than $10,000",-0.412817356150623
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - Not in labor force - With health insurance coverage - With public coverage,-0.4157159876049283
+Income and benefits - Total households - With Supplemental Security Income,-0.41681418506651235
+"Income and benefits - Families - $25,000 to $34,999",-0.44576921165224925
+Health Insurance Coverage - Civilian noninstitutionalized population 19 to 64 years - In labor force - Unemployed - With health insurance coverage - With public coverage,-0.4547407317917294
+Income and benefits - Total households - With Food Stamp/SNAP benefits in the past 12 months,-0.46104875788981653

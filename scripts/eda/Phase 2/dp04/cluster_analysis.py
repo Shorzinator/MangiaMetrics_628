@@ -59,5 +59,6 @@ plt.gca().yaxis.set_major_locator(plt.MaxNLocator(integer=True))
 # Increase the bottom margin to prevent cutting off the x-axis labels
 plt.gcf().subplots_adjust(bottom=0.3)
 
-plt.savefig(os.path.join(get_path_from_root("results", "eda", "Phase 2", "DP04_analysis"), "cluster_analysis_parCoordPlot.png"))
+plt.savefig(os.path.join(get_path_from_root("results", "eda", "Phase 2", "DP04_analysis"),
+                         "../../../../results/eda/Phase 2/DP04_analysis/cluster_analysis_parCoordPlot.png"))
 plt.show()

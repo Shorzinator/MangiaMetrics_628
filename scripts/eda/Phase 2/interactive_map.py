@@ -8,13 +8,13 @@ from folium.plugins import MarkerCluster
 from scripts.utility.path_utils import get_path_from_root
 
 # Replace these with the paths to your files
-path_to_demographic_data = os.path.join(get_path_from_root("data", "final"), "final_dp03.csv")
+# path_to_demographic_data = os.path.join(get_path_from_root("data", "final"), "final_dp03.csv")
 path_to_restaurant_data = os.path.join(get_path_from_root("data", "interim"), "flattened_gis.csv")
 path_to_pa_shapefile = os.path.join(get_path_from_root("data", "raw", "shape_files_for_pa"),
                                     "pennsylvania_administrative.shp")
 
 # Load the demographic data
-demographic_data = pd.read_csv(path_to_demographic_data)
+# demographic_data = pd.read_csv(path_to_demographic_data)
 
 # Load the restaurant data
 restaurant_data = pd.read_csv(path_to_restaurant_data)

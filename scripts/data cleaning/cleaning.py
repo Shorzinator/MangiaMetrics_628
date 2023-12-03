@@ -198,7 +198,7 @@ def clean_trips_data():
     df = df[df["State Postal Code"] == "PA"]
 
     # Define columns to drop
-    columns_to_drop = ['State FIPS', 'Level', 'Row ID', 'Week', 'Number of Trips >=500']
+    columns_to_drop = ['State FIPS', 'Level', 'Row ID', 'State Postal Code', 'Number of Trips >=500']
 
     # Drop the unnecessary columns
     df_cleaned = df.drop(columns=columns_to_drop, axis=1)
@@ -207,6 +207,16 @@ def clean_trips_data():
     df['Date'] = pd.to_datetime(df['Date'])
     df.set_index('Date', inplace=True)
 
+    # Convert 'Date' to datetime format
+    df['Date'] = pd.to_datetime(df['Date'])
+
+    # Extract day of the week (0 = Monday, 6 = Sunday)
+    df['DayOfWeek'] = df['Date'].dt.dayofweek
+
+    # Create a new column 'Weekday_Weekend' with 0 for weekdays and 1 for weekends
+    # Assuming that weekends are Saturday (5) and Sunday (6)
+    df['Weekday_Weekend'] = df['DayOfWeek'].apply(lambda x: 1 if x >= 5 else 0)
+
     # Save the cleaned dataset to a new file
     df_cleaned.to_csv(os.path.join(output_path, "cleaned_transportation.csv"), index=False)
     logger.info(f"Cleaned transportation data saved to {output_path}")
@@ -214,7 +224,7 @@ def clean_trips_data():
 
 if __name__ == "__main__":
     # Clean business.json
-    clean_business()
+    # clean_business()
 
     # Clean review.json
     # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()

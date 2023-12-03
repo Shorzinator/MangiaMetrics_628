@@ -1,0 +1,108 @@
+Feature,Levene_Stat,Levene_P_Value
+Housing Occupancy - Total housing units,1.5341886851160154,0.21906292427503876
+Housing Occupancy - Total housing units - Occupied housing units,1.100348689360671,0.33547982119167485
+Housing Occupancy - Total housing units - Vacant housing units,3.6808077147964675,0.027553987547452082
+Housing Occupancy - Total housing units - Homeowner vacancy rate,0.4202550650150773,0.657665939522702
+Housing Occupancy - Total housing units - Rental vacancy rate,2.108951976710992,0.12502241315736387
+Units in Structure - Total housing units,1.5341886851160154,0.21906292427503876
+"Units in Structure - Total housing units - 1-unit, detached",4.326891301016509,0.014930958553893092
+"Units in Structure - Total housing units - 1-unit, attached",5.67649450666984,0.004219816824235379
+Units in Structure - Total housing units - 2 units,4.61329509009539,0.01139816637481797
+Units in Structure - Total housing units - 3 or 4 units,0.5458429974969728,0.5805228344197246
+Units in Structure - Total housing units - 5 to 9 units,0.7930674569642909,0.4543809320289641
+Units in Structure - Total housing units - 10 to 19 units,1.1020492775985602,0.3349182002036758
+Units in Structure - Total housing units - 20 or more units,3.5509111500972392,0.031185498079146168
+Units in Structure - Total housing units - Mobile home,0.09000558361453903,0.9139764079931666
+"Units in Structure - Total housing units - Boat, RV, van, etc.",0.26280114624264933,0.7692552522678726
+Year structure built - Total housing units,1.5341886851160154,0.21906292427503876
+Year structure built - Total housing units - Built 2020 or later,2.744857494238335,0.06755281951684598
+Year structure built - Total housing units - Built 2010 to 2019,8.714370110089078,0.00026513129349907427
+Year structure built - Total housing units - Built 2000 to 2009,1.1966303620559613,0.3051371799623314
+Year structure built - Total housing units - Built 1990 to 1999,3.193253173456242,0.043900367759791566
+Year structure built - Total housing units - Built 1980 to 1989,3.435742739293107,0.0348097045102482
+Year structure built - Total housing units - Built 1970 to 1979,1.774103702035835,0.17324804232834554
+Year structure built - Total housing units - Built 1960 to 1969,0.292927637338231,0.7465105979514812
+Year structure built - Total housing units - Built 1950 to 1959,3.046925487906435,0.050516081659799955
+Year structure built - Total housing units - Built 1940 to 1949,6.216865734069302,0.002559638418877801
+Year structure built - Total housing units - Built 1939 or earlier,2.7765591895862345,0.06552001956858133
+Rooms - Total housing units,1.5341886851160154,0.21906292427503876
+Rooms - Total housing units - 1 room,1.1339195223474396,0.3245675182155883
+Rooms - Total housing units - 2 rooms,4.003437157866581,0.020278163750329994
+Rooms - Total housing units - 3 rooms,1.0907857793708282,0.3386558063043206
+Rooms - Total housing units - 4 rooms,0.6497985025083137,0.5236441374346262
+Rooms - Total housing units - 5 rooms,1.2233605100731888,0.29721750662337504
+Rooms - Total housing units - 6 rooms,8.722168064472454,0.00026328947080127394
+Rooms - Total housing units - 7 rooms,2.4335485576904268,0.09125207908090098
+Rooms - Total housing units - 8 rooms,1.2758804572015099,0.282258202815388
+Rooms - Total housing units - 9 rooms or more,5.543591001024433,0.00477441035416547
+Rooms - Total housing units - Median rooms,5.956495169772093,0.0032554287911799574
+Bedrooms - Total housing units,1.5341886851160154,0.21906292427503876
+Bedrooms - Total housing units - No bedroom,1.4612178882094613,0.2353026576882734
+Bedrooms - Total housing units - 1 bedroom,0.7988719445461648,0.45177921691346257
+Bedrooms - Total housing units - 2 bedrooms,0.5317977597718345,0.5886737699463844
+Bedrooms - Total housing units - 3 bedrooms,4.8643766926451075,0.009003185108995167
+Bedrooms - Total housing units - 4 bedrooms,1.3993531140164384,0.25002389167800193
+Bedrooms - Total housing units - 5 or more bedrooms,3.6159250314601405,0.02931096363849714
+Housing tenure - Occupied housing units,1.100348689360671,0.33547982119167485
+Housing tenure - Occupied housing units - Owner-occupied,0.0027988463546093755,0.997205119903368
+Housing tenure - Occupied housing units - Renter-occupied,1.6817430347822717,0.1896089073733653
+Housing tenure - Occupied housing units - Average household size of owner-occupied unit,5.447421437958543,0.005221317657956734
+Housing tenure - Occupied housing units - Average household size of renter-occupied unit,3.8428624792031094,0.02361737801637106
+Year householder move into unit - Occupied housing units,1.100348689360671,0.33547982119167485
+Year householder move into unit - Occupied housing units - Moved in 2019 or later,1.4266083590563463,0.24342656427533263
+Year householder move into unit - Occupied housing units - Moved in 2015 to 2018,0.2950787958462292,0.7449128455299223
+Year householder move into unit - Occupied housing units - Moved in 2010 to 2014,2.0527871715060155,0.13204087342658755
+Year householder move into unit - Occupied housing units - Moved in 2000 to 2009,0.7971034086623001,0.452570315075839
+Year householder move into unit - Occupied housing units - Moved in 1990 to 1999,0.3775165540328195,0.6862245682912986
+Year householder move into unit - Occupied housing units - Moved in 1989 and earlier,1.8469463490600815,0.16135919116463301
+Vehicles available - Occupied housing units,1.100348689360671,0.33547982119167485
+Vehicles available - Occupied housing units - No vehicles available,4.022588495552857,0.01991323920679684
+Vehicles available - Occupied housing units - 1 vehicle available,2.269516397171926,0.10697259821947577
+Vehicles available - Occupied housing units - 2 vehicles available,1.6436834219881225,0.19679867379674082
+Vehicles available - Occupied housing units - 3 or more vehicles available,2.407233793168615,0.09360666701269266
+House heating fuel - Occupied housing units,1.100348689360671,0.33547982119167485
+House heating fuel - Occupied housing units - Utility gas,3.5301253408967317,0.0318100967214499
+"House heating fuel - Occupied housing units - Bottled, tank, or LP gas",0.08510886375911869,0.9184575187034341
+House heating fuel - Occupied housing units - Electricity,0.7256373594073688,0.48574145030052485
+"House heating fuel - Occupied housing units - Fuel oil, kerosene, etc.",2.09248396120652,0.1270401839072684
+House heating fuel - Occupied housing units - Coal or coke,4.082619316219527,0.018811924600009168
+House heating fuel - Occupied housing units - Wood,0.6979796737895962,0.4992309888232639
+House heating fuel - Occupied housing units - Solar energy,2.584171351826161,0.07888369967711234
+House heating fuel - Occupied housing units - Other fuel,1.5739712132532875,0.21069260594231146
+House heating fuel - Occupied housing units - No fuel used,0.3654587405995826,0.6945069086923769
+Selected Characteristics - Occupied housing units,1.100348689360671,0.33547982119167485
+Selected Characteristics - Occupied housing units - Lacking complete plumbing facilities,3.158789019449884,0.04537490965379375
+Selected Characteristics - Occupied housing units - Lacking complete kitchen facilities,1.355793102547586,0.2609464176363551
+Selected Characteristics - Occupied housing units - No telephone service available,6.0983877115554606,0.002855324681093913
+Occupants per room - Occupied housing units,1.100348689360671,0.33547982119167485
+Occupants per room - Occupied housing units - 1.00 or less,0.9995408992153992,0.37053572357055253
+Occupants per room - Occupied housing units - 1.01 to 1.50,1.5860792910848964,0.2082099526909088
+Occupants per room - Occupied housing units - 1.51 or more,0.23828276731269363,0.7882836037936201
+Value - Owner-occupied units,0.0027988463546093755,0.997205119903368
+"Value - Owner-occupied units - Less than $50,000",7.465342522572528,0.0008168293737638576
+"Value - Owner-occupied units - $50,000 to $99,999",10.663224350408862,4.738332982363493e-05
+"Value - Owner-occupied units - $100,000 to $149,999",8.518821163648747,0.0003158460740691023
+"Value - Owner-occupied units - $150,000 to $199,999",2.8169330669257224,0.06302060973095117
+"Value - Owner-occupied units - $200,000 to $299,999",1.9346733161857805,0.14813234634870018
+"Value - Owner-occupied units - $300,000 to $499,999",5.6783050732274205,0.004212730365206743
+"Value - Owner-occupied units - $500,000 to $999,999",16.634866394403023,3.0725375741668205e-07
+"Value - Owner-occupied units - $1,000,000 or more",8.595840260813954,0.0002947913461620363
+Value - Owner-occupied units - Median (dollars),0.21726809007462794,0.8049721518108927
+Gross rent - Occupied units paying rent,1.4885439249975903,0.22908293559974233
+Gross rent - Occupied units paying rent - Less than $500,2.7790461596839675,0.06536319522478046
+Gross rent - Occupied units paying rent - $500 to $999,6.700585959702716,0.0016408547366318052
+"Gross rent - Occupied units paying rent - $1,000 to $1,499",2.2263415352495333,0.11154926111549025
+"Gross rent - Occupied units paying rent - $1,500 to $1,999",4.635594039583876,0.011161535054456228
+"Gross rent - Occupied units paying rent - $2,000 to $2,499",11.09311712320265,3.258328303865293e-05
+"Gross rent - Occupied units paying rent - $2,500 to $2,999",14.61199521431227,1.629462273563319e-06
+"Gross rent - Occupied units paying rent - $3,000 or more",11.161500269471542,3.0704451541168527e-05
+Gross rent - Occupied units paying rent - Median (dollars),1.2967654089432012,0.2765237005675102
+Gross rent - Occupied units paying rent - No rent paid,4.578452325457635,0.011778134418999428
+GRAPI - Occupied units paying rent (excluding units where GRAPI cannot be computed),1.4420025643347834,0.23977854438224258
+GRAPI - Occupied units paying rent (excluding units where GRAPI cannot be computed) - Less than 15.0 percent,2.9938281704658967,0.05315930824655388
+GRAPI - Occupied units paying rent (excluding units where GRAPI cannot be computed) - 15.0 to 19.9 percent,2.3609948958746254,0.09789424687565013
+GRAPI - Occupied units paying rent (excluding units where GRAPI cannot be computed) - 20.0 to 24.9 percent,0.04790358502022142,0.9532405619304016
+GRAPI - Occupied units paying rent (excluding units where GRAPI cannot be computed) - 25.0 to 29.9 percent,0.7676355185577177,0.4659604071135982
+GRAPI - Occupied units paying rent (excluding units where GRAPI cannot be computed) - 30.0 to 34.9 percent,0.47652740127041193,0.6218917137894975
+GRAPI - Occupied units paying rent (excluding units where GRAPI cannot be computed) - 35.0 percent or more,4.102306341148489,0.01846435809982993
+GRAPI - Occupied units paying rent (excluding units where GRAPI cannot be computed) - Not computed,3.5112283986773347,0.03238893636574169

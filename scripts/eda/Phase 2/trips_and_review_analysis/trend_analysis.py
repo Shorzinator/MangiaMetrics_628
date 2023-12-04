@@ -51,45 +51,37 @@ def monthly_trips():
     print("Monthly trips saved.")
 
 
-def monthly_avg_rating(review_df, output_path):
-    """
-    This function calculates the average star rating by month and plots the data.
+def monthly_avg_rating():
+    # Ensure the 'Date' column is in datetime format and set as index
+    review_df['Date'] = pd.to_datetime(review_df['Date'])
+    review_df.set_index('Date', inplace=True)
 
-    Args:
-    review_df (pd.DataFrame): DataFrame containing review data with 'Date' and 'stars' columns.
-    output_path (str): Directory path to save the plot and CSV file.
-
-    Returns:
-    None
-    """
-    # Resample the data to calculate the average star rating by month across all years
+    # Group by month and calculate the average star rating
     monthly_avg_rating = review_df['stars'].groupby(review_df.index.month).mean()
 
-    # Rename the index to month names for better readability in the plot
+    # Map the index to month names
     month_names = {1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', 6: 'June',
                    7: 'July', 8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December'}
     monthly_avg_rating.index = monthly_avg_rating.index.map(month_names)
 
-    # Plotting the data
+    # Plotting the average star rating by month
     plt.figure(figsize=(12, 6))
     monthly_avg_rating.plot(kind='bar')
     plt.title('Average Star Rating by Month')
     plt.xlabel('Month')
-    plt.ylabel('Average Rating')
+    plt.ylabel('Average Star Rating')
     plt.grid(True)
 
-    # Save the plot
-    plot_filename = 'monthly_avg_rating.png'
-    plot_path = os.path.join(output_path, plot_filename)
+    # Saving the plot
+    plot_path = os.path.join(output_path, 'monthly_avg_rating.png')
     plt.savefig(plot_path)
 
-    # Save the csv
-    monthly_avg_rating_df = pd.DataFrame(monthly_avg_rating).reset_index()
-    monthly_avg_rating_df.columns = ['Month', 'Average Rating']
-    csv_filename = 'monthly_avg_rating.csv'
-    csv_path = os.path.join(output_path, csv_filename)
-    monthly_avg_rating_df.to_csv(csv_path, index=False)
-    print("Monthly ratings saved.")
+    plt.show()
+
+    # Saving the data to a CSV file
+    csv_path = os.path.join(output_path, 'monthly_avg_rating.csv')
+    monthly_avg_rating.to_csv(csv_path, index_label='Month')
+    print("Monthly average star rating saved.")
 
 
 def quarterly_trips():
@@ -203,9 +195,9 @@ def quarterly_avg_rating():
 
 
 def main():
-    # monthly_trips()
-    # monthly_avg_rating()
-    # quarterly_trips()
+    monthly_trips()
+    monthly_avg_rating()
+    quarterly_trips()
     quarterly_avg_rating()
 
 

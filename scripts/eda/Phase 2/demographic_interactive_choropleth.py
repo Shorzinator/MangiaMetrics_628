@@ -59,39 +59,40 @@ for feature in tqdm(demographic_features, desc="Creating choropleth layers"):
 # Add a marker cluster for restaurant points
 marker_cluster = MarkerCluster().add_to(m)
 
-for idx, row in gdf_restaurants.iterrows():
-    folium.Marker(
-        location=[row['latitude'], row['longitude']],
-        popup=row['name']  # Replace 'name' with the actual restaurant name column
-    ).add_to(marker_cluster)
+# for idx, row in gdf_restaurants.iterrows():
+#     folium.Marker(
+#         location=[row['latitude'], row['longitude']],
+#         popup=row['name']  # Replace 'name' with the actual restaurant name column
+#     ).add_to(marker_cluster)
 
 # Add each restaurant to the marker cluster
-# for idx, row in gdf_restaurants.iterrows():
-#     # Create a string with the demographic information
-#     popup_content = f"""
-#         <strong>ZIP Code:</strong> {row['ZIP_CODE']}<br>
-#         <strong>Median Income:</strong> {row['Employment Status - Females 16 years and over - In labor force']}<br>
-#         <strong>Population:</strong> {row['Occupation']}<br>
-#         <strong>Employment Status:</strong> {row['Employment_Status']}
-#         """
-#     # Create a popup
-#     popup = folium.Popup(popup_content, max_width=300)
-#
-#     # Get the centroid of the area
-#     centroid = row['geometry'].centroid
-#
-#     # Create an invisible marker and add it to the map
-#     folium.Marker(
-#         location=[centroid.y, centroid.x],
-#         icon=folium.Icon(icon_color='rgba(0,0,0,0)'),  # Invisible icon
-#         popup=popup
-#     ).add_to(m)
+for idx, row in gdf_restaurants.iterrows():
+    # Create a string with the demographic information
+    popup_content = f"""
+        <strong>ZIP Code:</strong> {row['ZIP_CODE']}<br>
+        <strong>Name:</strong> {row['name']}<br>
+        <strong>County:</strong> {row['county']}<br>
+
+        """
+
+    # Create a popup
+    popup = folium.Popup(popup_content, max_width=300)
+
+    # Get the centroid of the area
+    centroid = row['geometry'].centroid
+
+    # Create an invisible marker and add it to the map
+    folium.Marker(
+        location=[centroid.y, centroid.x],
+        icon=folium.Icon(icon_color='rgba(0,0,0,0)'),  # Invisible icon
+        popup=popup
+    ).add_to(marker_cluster)
 
 # Add Layer Control to switch between choropleth layers
 folium.LayerControl().add_to(m)
 
 # Save the interactive map to an HTML file
-output_html = os.path.join(get_path_from_root("results", "eda", "Phase 2"), "interactive_map_success_index.html")
+output_html = os.path.join(get_path_from_root("results", "eda", "Phase 2"), "interactive_map_success_index_test.html")
 m.save(output_html)
 
 # Print the path where the map is saved

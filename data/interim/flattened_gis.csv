@@ -1,4 +1,4 @@
-@id,name,longitude,latitude,addr:city,addr:postcode,building,opening_hours,phone,website,county
+@id,name,longitude,latitude,addr:city,ZIP_CODE,building,opening_hours,phone,website,county
 relation/6176471,Monte Cello's,-80.0523498,40.6064814,,15090,,,,,Allegheny County
 relation/14702526,Villa Ballanca,-79.7357004,40.5903043,Lower Burrell,15068,commercial,We-Sa 11:00-21:00; Su 11:00-20:00,+1 724 339 6111,https://villaballanca.com,Allegheny County
 way/43000780,Sal's Brick Oven Pizza,-75.3782697,40.6115597,Bethlehem,18015,yes,Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00,+1 610 317 0400,https://www.salsbrickovenpizzamenu.com/,Northampton County

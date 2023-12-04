@@ -82,58 +82,16 @@ def plot_and_save_importances(model, X, preprocessor, file_name, output_path):
     feature_importances.to_csv(os.path.join(output_path, f'{file_name}_feature_importance.csv'), index=False)
 
 
-# Function to calculate and plot permutation importance
-def permutation_importance_plot(model, X_test, y_test, file_name, output_path):
-    result = permutation_importance(model, X_test, y_test, n_repeats=10, random_state=42)
-    sorted_idx = result.importances_mean.argsort()
-
-    # plt.figure()
-    # plt.boxplot(result.importances[sorted_idx].T,
-    #             vert=False, labels=X_test.columns[sorted_idx])
-    # plt.title("Permutation Importances (test set)")
-    # plt.tight_layout()
-    # plt.savefig(os.path.join(output_path, f'{file_name}_permutation_importance.png'))
-
-    # Save Permutation Importances to CSV
-    perm_importances = pd.DataFrame(
-        {'Feature': X_test.columns[sorted_idx], 'Importance': result.importances_mean[sorted_idx]})
-    perm_importances.to_csv(os.path.join(output_path, f'{file_name}_permutation_importance.csv'), index=False)
-
-
-# Function to calculate and plot SHAP values
-def shap_values_plot(model, X, preprocessor, file_name, output_path):
-    # Apply preprocessing steps (excluding imputation) to X
-    X_transformed = preprocessor.transform(X)
-
-    # Initialize the SHAP explainer with the model and transformed data
-    explainer = shap.Explainer(model.named_steps['regressor'], X_transformed)
-
-    # Calculate SHAP values
-    shap_values = explainer.shap_values(X_transformed)
-
-    # Plot SHAP values
-    plt.figure(figsize=(10, 5))  # Adjust figure size as needed
-    shap.summary_plot(shap_values, X_transformed, plot_type="bar")
-    plt.tight_layout()
-
-    shap_df = pd.DataFrame(shap_values, columns=X.columns)
-
-    shap_df.to_csv(os.path.join(output_path, f"{file_name}_shap_importance.csv"))
-    plt.savefig(os.path.join(output_path, f'{file_name}_shap_importance.png'))
-
-
 # Main execution function
 def main():
-    df_path = get_path_from_root("data", "interim", "demographic data", "DP03", "DP03_x_business_x_review.csv")
+    df_path = get_path_from_root("data", "interim", "demographic data", "DP05", "DP05_x_business_x_review.csv")
     df = pd.read_csv(df_path)
-    output_path = get_path_from_root("results", "modeling", "DP03")
+    output_path = get_path_from_root("results", "modeling", "DP05")
 
     X, y, preprocessor = preprocess_data(df, 'success_score')
     model, X_train, y_train, X_test, y_test = build_and_fit_model(X, y, preprocessor)
 
-    # plot_and_save_importances(model, X_train, preprocessor, 'random_forest', output_path)
-    # permutation_importance_plot(model, X_test, y_test, 'random_forest', output_path)
-    shap_values_plot(model, X_train, preprocessor, 'random_forest', output_path)
+    plot_and_save_importances(model, X_train, preprocessor, 'random_forest', output_path)
 
 
 if __name__ == "__main__":

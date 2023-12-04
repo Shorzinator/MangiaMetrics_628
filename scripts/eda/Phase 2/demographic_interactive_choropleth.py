@@ -7,7 +7,7 @@ from scripts.utility.path_utils import get_path_from_root
 from tqdm import tqdm
 
 # File paths
-path_to_demographic_data = os.path.join(get_path_from_root("data", "final"), "final_dp03.csv")
+path_to_demographic_data = os.path.join(get_path_from_root("data", "interim"), "composite_metric.csv")
 path_to_restaurant_data = os.path.join(get_path_from_root("data", "interim"), "flattened_gis.csv")
 path_to_pa_shapefile = os.path.join(get_path_from_root("data", "raw", "shape_files_for_pa"), "PA_ZipCode_data.shp")
 
@@ -40,7 +40,7 @@ m = folium.Map(location=[40.90, -77.84], zoom_start=7)
 
 # Plot demographic data as a Choropleth layer
 # Replace 'Median_Income' with the actual demographic column you want to visualize
-demographic_features = ['Employment Status - Population 16 years and over']
+demographic_features = ['Composite_Metric']
 
 for feature in tqdm(demographic_features, desc="Creating choropleth layers"):
     layer = folium.FeatureGroup(name=feature)
@@ -52,7 +52,7 @@ for feature in tqdm(demographic_features, desc="Creating choropleth layers"):
         fill_color='PuBuGn',
         fill_opacity=0.8,
         line_opacity=0.2,
-        legend_name=feature
+        legend_name="Italian Restaurant Success Index"
     ).add_to(m)
     layer.add_to(m)
 
@@ -91,7 +91,7 @@ for idx, row in gdf_restaurants.iterrows():
 folium.LayerControl().add_to(m)
 
 # Save the interactive map to an HTML file
-output_html = os.path.join(get_path_from_root("results", "eda", "Phase 2"), "interactive_map_dp03.html")
+output_html = os.path.join(get_path_from_root("results", "eda", "Phase 2"), "interactive_map_success_index.html")
 m.save(output_html)
 
 # Print the path where the map is saved

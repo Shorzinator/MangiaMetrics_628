@@ -18,7 +18,8 @@ def plot_category_counts(business_data, title, file_name):
     plt.xlabel('Category')
     plt.ylabel('Count')
     plt.tight_layout()
-    plt.savefig(file_name)
+    # plt.savefig(file_name)
+    plt.show()
     plt.close()
 
 
@@ -29,7 +30,8 @@ def plot_restaurant_density(geo_df, title, file_name):
     plt.xlabel('Longitude')
     plt.ylabel('Latitude')
     plt.legend()
-    plt.savefig(file_name)
+    # plt.savefig(file_name)
+    plt.show()
     plt.close()
 
 

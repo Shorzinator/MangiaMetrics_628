@@ -1,13 +1,10 @@
 import os
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import shap
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.impute import KNNImputer
-from sklearn.inspection import permutation_importance
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
@@ -22,7 +19,6 @@ def preprocess_data(df, target):
     y = df[target]
     categorical_cols = X.select_dtypes(include=['object', 'category']).columns
 
-    # Use SparseThreshold to control the sparsity/density of the output
     preprocessor = ColumnTransformer(
         transformers=[
             ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_cols)
@@ -50,9 +46,14 @@ def build_and_fit_model(X, y, preprocessor):
 
 # Function to plot and save feature importances
 def plot_and_save_importances(model, X, preprocessor, file_name, output_path):
+    # Fit the preprocessor on the data to access transformer methods
+    preprocessor.fit(X)
+
     # Retrieve feature names after transformation
-    feature_names = preprocessor.transformers_[0][1].get_feature_names_out().tolist()
-    feature_names += X.columns[len(preprocessor.transformers_[0][2]):].tolist()
+    feature_names_transformed = preprocessor.named_transformers_['cat'].get_feature_names_out(
+        X.select_dtypes(include=['object', 'category']).columns)
+    remaining_feature_names = X.select_dtypes(exclude=['object', 'category']).columns
+    feature_names = np.concatenate([feature_names_transformed, remaining_feature_names])
 
     # Get importances from the model
     importances = model.named_steps['regressor'].feature_importances_
@@ -63,77 +64,25 @@ def plot_and_save_importances(model, X, preprocessor, file_name, output_path):
         print("Mismatch in the number of features and importances")
         return
 
-    # Plot Feature Importances
-    # plt.figure()
-    # plt.title("Feature importances")
-    # plt.bar(range(len(importances)), importances[indices], align="center")
-    # plt.xticks(range(len(importances)), [feature_names[i] for i in indices], rotation='vertical')
-    # plt.xlim([-1, len(importances)])
-    # plt.tight_layout()
-    # plt.savefig(os.path.join(output_path, f'{file_name}_feature_importance.png'))
-
     # Save Feature Importances to CSV
-    feature_importances = pd.DataFrame(
-        {
-            'Feature': [feature_names[i] for i in indices],
-            'Importance': importances[indices]}
+    feature_importances = pd.DataFrame({
+        'Feature': [feature_names[i] for i in indices],
+        'Importance': importances[indices]
+    }
     )
-
     feature_importances.to_csv(os.path.join(output_path, f'{file_name}_feature_importance.csv'), index=False)
-
-
-# Function to calculate and plot permutation importance
-def permutation_importance_plot(model, X_test, y_test, file_name, output_path):
-    result = permutation_importance(model, X_test, y_test, n_repeats=10, random_state=42)
-    sorted_idx = result.importances_mean.argsort()
-
-    # plt.figure()
-    # plt.boxplot(result.importances[sorted_idx].T,
-    #             vert=False, labels=X_test.columns[sorted_idx])
-    # plt.title("Permutation Importances (test set)")
-    # plt.tight_layout()
-    # plt.savefig(os.path.join(output_path, f'{file_name}_permutation_importance.png'))
-
-    # Save Permutation Importances to CSV
-    perm_importances = pd.DataFrame(
-        {'Feature': X_test.columns[sorted_idx], 'Importance': result.importances_mean[sorted_idx]})
-    perm_importances.to_csv(os.path.join(output_path, f'{file_name}_permutation_importance.csv'), index=False)
-
-
-# Function to calculate and plot SHAP values
-def shap_values_plot(model, X, preprocessor, file_name, output_path):
-    # Apply preprocessing steps (excluding imputation) to X
-    X_transformed = preprocessor.transform(X)
-
-    # Initialize the SHAP explainer with the model and transformed data
-    explainer = shap.Explainer(model.named_steps['regressor'], X_transformed)
-
-    # Calculate SHAP values
-    shap_values = explainer.shap_values(X_transformed)
-
-    # Plot SHAP values
-    plt.figure(figsize=(10, 5))  # Adjust figure size as needed
-    shap.summary_plot(shap_values, X_transformed, plot_type="bar")
-    plt.tight_layout()
-
-    shap_df = pd.DataFrame(shap_values, columns=X.columns)
-
-    shap_df.to_csv(os.path.join(output_path, f"{file_name}_shap_importance.csv"))
-    plt.savefig(os.path.join(output_path, f'{file_name}_shap_importance.png'))
 
 
 # Main execution function
 def main():
-    df_path = get_path_from_root("data", "interim", "demographic data", "DP03", "DP03_x_business_x_review.csv")
+    df_path = get_path_from_root("data", "interim", "demographic data", "DP04", "DP04_x_business_x_review.csv")
     df = pd.read_csv(df_path)
-    output_path = get_path_from_root("results", "modeling", "DP03")
+    output_path = get_path_from_root("results", "modeling", "DP04")
 
     X, y, preprocessor = preprocess_data(df, 'success_score')
     model, X_train, y_train, X_test, y_test = build_and_fit_model(X, y, preprocessor)
 
-    # plot_and_save_importances(model, X_train, preprocessor, 'random_forest', output_path)
-    # permutation_importance_plot(model, X_test, y_test, 'random_forest', output_path)
-    shap_values_plot(model, X_train, preprocessor, 'random_forest', output_path)
+    plot_and_save_importances(model, X_train, preprocessor, 'DP04_random_forest', output_path)
 
 
 if __name__ == "__main__":

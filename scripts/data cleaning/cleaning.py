@@ -5,6 +5,7 @@ import os
 import re
 
 import nltk
+# import emoji
 import pandas as pd
 from nltk.corpus import stopwords
 
@@ -122,7 +123,26 @@ def clean_business():
         raise
 
 
+def handle_negations(words):
+    # Example implementation - can be refined further
+    transformed_words = []
+    negation = False
+    for word in words:
+        if negation:
+            word = 'not_' + word
+            negation = False
+        if word in ['not', 'no']:
+            negation = True
+        else:
+            transformed_words.append(word)
+    return transformed_words
+
+
 def preprocess_text(text):
+
+    # Remove emojies
+    # text = emoji.demojize(text)
+
     # Remove URLs
     text = re.sub(r'http\S+', '', text)
 
@@ -137,7 +157,7 @@ def preprocess_text(text):
     words = [word for word in words if word not in stop_words]
 
     # Negation handling
-    words = ['not_' + words[i + 1] if words[i] == 'not' and i + 1 < len(words) else words[i] for i in range(len(words))]
+    words = handle_negations(words)
 
     # Lemmatization
     lemmatizer = nltk.WordNetLemmatizer()
@@ -179,8 +199,8 @@ def clean_reviews():
         cleaned_reviews_df = pd.concat(chunks)
 
         # Save cleaned data
-        path_to_save = get_path_from_root("data", "interim", "cleaned_reviews.json")
-        cleaned_reviews_df.to_json(path_to_save, orient='records', lines=True)
+        path_to_save = get_path_from_root("data", "interim", "cleaned_reviews.csv")
+        cleaned_reviews_df.to_csv(path_to_save, index=False)
 
         logging.info(f"Cleaned review data saved to {path_to_save}")
 
@@ -227,9 +247,9 @@ if __name__ == "__main__":
     # clean_business()
 
     # Clean review.json
-    # REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
-    # clean_reviews()
+    REVIEW_CLEANING_CONFIG['business_ids'] = get_cleaned_business_ids()
+    clean_reviews()
 
     # Clean Trips_by_Distance.csv
-    clean_trips_data()
+    # clean_trips_data()
     # pass

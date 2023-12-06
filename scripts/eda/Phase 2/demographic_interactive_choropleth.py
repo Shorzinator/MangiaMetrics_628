@@ -92,7 +92,7 @@ for idx, row in gdf_restaurants.iterrows():
 folium.LayerControl().add_to(m)
 
 # Save the interactive map to an HTML file
-output_html = os.path.join(get_path_from_root("results", "eda", "Phase 2"), "interactive_map_success_index_test.html")
+output_html = os.path.join(get_path_from_root("results", "eda", "Phase 2"), "interactive_map_success_index.html")
 m.save(output_html)
 
 # Print the path where the map is saved

@@ -67,7 +67,7 @@ def plot_word_embeddings(embeddings_index, word_list, file_name="word_embeddings
                       legend_title_font_size=18)
 
     # Save the figure as an HTML file
-    fig.write_html(os.path.join(output_path, file_name))
+    fig.write_html(file_name)
 
     # Show the plot
     fig.show()
@@ -210,20 +210,26 @@ def main(cleaned_reviews_path):
     # plot_ngrams(trigrams, top_n=10, title="Top Tri-grams", file_name="trigram_plot.png")
 
     # Word Embeddings
-    # glove_path = get_path_from_root("data", "interim", "glove.6B.300d.txt")
-    # embeddings_index = load_glove_embeddings(glove_path)
+    glove_path = get_path_from_root("data", "interim", "glove.6B.300d.txt")
+    embeddings_index = load_glove_embeddings(glove_path)
+
     # Visualize Word Embeddings
     words_to_visualize = [
-        'excellent', 'poor', 'delicious', 'awful', 'friendly', 'rude', 'fast', 'slow',
-        'happy', 'sad', 'angry', 'calm', 'love', 'hate', 'bright', 'dark',
-        'modern', 'ancient', 'clean', 'dirty', 'hot', 'cold', 'fresh', 'stale',
-        'hard', 'soft', 'strong', 'weak', 'success', 'failure', 'win', 'lose',
-        'beautiful', 'ugly', 'rich', 'poor', 'healthy', 'sick', 'peace', 'war',
-        'city', 'village', 'mountain', 'ocean', 'coffee', 'tea', 'book', 'movie',
-        'music', 'art', 'science', 'technology', 'politics', 'economy', 'education', 'culture'
+        'pasta', 'pizza', 'risotto', 'tiramisu', 'espresso', 'gelato', 'antipasto', 'prosciutto',
+        'mozzarella', 'parmigiano', 'ricotta', 'gourmet', 'authentic', 'traditional', 'innovative',
+        'atmosphere', 'cozy', 'romantic', 'family-friendly', 'casual', 'elegant', 'rustic', 'charming',
+        'service', 'welcoming', 'attentive', 'professional', 'friendly', 'knowledgeable', 'slow',
+        'affordable', 'expensive', 'value', 'overpriced', 'reasonable', 'portions', 'generous', 'hearty',
+        'flavorful', 'savory', 'spicy', 'sweet', 'bitter', 'rich', 'creamy', 'crispy', 'tender',
+        'fresh', 'local', 'seasonal', 'organic', 'imported', 'homemade', 'signature', 'recommend',
+        'reservation', 'waitstaff', 'chef', 'sommelier', 'patio', 'view', 'ambience', 'decor',
+        'cleanliness', 'hygiene', 'location', 'accessible', 'parking', 'reservations', 'booking',
+        'wine', 'vineyard', 'pairing', 'appetizer', 'entree', 'dessert', 'course', 'cuisine',
+        'dining', 'experience', 'review', 'rating', 'favorite', 'popular', 'crowded', 'quiet',
+        'lively', 'noisy', 'intimate', 'exclusive', 'innovation', 'tradition', 'culture', 'heritage'
     ]
 
-    # plot_word_embeddings(embeddings_index, words_to_visualize)
+    plot_word_embeddings(embeddings_index, words_to_visualize)
 
     # Sentiment Analysis with VADER
     # sentiment_scores = analyze_sentiment_vader(reviews)
@@ -246,8 +252,8 @@ def main(cleaned_reviews_path):
         'portion', 'value', 'experience', 'comfort', 'decor', 'seating', 'wait time'
     ]
 
-    aspect_sentiments = analyze_aspect_sentiment(reviews, aspect_keywords)
-    plot_aspect_sentiment(aspect_sentiments, file_name="aspect_sentiment.png")
+    # aspect_sentiments = analyze_aspect_sentiment(reviews, aspect_keywords)
+    # plot_aspect_sentiment(aspect_sentiments, file_name="aspect_sentiment.png")
 
 
 if __name__ == "__main__":
